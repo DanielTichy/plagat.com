@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.6">
+	<name>M17n</name>
+	<version>1.5.8</version>
+	<author>Groenewegdigitaal ft SDIC</author>
+	<creationDate>November 2008</creationDate>
+	<copyright>Hacks Copyleft - (C) 2005 - 2008 SDIC SA. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@groenewegdigitaal.nl</authorEmail>
+	<authorUrl>http://www.groenewegdigitaal.nl</authorUrl>
+	<description>Joomla 1.5.8 - Multilingual using M17n package</description>
+
+	<installfile>install.M17n.php</installfile>
+	<uninstallfile>uninstall.M17n.php</uninstallfile>
+    
+	<administration>	  
+		<files folder="files">
+		
+			<filename>install.M17n.php</filename>
+			<filename>uninstall.M17n.php</filename>
+
+				<filename>administrator/components/com_menus/views/item/tmpl/form.php</filename>
+				<filename>administrator/components/com_menus/views/list/view.php</filename>
+				<filename>administrator/components/com_menus/views/list/tmpl/default.php</filename>
+				<filename>administrator/components/com_menus/models/list.php</filename>
+
+				<filename>libraries/joomla/application/menu.php</filename>
+				
+				<filename>modules/mod_mainmenu/helper.php</filename>
+				<filename>modules/mod_mainmenu/legacy.php</filename>
+				<filename>modules/mod_mainmenu/mod_mainmenu.php</filename>
+				<filename>modules/mod_mainmenu/mod_mainmenu.xml</filename>
+					<filename>modules/mod_mainmenu/tmpl/default.php</filename>
+
+				<filename>modules/mod_M17n/index.html</filename>
+				<filename>modules/mod_M17n/mod_M17n.php</filename>
+				<filename>modules/mod_M17n/mod_M17n.xml</filename>
+					<filename>modules/mod_M17n/icons/index.html</filename>
+					<filename>modules/mod_M17n/icons/af.gif</filename>
+					<filename>modules/mod_M17n/icons/ar.gif</filename>
+					<filename>modules/mod_M17n/icons/az.gif</filename>
+					<filename>modules/mod_M17n/icons/bg.gif</filename>
+					<filename>modules/mod_M17n/icons/bn.gif</filename>
+					<filename>modules/mod_M17n/icons/bs.gif</filename>
+					<filename>modules/mod_M17n/icons/ca.gif</filename>
+					<filename>modules/mod_M17n/icons/cy.gif</filename>
+					<filename>modules/mod_M17n/icons/cz.gif</filename>
+					<filename>modules/mod_M17n/icons/da.gif</filename>
+					<filename>modules/mod_M17n/icons/de.gif</filename>
+					<filename>modules/mod_M17n/icons/el.gif</filename>
+					<filename>modules/mod_M17n/icons/en.gif</filename>
+					<filename>modules/mod_M17n/icons/eo.gif</filename>
+					<filename>modules/mod_M17n/icons/es.gif</filename>
+					<filename>modules/mod_M17n/icons/et.gif</filename>
+					<filename>modules/mod_M17n/icons/fa.gif</filename>
+					<filename>modules/mod_M17n/icons/fi.gif</filename>
+					<filename>modules/mod_M17n/icons/fr.gif</filename>
+					<filename>modules/mod_M17n/icons/hi.gif</filename>
+					<filename>modules/mod_M17n/icons/hr.gif</filename>
+					<filename>modules/mod_M17n/icons/hu.gif</filename>
+					<filename>modules/mod_M17n/icons/hy.gif</filename>
+					<filename>modules/mod_M17n/icons/is.gif</filename>
+					<filename>modules/mod_M17n/icons/it.gif</filename>
+					<filename>modules/mod_M17n/icons/ja.gif</filename>
+					<filename>modules/mod_M17n/icons/ka.gif</filename>
+					<filename>modules/mod_M17n/icons/ko.gif</filename>
+					<filename>modules/mod_M17n/icons/ku.gif</filename>
+					<filename>modules/mod_M17n/icons/lt.gif</filename>
+					<filename>modules/mod_M17n/icons/lv.gif</filename>
+					<filename>modules/mod_M17n/icons/mn.gif</filename>
+					<filename>modules/mod_M17n/icons/nl.gif</filename>
+					<filename>modules/mod_M17n/icons/no.gif</filename>
+					<filename>modules/mod_M17n/icons/pl.gif</filename>
+					<filename>modules/mod_M17n/icons/ps.gif</filename>
+					<filename>modules/mod_M17n/icons/pt.gif</filename>
+					<filename>modules/mod_M17n/icons/ro.gif</filename>
+					<filename>modules/mod_M17n/icons/ru.gif</filename>
+					<filename>modules/mod_M17n/icons/sk.gif</filename>
+					<filename>modules/mod_M17n/icons/sl.gif</filename>
+					<filename>modules/mod_M17n/icons/sr.gif</filename>
+					<filename>modules/mod_M17n/icons/sv.gif</filename>
+					<filename>modules/mod_M17n/icons/ta.gif</filename>
+					<filename>modules/mod_M17n/icons/th.gif</filename>
+					<filename>modules/mod_M17n/icons/tr.gif</filename>
+					<filename>modules/mod_M17n/icons/uk.gif</filename>
+					<filename>modules/mod_M17n/icons/ur.gif</filename>
+					<filename>modules/mod_M17n/icons/uz.gif</filename>
+					<filename>modules/mod_M17n/icons/vi.gif</filename>
+					<filename>modules/mod_M17n/icons/zh.gif</filename>
+
+
+				<filename>plugins/system/M17n.php</filename>
+				<filename>plugins/system/M17n.xml</filename>
+				
+				<filename>components/com_content/models/frontpage.php</filename>
+				<filename>components/com_content/models/category.php</filename>
+				<filename>components/com_content/models/section.php</filename>
+				<filename>components/com_content/controller.php</filename>
+				<filename>plugins/search/content.php</filename>
+				<filename>modules/mod_mostread/helper.php</filename>
+				<filename>modules/mod_latestnews/helper.php</filename>
+				<filename>modules/mod_newsflash/helper.php</filename>
+
+		</files>
+
+	</administration>
+
+</install>

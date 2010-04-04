@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>MySocialBookmark</name>
+	<creationDate>September 2008</creationDate>
+	<author>camp26.biz Team</author>
+	<authorEmail>marketing@camp26.biz</authorEmail>
+	<authorUrl>http://www.camp26.biz/</authorUrl>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.1</version>
+	<description>MODULE : MYSOCIALBOOKMARK</description>
+	
+	<files>
+    <filename module="mod_mysocialbookmark">mod_mysocialbookmark.php</filename>
+	
+	<filename>index.html</filename>
+    <filename>helper.php</filename>
+	<filename>legacy.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+	
+	<filename>mysocialbookmark/blinklist.gif</filename>
+	<filename>mysocialbookmark/blinklist_trans.gif</filename>
+	<filename>mysocialbookmark/blinklist_ani.gif</filename>
+	<filename>mysocialbookmark/blinklist_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/del.gif</filename>
+	<filename>mysocialbookmark/del_trans.gif</filename>
+	<filename>mysocialbookmark/del_ani.gif</filename>
+	<filename>mysocialbookmark/del_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/webnews.gif</filename>
+	<filename>mysocialbookmark/webnews_trans.gif</filename>
+	<filename>mysocialbookmark/webnews_ani.gif</filename>
+	<filename>mysocialbookmark/webnews_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/icio.gif</filename>
+	<filename>mysocialbookmark/icio_trans.gif</filename>
+	<filename>mysocialbookmark/icio_ani.gif</filename>
+	<filename>mysocialbookmark/icio_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/oneview.gif</filename>
+	<filename>mysocialbookmark/oneview_trans.gif</filename>
+	<filename>mysocialbookmark/oneview_ani.gif</filename>
+	<filename>mysocialbookmark/oneview_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/digg.gif</filename>
+	<filename>mysocialbookmark/digg_trans.gif</filename>
+	<filename>mysocialbookmark/digg_ani.gif</filename>
+	<filename>mysocialbookmark/digg_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/stumbleupon.gif</filename>
+	<filename>mysocialbookmark/stumbleupon_trans.gif</filename>
+	<filename>mysocialbookmark/stumbleupon_ani.gif</filename>
+	<filename>mysocialbookmark/stumbleupon_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/slashdot.gif</filename>
+	<filename>mysocialbookmark/slashdot_trans.gif</filename>
+	<filename>mysocialbookmark/slashdot_ani.gif</filename>
+	<filename>mysocialbookmark/slashdot_trans_ani.gif</filename>
+
+	<filename>mysocialbookmark/netscape.gif</filename>
+	<filename>mysocialbookmark/netscape_trans.gif</filename>
+	<filename>mysocialbookmark/netscape_ani.gif</filename>
+	<filename>mysocialbookmark/netscape_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/folkd.gif</filename>
+	<filename>mysocialbookmark/folkd_trans.gif</filename>
+	<filename>mysocialbookmark/folkd_ani.gif</filename>
+	<filename>mysocialbookmark/folkd_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/furl.gif</filename>
+	<filename>mysocialbookmark/furl_trans.gif</filename>
+	<filename>mysocialbookmark/furl_ani.gif</filename>
+	<filename>mysocialbookmark/furl_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/google.gif</filename>
+	<filename>mysocialbookmark/google_trans.gif</filename>
+	<filename>mysocialbookmark/google_ani.gif</filename>
+	<filename>mysocialbookmark/google_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/linkarena.gif</filename>
+	<filename>mysocialbookmark/linkarena_trans.gif</filename>
+	<filename>mysocialbookmark/linkarena_ani.gif</filename>
+	<filename>mysocialbookmark/linkarena_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/reddit.gif</filename>
+	<filename>mysocialbookmark/reddit_trans.gif</filename>
+	<filename>mysocialbookmark/reddit_ani.gif</filename>
+	<filename>mysocialbookmark/reddit_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/spurl.gif</filename>
+	<filename>mysocialbookmark/spurl_trans.gif</filename>
+	<filename>mysocialbookmark/spurl_ani.gif</filename>
+	<filename>mysocialbookmark/spurl_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/wong.gif</filename>
+	<filename>mysocialbookmark/wong_trans.gif</filename>
+	<filename>mysocialbookmark/wong_ani.gif</filename>
+	<filename>mysocialbookmark/wong_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/yahoo.gif</filename>
+	<filename>mysocialbookmark/yahoo_trans.gif</filename>
+	<filename>mysocialbookmark/yahoo_ani.gif</filename>
+	<filename>mysocialbookmark/yahoo_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/yigg.gif</filename>
+	<filename>mysocialbookmark/yigg_trans.gif</filename>
+	<filename>mysocialbookmark/yigg_ani.gif</filename>
+	<filename>mysocialbookmark/yigg_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/blogmarks.gif</filename>
+	<filename>mysocialbookmark/blogmarks_trans.gif</filename>
+	<filename>mysocialbookmark/blogmarks_ani.gif</filename>
+	<filename>mysocialbookmark/blogmarks_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/ma.gnolia.gif</filename>
+	<filename>mysocialbookmark/ma.gnolia_trans.gif</filename>
+	<filename>mysocialbookmark/ma.gnolia_ani.gif</filename>
+	<filename>mysocialbookmark/ma.gnolia_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/smarking.gif</filename>
+	<filename>mysocialbookmark/smarking_trans.gif</filename>
+	<filename>mysocialbookmark/smarking_ani.gif</filename>
+	<filename>mysocialbookmark/smarking_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/netvouz.gif</filename>
+	<filename>mysocialbookmark/netvouz_trans.gif</filename>
+	<filename>mysocialbookmark/netvouz_ani.gif</filename>
+	<filename>mysocialbookmark/netvouz_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/technorati.gif</filename>
+	<filename>mysocialbookmark/technorati_trans.gif</filename>
+	<filename>mysocialbookmark/technorati_ani.gif</filename>
+	<filename>mysocialbookmark/technorati_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/newsvine.gif</filename>
+	<filename>mysocialbookmark/newsvine_trans.gif</filename>
+	<filename>mysocialbookmark/newsvine_ani.gif</filename>
+	<filename>mysocialbookmark/newsvine_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/blinkbits.gif</filename>	
+	<filename>mysocialbookmark/blinkbits_trans.gif</filename>
+	<filename>mysocialbookmark/blinkbits_ani.gif</filename>
+	<filename>mysocialbookmark/blinkbits_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/diigo.gif</filename>
+	<filename>mysocialbookmark/diigo_trans.gif</filename>
+	<filename>mysocialbookmark/diigo_ani.gif</filename>
+	<filename>mysocialbookmark/diigo_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/simpy.gif</filename>
+	<filename>mysocialbookmark/simpy_trans.gif</filename>
+	<filename>mysocialbookmark/simpy_ani.gif</filename>
+	<filename>mysocialbookmark/simpy_trans_ani.gif</filename>
+	
+	<filename>mysocialbookmark/what.gif</filename>
+	<filename>mysocialbookmark/what_trans.gif</filename>
+	<filename>mysocialbookmark/what_ani.gif</filename>
+	<filename>mysocialbookmark/what_trans_ani.gif</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_mysocialbookmark.ini</language>
+	</languages>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling">
+		</param>
+		
+		<param name="align" type="list" default='Left' label="Align" description="" >
+			<option value='left'>Left</option>
+			<option value='center'>Center</option>
+			<option value='right'>Right</option>
+		</param>
+		
+		<param name="padding" type="text" default='0' label="Padding" description="" ></param>
+		<param name="style" type="list" default='_trans' label="Icon style" description="" >
+			<option value='_trans'>Transparent</option>
+			<option value=''>Border</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Social Bookmark Settings" description=""></param>
+		
+		<param name="ani" type="list" default='_ani' label="Animated Icons" description="" >
+			<option value='_ani'>Yes</option>
+			<option value=''>No</option>
+		</param>
+		
+		<param name="what" type="list" default='1' label="Display icon information" description="Display icon information" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="whatlink" type="text" size="60" default="http://en.wikipedia.org/wiki/Social_Bookmarking" label="Link to external or internal infopage" description="Link to external or internal infopage">
+		</param>
+		
+		<param name="linktype" type="list" default='1' label="External or internal link" description="External or internal link">
+			<option value='1'>External</option>
+			<option value='2'>Internal</option>
+		</param>
+	
+		<param name="alt" type="text" default="Add to:" label="Alternative text for HTML img tag" description="Alternative text for HTML img tag">
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="Social Bookmark List" description=""></param>
+		
+		<param name="wong" type="list" default='1' label="Mr. Wong (Ger.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="webnews" type="list" default='1' label="Webnews (Ger.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="iciode" type="list" default='1' label="Icio (Ger.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+	
+		<param name="oneview" type="list" default='1' label="Oneview (Ger.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="yigg" type="list" default='1' label="Yigg (Ger.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="linkarena" type="list" default='1' label="Linkarena (Ger./Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="icio" type="list" default='1' label="Del Icio (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="digg" type="list" default='1' label="Digg (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="reddit" type="list" default='1' label="Reddit (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="simpy" type="list" default='1' label="Simpy (Ger./Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="stumbleupon" type="list" default='1' label="StumbleUpon (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="slashdot" type="list" default='1' label="Slashdot (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="netscape" type="list" default='1' label="Netscape (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="furl" type="list" default='1' label="Furl (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="yahoo" type="list" default='1' label="Yahoo (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="blogmarks" type="list" default='1' label="Blogmarks (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+	
+		<param name="diigo" type="list" default='1' label="Diigo (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="technorati" type="list" default='1' label="Technorati (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="newsvine" type="list" default='1' label="Newsvine (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="blinkbits" type="list" default='1' label="Blinkbits (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="magnolia" type="list" default='1' label="Ma.Gnolia (Eng.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="smarking" type="list" default='1' label="Smarking (Eng./Ita.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="netvouz" type="list" default='1' label="Netvouz (Eng./Swe.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+	
+		<param name="folkd" type="list" default='1' label="Folkd (Ger./Eng./Spa./Fra.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="spurl" type="list" default='1' label="Spurl (Multi lang.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+	
+		<param name="google" type="list" default='1' label="Google (Multi lang.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+		
+		<param name="blinklist" type="list" default='1' label="Blinklist (Multi lang.)" description="" >
+			<option value='1'>Yes</option>
+			<option value='2'>No</option>
+		</param>
+</params>
+</install>

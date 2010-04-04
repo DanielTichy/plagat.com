@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JA News Frontpage</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Match 2008</creationDate>
+	<copyright>(C) 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.3.1</version>
+	<description>
+	Rearrange frontpage contents (article choose to display on frontpage) of Joomla into Headline layouts like news portal. You can choose among 2 options layout 
+	JA News Frontpage is a part of JA News packages (JA News + JA News frontpage = JA News 1.3 and released with JA Teline II). For Userguide, please visit http://www.joomlart.com/forums/showthread.php?t=11946
+	</description>
+	<files>
+		<filename module="mod_janews_fp">mod_janews_fp.php</filename>
+		<filename module="mod_janews_fp">helper.php</filename>
+		<filename module="mod_janews_fp">index.html</filename>
+		<filename module="mod_janews_fp">tmpl/default_fp.php</filename>
+		<filename module="mod_janews_fp">tmpl/headline_fp.php</filename>
+		<filename module="mod_janews_fp">tmpl/index.html</filename>
+		<filename module="mod_janews_fp">ja.news/index.html</filename>
+		<filename module="mod_janews_fp">ja.news/ja.news.js</filename>
+		<filename module="mod_janews_fp">ja.news/ja.news.fp.css</filename>
+		<filename module="mod_janews_fp">ja.news/pause.png</filename>
+		<filename module="mod_janews_fp">ja.news/play.png</filename>
+		<filename module="mod_janews_fp">ja.news/next.png</filename>
+		<filename module="mod_janews_fp">ja.news/prev.png</filename>
+		<filename module="mod_janews_fp">ja.news/arrow.png</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="hiddenClasses" type="textarea" default="" rows="10" cols="30" label="Hidden Classes" description="Classes that have property such display: none. Separated by |" />
+		
+    <param name="numberofheadlinenews" type="text" default="10" label="Number of news" description="Total number of news showed in headline; applied in both layout" />
+		<param name="bigitems" type="text" default="1" label="Number of Featured Articles" description="Featured Articles is the newest articles and take most of the place of area, should be 1 if you use default_fp.php layout and 5 if you use headline_fp.php" />
+		<param name="bigmaxchars" type="text" default="0" label="Max Chars of Featured News" description="Maximum number character display" />
+		<param name="bigshowimage" type="radio" default="1" label="Show image on Featured News" description="Show/Hide image">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="bigimg_w" type="text" default="100" label="Featured News Image Width" description="Fixed width of the image in pixel (set to -1 if you want to leave the image's default size" />
+		<param name="bigimg_h" type="text" default="100" label="Featured News Image Height" description="Fixed height of the image in pixel (set to -1 if you want to leave the image's default size" />
+
+		<param name="smallmaxchars" type="text" default="0" label="Max Chars of normal frontpage news" description="Maximum number character display" />
+		<param name="smallshowimage" type="radio" default="1" label="Show image on normal frontpage news" description="Show/Hide image">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="smallimg_w" type="text" default="100" label="Normal news Image Width" description="Fixed width of the image in pixel (set to -1 if you want to leave the image's default size" />
+		<param name="smallimg_h" type="text" default="100" label="Normal news Image Height" description="Fixed height of the image in pixel (set to -1 if you want to leave the image's default size" />
+
+		<param name="fp_layout" type="filelist" directory="modules/mod_janews_fp/tmpl" default="" label="Layout style" filter=".*_fp\.php" description="Layout for display Frontpage news as headline. If you choose different layout, please change config of other above parameters. If you choose headline_fp.php layout, you can config more in Advance parameters belows." />
+
+	</params>
+	<params group="advanced" description="This configuration for layout Headline only (headline_fp.php)">
+
+		<param name="headlinelang" type="text" default="Headline" label="Headline Text" description="Headline's text" />
+		<param name="showhltools" type="radio" default="1" label="Show Headline Tools" description="Show/hide the tool buttons on Headline">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>		
+		<param name="showhltitle" type="radio" default="1" label="Show Headline News title" description="Show/hide the title of headline news">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>		
+		<param name="showhlreadmore" type="radio" default="1" label="Show Headline Readmore" description="Show/Hide Readmore button on Headline">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="headlineheight" type="text" default="220" label="Headline Fixed Height" description="Fixed height of headline, in pixels. Use 0 if you want the headline has flexible height." />
+		<param name="autoroll" type="radio" default="1" label="Auto Roll" description="Rolls the headline news">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="delaytime" type="text" default="5" label="Rolling delay time" description="Time between two articles, in seconds" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+	</params>
+</install>

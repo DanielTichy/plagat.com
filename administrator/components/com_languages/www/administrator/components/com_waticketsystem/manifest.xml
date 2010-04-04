@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<install type="component" version="1.5">
+    <name>WATicketSystem</name>
+    <creationDate>December 2009</creationDate>
+    <author>James Kennard</author>
+    <copyright>This component is released under the GNU/GPL License</copyright>
+    <license>GNU/GPL</license>
+    <authorEmail>james@webamoeba.co.uk</authorEmail>
+    <authorUrl>www.webamoeba.co.uk</authorUrl>
+    <version>3.0.5</version>
+    <description>Help ticket system</description>
+    <administration>
+        <menu>WATicketSystem</menu>
+            <submenu>
+                <menu act="configure">Configure</menu>
+                <menu act="css">CSS</menu>
+                <menu act="user">User Manager</menu>
+                <menu act="rites">Rights Manager</menu>
+                <menu act="category">Category Manager</menu>
+                <menu act="ticket">Ticket Viewer</menu>
+                <menu act="database">Database Maintenance</menu>
+                <menu act="about">About</menu>
+            </submenu>
+        <files folder="administration">
+            <filename>admin.waticketsystem.php</filename>
+            <filename>admin.waticketsystem.class.php</filename>
+            <filename>admin.waticketsystem.html.php</filename>
+            <filename>admin.wats.js</filename>
+            <filename>toolbar.waticketsystem.php</filename>
+            <filename>toolbar.waticketsystem.html.php</filename>
+            <filename>index.html</filename>
+            <folder>images</folder>
+            <folder>classes</folder>
+        </files>
+        <languages folder="administrationLanguages">
+            <language tag="en-GB">en-GB.com_waticketsystem.ini</language>
+            <language tag="sr-SR">sr-RS.com_waticketsystem.ini</language>
+        </languages>
+    </administration>
+    <install>
+        <sql></sql>
+    </install>
+    <uninstall>
+        <sql></sql>
+    </uninstall>
+    <installfile>install.waticketsystem.php</installfile>
+    <uninstallfile>uninstall.waticketsystem.php</uninstallfile>
+    <files folder="site">
+        <filename>waticketsystem.php</filename>
+        <filename>waticketsystem.html.php</filename>
+        <filename>waticketsystem.class.php</filename>
+        <filename>wats.css</filename>
+        <filename>wats.restore.css</filename>
+        <filename>wats.js</filename>
+        <filename>bbcode.inc.php</filename>
+        <filename>index.html</filename>
+        <folder>images</folder>
+    </files>
+    <languages folder="siteLanguages">
+        <!-- component language files -->
+        <language tag="cs-CZ">cs-CZ.com_waticketsystem.ini</language>
+        <language tag="de-DE">de-DE.com_waticketsystem.ini</language>
+        <language tag="el-GR">de-DE.com_waticketsystem.ini</language>
+        <language tag="en-GB">en-GB.com_waticketsystem.ini</language>
+        <language tag="es-ES">es-ES.com_waticketsystem.ini</language>
+        <language tag="fa-IR">fa-IR.com_waticketsystem.ini</language>
+        <language tag="fr-FR">fr-FR.com_waticketsystem.ini</language>
+        <language tag="it-IT">it-IT.com_waticketsystem.ini</language>
+        <language tag="nl-NL">nl-NL.com_waticketsystem.ini</language>
+        <language tag="pt-BR">pt-BR.com_waticketsystem.ini</language>
+        <language tag="pt-PT">pt-PT.com_waticketsystem.ini</language>
+        <language tag="ru-RU">ru-RU.com_waticketsystem.ini</language>
+        <language tag="sk-SK">sk-SK.com_waticketsystem.ini</language>
+        <language tag="sl-SI">sl-SI.com_waticketsystem.ini</language>
+        <language tag="sr-RS">sr-RS.com_waticketsystem.ini</language>
+        <language tag="sv-SE">sv-SE.com_waticketsystem.ini</language>
+        <language tag="tr-TR">tr-TR.com_waticketsystem.ini</language>
+        <!-- mail plugin language files -->
+        <language tag="en-GB">en-GB.plg_waticketsystem_mailnotification.ini</language>
+        <language tag="sl-SI">sl-SI.plg_waticketsystem_mailnotification.ini</language>
+        <language tag="sr-RS">sr-RS.plg_waticketsystem_mailnotification.ini</language>
+    </languages>
+</install>

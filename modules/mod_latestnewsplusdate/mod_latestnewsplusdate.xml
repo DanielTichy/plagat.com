@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Latest News Plus Date</name>
+	<author>TemplatePlazza</author>
+	<creationDate>July 2008</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>plazza@templateplazza.com</authorEmail>
+	<authorUrl>www.templateplazza.com</authorUrl>
+	<version>1.5.0</version>
+	<description>DESCLATESTNEWS</description>
+	<files>
+		<filename module="mod_latestnewsplusdate">mod_latestnewsplusdate.php</filename>
+		<filename module="mod_latestnewsplusdate">helper.php</filename>
+		<filename module="mod_latestnewsplusdate">index.html</filename>
+		<filename module="mod_latestnewsplusdate">tmpl/index.html</filename>
+		<filename module="mod_latestnewsplusdate">tmpl/default.php</filename>
+		<filename module="mod_latestnewsplusdate">latestnewsplusdate/index.html</filename>
+		<filename module="mod_latestnewsplusdate">latestnewsplusdate/default.gif</filename>
+		<filename module="mod_latestnewsplusdate">latestnewsplusdate/more.gif</filename>
+		<filename module="mod_latestnewsplusdate">latestnewsplusdate/style.css</filename>
+		<filename module="mod_latestnewsplusdate">latestnewsplusdate/title.gif</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+		<param name="ordering" type="list" default="create_dsc" label="Ordering" description="Ordering options">
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+	  	</param>
+		<param name="user_id" type="list" default="0" label="Authors" description="A filter for the authors">
+			<option value="0">Anyone</option>
+			<option value="by_me">Added or modified by me</option>
+			<option value="not_me">Not added or modified by me</option>
+	  	</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_front" type="radio" default="1" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="secid" type="text" default="" label="Section ID" description="PARAMSECTIONID" />
+		<param name="catid" type="text" default="" label="Category ID" description="PARAMCATEGORYID" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+		<param name="show_date" type="radio" default="1" label="Show Created Date Time" description="Select whether to show created date of the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="show_introtext" type="radio" default="1" label="Show Intro Text" description="Select whether to show intro text of the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="show_date_type" type="radio" default="0" label="Show Date Type" description="Type of date time will be displaying">
+			<option value="0">Date and Time</option>
+			<option value="1">Date Only</option>
+			<option value="2">Time Only</option>
+		</param>
+
+		<param name="thumb_embed" type="radio" default="1" label="Show thumbnails" description="Show / Hide thumbnail image in intro text - just like mosimage does">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="thumb_width" type="text" default="64" label="Thumbnail Image Width" description="thumb image width if embed thumbnail is selected" />
+		<param name="thumb_height" type="text" default="64" label="Thumbnail Image height" description="thumb image height  if embed thumbnail is selected" />
+		<param name="limit" type="text" default="200" label="Limit intro text" description="Limit article intro text to specified number of characters, (default 0 means no limit, 1 means no intro text)" />
+		<param name="loadorder" type="list" default="0" label="Thumbnail Position" description="Thumbnail Position">
+				<option value="1">Before Title / Category</option>
+				<option value="0">After Title / Date</option>
+		</param>
+		<param name="aspect" type="radio" default="0" label="Preserve Aspect" description="Preserve image aspect ratio, if yes the height param above doesn't matter">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="show_date_in_introtext" type="radio" default="1" label="Show Date in Intro Text" description="Show / Hide 'more in' field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+
+		<param name="show_more_in" type="radio" default="1" label="Show 'More In' Field" description="Show / Hide 'more in' field">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+
+		<param name="show_more_type" type="radio" default="1" label="Show 'More In' Type" description="Show / Hide 'more in' field">
+			<option value="0">List</option>
+			<option value="1">Blog</option>
+		</param>
+
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+
+
+</install>

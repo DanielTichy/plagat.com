@@ -1,0 +1,78 @@
+/*------------------------------------------------------------------------
+# JA Rutile for Joomla 1.5 - Version 1.0 - Licence Owner JA122250
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+a {
+	color: #FF6600;
+}
+
+a:hover, a:active, a:focus {
+	color: #FF6600;
+}
+
+a.readon {
+	background: url(../../images/orange/readon-bg.gif) no-repeat center left #FF6600;
+}
+
+ul.pagination a:hover, ul.pagination a:active, ul.pagination a:focus {
+	background: #FF6600;
+}
+
+.modifydate {
+	color: #FF6600;
+}
+
+ul.menu li a:hover,
+ul.menu li a:active,
+ul.menu li a:focus {
+	color: #FF6600;
+	background: url(../../images/orange/arrow.gif) no-repeat 16px 12px #F7F7F7;
+}
+
+ul.menu li.active a {
+	background: url(../../images/orange/arrow.gif) no-repeat 16px 12px #F7F7F7;
+	color: #FF6600;
+}
+
+ul.menu li li a {
+	background: url(../../images/orange/arrow.gif) no-repeat 25px 10px #F7F7F7 !important;
+}
+
+#ja-search {
+	background: url(../../images/orange/search-bg.gif) no-repeat;
+}
+
+.dropcap {
+	color: #FF6600;
+}
+
+h1.logo a {
+	background: url(../../images/orange/logo.jpg) no-repeat center;
+}
+
+/*split menu*/
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus {
+	background: url(../../images/orange/mainnav-active.gif) no-repeat center top #FF6600;
+}
+
+/*dropline menu*/
+#jasdl-mainnav li.active a:focus {
+	background: url(../../images/orange/mainnav-active.gif) no-repeat center top #FF6600;
+}
+
+/*css + moo*/
+#ja-cssmenu li a.active,
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus {
+	background: url(../../images/orange/mainnav-active.gif) no-repeat center top #FF6600;
+}

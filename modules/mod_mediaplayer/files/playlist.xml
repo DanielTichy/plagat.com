@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>Test playlist with all Bunny conversions</title>
+		<link>http://www.jeroenwijering.com</link>
+
+		<item>
+			<title>Big Buck Bunny - FLV video</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.flv" type="video/x-flv" duration="33" />
+
+			<media:thumbnail url="http://www.jeroenwijering.com/upload/bunny.jpg" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+		<item>
+			<title>Big Buck Bunny - VP6 video</title>
+
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.vp6" type="video/x-flv" duration="33" />
+			<media:thumbnail url="http://www.jeroenwijering.com/upload/bunny.jpg" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+		<item>
+
+			<title>Big Buck Bunny - MP4 video</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.mp4" type="video/x-m4v" duration="33" />
+			<media:thumbnail url="http://www.jeroenwijering.com/upload/bunny.jpg" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+		<item>
+			<title>Big Buck Bunny - AAC audio</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.m4a" type="audio/x-m4a" duration="33" />
+			<media:thumbnail url="http://www.jeroenwijering.com/upload/bunny.jpg" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+			<link>http://www.bigbuckbunny.org</link>
+
+		</item>
+
+		<item>
+			<title>Big Buck Bunny - MP3 audio</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.mp3" type="audio/mpeg" duration="33" />
+			<media:thumbnail url="http://www.jeroenwijering.com/upload/bunny.jpg" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+		<item>
+			<title>Big Buck Bunny - JPG image</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.jpg" type="image/jpeg" duration="10" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+		<item>
+			<title>Big Buck Bunny - PNG image</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.png" type="image/png" duration="10" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+		<item>
+			<title>Big Buck Bunny - GIF image</title>
+			<media:content url="http://www.jeroenwijering.com/upload/bunny.gif" type="image/gif" duration="10" />
+			<media:credit>Blender Foundation</media:credit>
+			<description>Big Buck Bunny is a short animated film by the Blender Institute, part of the Blender Foundation. Like the foundation's previous film Elephants Dream, the film is made using free and open source software.</description>
+
+			<link>http://www.bigbuckbunny.org</link>
+		</item>
+
+	</channel>
+</rss>

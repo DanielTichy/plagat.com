@@ -1,0 +1,27 @@
+<?php
+/**
+ * @version $Id: assign.tmpl 200 2009-11-29 03:12:10Z webamoeba $
+ * @copyright Copyright (C) James Kennard
+ * @license GNU/GPL, see LICENSE.php
+ * @package wats-plugins
+ * @subpackage mailnotification
+ */
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+$wats =& WFactory::getConfig();
+?>
+
+<?php echo JText::sprintf("TO %s", $this->recipient->name); ?> 
+<?php if ($this->assignee->id == $this->recipient->id) : ?>
+<?php echo JText::_("TICKET ASSIGNED TO YOU"); ?> 
+<?php else: ?>
+<?php echo JText::sprintf("TICKET ASSIGNED TO %s", $this->assignee->username); ?>
+<?php endif; ?>
+------------------------------------------------------------ 
+<?php echo JText::_("Ticket Name"); ?>: <?php echo $this->ticket->name; ?> 
+<?php echo JText::_("WATS_TICKETS_ID"); ?>: WATS-<?php echo $this->ticket->ticketId; ?> 
+<?php echo JText::_("Submitted By"); ?>: <?php echo $this->ticketOwner->username; ?> 
+------------------------------------------------------------ 
+<?php echo $wats->get( 'copyright' )?> 

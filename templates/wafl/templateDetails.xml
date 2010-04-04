@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>WAFL!</name>
+	<creationDate>May 2009</creationDate>
+	<author>WAFL Team</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>info@wafl.be</authorEmail>
+	<authorUrl>http://www.wafl.ugent.be</authorUrl>
+	<version>0.1.0</version>
+	<description></description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>includes</folder>
+		<folder>javascript</folder>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>breadcrumbs</position>
+		<position>footer</position>
+		<position>syndicate</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<!--
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		-->
+		<position>debug</position>
+	</positions>
+	<params />
+</install>

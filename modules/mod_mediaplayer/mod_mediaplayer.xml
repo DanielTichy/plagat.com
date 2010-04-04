@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Media Player</name>
+	<author>Daniel Gutierrez</author>
+	<creationDate>March 2008</creationDate>
+	<copyright>Copyright (C) 2008 Daniel Gutierrez.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>daniel@gutierrez.nu</authorEmail>
+	<authorUrl>www.gutierrez.nu</authorUrl>
+	<version>1.1.1</version>
+	<description>Integration of JW Media Player www.jeroenwijering.com by Daniel Gutierrez to Joomla. You must configure playlist to multiple files.</description>
+	<files>
+		<filename module="mod_mediaplayer">mod_mediaplayer.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>constants.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>files/index.html</filename>
+		<filename>files/xmoov.php</filename>
+		<filename>files/player.swf</filename>
+		<filename>files/playlist.xml</filename>		
+		<filename>files/swfobject.js</filename>
+		<filename>files/yt.swf</filename>
+		<filename>media/image.jpg</filename>
+		<filename>media/index.html</filename>		
+		<filename>media/preview.jpg</filename>
+		<filename>media/song.mp3</filename>
+		<filename>media/video.flv</filename>
+		<filename>skins/index.html</filename>
+		<filename>skins/overlay.swf</filename>
+		<filename>skins/simple.swf</filename>
+		<filename>skins/stylish.swf</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mediaplayer.ini</language>
+		<language tag="es-ES">es-ES.mod_mediaplayer.ini</language>
+	</languages>
+	<params>
+		<param name="playing" type="radio" default="0" label="PLAYING" description="PLAYING_DESC">
+			<option value="0">PLAYING_OPT1</option>
+			<option value="1">PLAYING_OPT2</option>
+		</param>		
+		<param name="file" type="text" default="video.flv" label="FILE" description="FILE_DESC" />		
+		<param name="width" type="text" default="300" label="WIDTH" description="WIDTH_DESC" />
+		<param name="height" type="text" default="290" label="HEIGHT" description="HEIGHT_DESC" />
+		<param name="backcolor" type="text" default="000000" label="BACKCOLOR" description="BACKCOLOR_DESC" />
+		<param name="lightcolor" type="text" default="0066CC" label="LIGHTCOLOR" description="LIGHTCOLOR_DESC" />
+		<param name="frontcolor" type="text" default="EEEEEE" label="FRONTCOLOR" description="FRONTCOLOR_DESC" />
+		<param name="cbar" type="list" default="bottom" label="CBAR" description="CBAR_DESC">
+			<option value="over">CBAR_OPT1</option>
+			<option value="bottom">CBAR_OPT2</option>
+			<option value="none">CBAR_OPT3</option>
+		</param>
+		<param name="image" type="text" default="" label="IMAGE" description="IMAGE_DESC" />
+		<param name="skin" type="text" default="" label="SKIN" description="SKIN_DESC" />
+		<param name="logo" type="text" default="" label="LOGO" description="LOGO_DESC" />
+		<param name="icons" type="radio" default="0" label="ICONS" description="ICONS_DESC">
+			<option value="0">ICONS_OPT1</option>
+			<option value="1">ICONS_OPT2</option>
+		</param>
+		<param name="playlist" type="list" default="bottom" label="PLAYLIST" description="PLAYLIST_DESC" >
+			<option value="bottom">PLAYLIST_OPT1</option>
+			<option value="over">PLAYLIST_OPT2</option>
+			<option value="right">PLAYLIST_OPT3</option>
+			<option value="none">PLAYLIST_OPT4</option>
+		</param>
+		<param name="psize" type="text" default="180" label="PSIZE" description="PSIZE_DESC" />
+	</params>
+	<params group="advanced">
+		<param name="volume" type="text" default="80" label="VOLUME" description="VOLUME_DESC"/>
+		<param name="item" type="text" default="0" label="ITEM" description="ITEM_DESC" />
+		<param name="autostart" type="radio" default="1" label="AUTOSTART" description="AUTOSTART_DESC">
+			<option value="0">AUTOSTART_OPT1</option>
+			<option value="1">AUTOSTART_OPT2</option>
+		</param>
+		<param name="repeat" type="list" default="none" label="REPEAT" description="REPEAT_DESC">
+			<option value="list">REPEAT_OPT1</option>
+			<option value="always">REPEAT_OPT2</option>
+			<option value="none">REPEAT_OPT3</option>
+		</param>
+		<param name="shuffle" type="list" default="1" label="SHUFFLE" description="SHUFFLE_DESC">
+			<option value="0">SHUFFLE_OPT1</option>
+			<option value="1">SHUFFLE_OPT2</option>
+		</param>
+		<param name="stretch" type="list" default="uniform" label="STRETCH" description="STRETCH_DESC">
+			<option value="uniform">STRETCH_OPT1</option>
+			<option value="exactfit">STRETCH_OPT2</option>
+			<option value="fill">STRETCH_OPT3</option>
+			<option value="none">STRETCH_OPT4</option>
+		</param>
+		<param name="buffer" type="text" default="1" label="BUFFER" description="BUFFER_DESC" />
+		<param name="streaming" type="list" default="1" label="STREAMING" description="STREAMING_DESC" >
+			<option value="0">STREAMING_OPT1</option>
+			<option value="1">STREAMING_OPT2</option>
+		</param>
+		<param name="plugins" type="textarea" cols="30" rows="4" default="" label="PLUGINS" description="PLUGINS_DESC" />
+	</params>
+</install>

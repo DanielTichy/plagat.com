@@ -1,0 +1,75 @@
+<?php
+/**
+ * @version $Id: reply.tmpl 180 2009-10-06 11:24:12Z webamoeba $
+ * @copyright Copyright (C) James Kennard
+ * @license GNU/GPL, see LICENSE.php
+ * @package wats-plugins
+ * @subpackage mailnotification
+ */
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+$wats =& WFactory::getConfig();
+
+// create the URL, make suire this includes the host!
+$uri =& JURI::getInstance();
+$url = JRoute::_('index.php?option=com_waticketsystem&act=ticket&task=view&ticketid='.$this->ticket->ticketId);
+$url = $uri->toString(array('scheme', 'user', 'pass', 'host', 'port')) . ((!preg_match('~^/~', $url)) ? '/' : '') . $url;
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php echo $this->ticket->name; ?></title>
+</head>
+<body style="background-color: #8FACC9; 
+             margin: 20px; 
+             font-family: Arial;
+             font-size: small;">
+    <div style="background-color: #EBF0F5; 
+                border: 1px solid #FFFFFF; 
+                font-family: Arial;
+                font-size: small;">
+        <p><?php echo JText::sprintf("TO %s", $this->recipient->name); ?></p>
+        <p><?php echo JText::_("NEW REPLY HAS ARRIVED"); ?></p>
+        <?php if (JRequest::getInt("close", 0) == 1) : ?>
+        <p><em><?php echo JText::_("TICKET HAS BEEN CLOSED"); ?></em></p>
+        <?php endif; ?>
+        <table border="0"
+               width="100%" 
+               style="font-family: Arial;
+                      font-size: small;">
+            <tbody>
+                <tr>
+                    <td><strong><?php echo JText::_("Ticket Name"); ?></strong></td>
+                    <td><a href="<?php echo $url; ?>"><?php echo $this->ticket->name; ?></a></td>
+                </tr>
+                <tr>
+                    <td><strong><?php echo JText::_("WATS_TICKETS_ID"); ?></strong></td>
+                    <td>WATS-<?php echo $this->ticket->ticketId; ?></td>
+                </tr>
+                <tr>
+                    <td><strong><?php echo JText::_("REPLY SUBMITTED"); ?></strong></td>
+                    <td><?php echo JHTML::_('date', $this->lastMessage->datetime, $wats->get('date')); ?></td>
+                </tr>
+                <tr>
+                    <td><strong><?php echo JText::_("REPLY SUBMITTED BY"); ?></strong></td>
+                    <td><?php echo $this->lastMessageOwner->username; ?></td>
+                </tr>
+                <tr>
+                    <td><strong><?php echo JText::_("REPLY BODY"); ?></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><?php echo $this->lastMessage->msg; ?></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br /><br />
+    <hr />
+    <p><?php echo $wats->get( 'copyright' )?></p>
+</body>
+</html>
+

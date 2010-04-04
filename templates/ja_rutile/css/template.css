@@ -1,0 +1,2079 @@
+﻿/*------------------------------------------------------------------------
+
+# JA Rutile for Joomla 1.5 - Version 1.0 - Licence Owner JA122250
+
+# ------------------------------------------------------------------------
+
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+
+# @license - Copyrighted Commercial Software
+
+# Author: J.O.O.M Solutions Co., Ltd
+
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+
+# This file may not be redistributed in whole or significant part.
+
+-------------------------------------------------------------------------*/
+
+
+
+/* COMMON STYLE
+
+--------------------------------------------------------- */
+
+html, body, form, fieldset
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body
+{
+	background: #ffffff;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+
+
+body#bd
+{
+	color: #000000;
+	margin-top: 5px;
+	background: #F1F1F1;
+}
+
+
+
+body.contentpane
+{
+	color: #000000;
+	font-size: 12px;
+	line-height: 1.3em;
+	margin: 0;
+	margin: 1em 2em;
+	width: auto; /* Printable Page */
+}
+
+
+
+body.fs1
+{
+	font-size: 10px;
+}
+
+body.fs2
+{
+	font-size: 11px;
+}
+
+body.fs3
+{
+	font-size: 12px;
+}
+
+body.fs4
+{
+	font-size: 13px;
+}
+
+body.fs5
+{
+	font-size: 14px;
+}
+
+body.fs6
+{
+	font-size: 15px;
+}
+
+
+
+/* Normal link */
+
+a
+{
+	color: #CC0000;
+	text-decoration: none;
+}
+
+
+
+a:hover, a:active, a:focus
+{
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+
+
+a img
+{
+	border: none;
+}
+
+
+
+/* Title text */
+
+.contentheading, .componentheading, .blog_more strong, h1, h2, h3, h4
+{
+	line-height: normal;
+	color: #000000;
+}
+
+
+
+/* Small text */
+
+small, .small, .smalldark, .article-meta, .modifydate, .img_caption p, .site-slogan, #ja-topnav, #ja-pathway, #ja-subnav, #ja-footer, #ja-col1, #ja-col2, #ja-botsl
+{
+	font-size: 92%;
+}
+
+
+
+img
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.img_caption p
+{
+	text-align: center;
+}
+
+
+
+.img_caption.left, .img_caption.right
+{
+	margin-top: 3px;
+}
+
+
+
+/* Heading */
+
+h1
+{
+	font-size: 200%;
+}
+
+h2
+{
+	font-size: 175%;
+}
+
+h3
+{
+	font-size: 150%;
+}
+
+h4
+{
+	font-size: 125%;
+}
+
+
+
+p, pre, blockquote, ul, ol, h1, h2, h3, h4, h5, h6
+{
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+
+ul
+{
+	list-style: none;
+}
+
+
+
+ul li
+{
+	background: url(../images/bullet.gif) no-repeat 20px 8px;
+	padding-left: 30px;
+}
+
+
+
+ol li
+{
+	margin-left: 35px;
+}
+
+
+
+th
+{
+	font-weight: bold;
+	padding: 8px;
+	text-align: left;
+}
+
+
+
+fieldset
+{
+	border: none;
+	padding: 10px 5px;
+	background: url(../images/dot.gif) repeat-x top;
+}
+
+
+
+fieldset a
+{
+	font-weight: bold;
+}
+
+
+
+fieldset.input
+{
+	padding: 0;
+	background: none;
+}
+
+
+
+hr
+{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 1px solid #EEEEEE;
+	height: 1px;
+}
+
+
+
+br
+{
+	height: 1px;
+	font-size: 1px;
+}
+
+
+
+td, th, div
+{
+	font-size: 100%;
+}
+
+
+
+/* FORM
+
+--------------------------------------------------------- */
+
+form
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+form label
+{
+	cursor: pointer;
+}
+
+
+
+input, select, textarea, .inputbox, .button
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+
+
+.inputbox
+{
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+	color: #000000;
+	font-size: 100%;
+}
+
+
+
+.button
+{
+	padding: 1px 8px;
+	border: 1px solid #333333;
+	background: #333333;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 92%;
+}
+
+
+
+* html .button
+{
+	/*IE 6*/
+	padding: 0 5px !important;
+}
+
+
+
+* + html .button
+{
+	/*IE 7*/
+	padding: 0 5px !important;
+}
+
+
+
+/* JOOMLA STYLE
+
+--------------------------------------------------------- */
+
+.article_separator, .article_seperator
+{
+	clear: both;
+	display: block;
+	height: 30px;
+	margin: 0;
+	background: url(../images/dot.gif) repeat-x center;
+}
+
+
+
+.column_separator
+{
+	padding: 0 25px;
+}
+
+
+
+/* content tables */
+
+.sectiontableheader
+{
+	background: #333333;
+	padding: 4px 8px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+
+.sectiontableheader a, .sectiontableheader a:hover, .sectiontableheader a:active, .sectiontableheader a:focus
+{
+	color: #FFFFFF;
+}
+
+
+
+tr.sectiontableentry0 td, tr.sectiontableentry1 td, tr.sectiontableentry2 td
+{
+	padding: 8px;
+	background: url(../images/dot.gif) repeat-x bottom;
+}
+
+
+
+table.contentpane
+{
+	border: none;
+	width: 100%;
+}
+
+
+
+table.contentpaneopen
+{
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+table.contenttoc
+{
+	margin: 0 0 10px 10px;
+	padding: 0;
+	width: 30%;
+	float: right;
+}
+
+
+
+table.contenttoc td
+{
+	background: url(../images/bullet.gif) no-repeat 12px 8px;
+	padding: 1px 5px 1px 20px;
+}
+
+
+
+table.contenttoc th
+{
+	border-bottom: 1px solid #CCCCCC;
+	padding: 0 0 3px;
+	text-indent: 5px;
+}
+
+
+
+table.poll
+{
+	border-collapse: collapse;
+	padding: 0;
+	width: 100%;
+}
+
+
+
+table.pollstableborder
+{
+	border: none;
+	padding: 0;
+	text-align: left;
+	width: 100%;
+}
+
+
+
+table.pollstableborder img
+{
+	vertical-align: baseline;
+}
+
+
+
+table.pollstableborder td
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 4px !important;
+	background: none;
+}
+
+
+
+table.pollstableborder tr.sectiontableentry1 td
+{
+	background: #E6E6E6;
+}
+
+
+
+table.searchintro
+{
+	padding: 10px 0;
+	width: 100%;
+}
+
+
+
+table.searchintro td
+{
+	padding: 5px !important;
+}
+
+
+
+.blog_more
+{
+	margin: 15px 0 0;
+	padding: 10px 0 0;
+	background: url(../images/dot.gif) repeat-x top;
+}
+
+
+
+.blog_more strong
+{
+	display: block;
+	margin: 0 0 5px;
+	text-transform: uppercase;
+}
+
+
+
+.blog_more ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.blog_more ul li
+{
+	background: url(../images/bullet.gif) no-repeat 4px 8px;
+	margin: 0;
+	padding: 0 0 0 12px;
+}
+
+
+
+.category
+{
+	font-weight: bold;
+}
+
+
+
+h1.componentheading, .componentheading
+{
+	font-size: 250%;
+	border-bottom: 1px solid #EEEEEE;
+	margin: 0 0 15px;
+	padding: 5px 0;
+}
+
+
+
+.contentdescription
+{
+	padding-bottom: 30px;
+}
+
+
+
+h2.contentheading, .contentheading
+{
+	margin: 0;
+	padding: 0;
+	font-size: 250%;
+}
+
+
+
+table.blog .contentheading
+{
+	font-size: 175%;
+}
+
+
+
+a.contentpagetitle, a.contentpagetitle:hover, a.contentpagetitle:active, a.contentpagetitle:focus
+{
+}
+
+
+
+a.readon
+{
+	text-align: center;
+	color: #FFFFFF;
+	background: url(../images/readon-bg.gif) no-repeat center left #CC0000;
+	width: 90px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+
+
+a.readon:hover, a.readon:focus, a.readon:active
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+
+table.contentpaneopen td, table.contentpane td
+{
+}
+
+
+
+table.contentpaneopen, table.contentpane, table.blog
+{
+	width: 100%;
+}
+
+
+
+.moduletable
+{
+	padding: 0;
+}
+
+
+
+ul.pagination
+{
+	margin: 15px auto 0;
+	padding: 10px 0 0;
+	background: url(../images/dot.gif) repeat-x top;
+	color: #999999;
+}
+
+
+
+ul.pagination li
+{
+	background: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ul.pagination li span
+{
+	padding: 2px 5px;
+}
+
+
+
+ul.pagination a
+{
+	padding: 2px 3px;
+	text-decoration: none;
+	background: #EEEEEE;
+	color: #000000;
+	border: 1px solid #DDDDDD;
+}
+
+
+
+ul.pagination a:hover, ul.pagination a:active, ul.pagination a:focus
+{
+	background: #CC0000;
+	color: #FFFFFF;
+}
+
+
+
+.pagenavbar
+{
+	background: url(../images/icon-pages.gif) no-repeat center left;
+	font-weight: bold;
+	padding-left: 14px;
+}
+
+
+
+.pagenavcounter
+{
+	background: url(../images/icon-pages.gif) no-repeat 0 11px;
+	font-weight: bold;
+	padding: 8px 14px 0 14px;
+}
+
+
+
+.smalldark
+{
+	text-align: left;
+}
+
+
+
+div.syndicate div
+{
+	text-align: center;
+}
+
+
+
+.pollstableborder tr.sectiontableentry1 td, .pollstableborder tr.sectiontableentry2 td
+{
+	background: none;
+}
+
+
+
+ul.latestnews a, ul.mostread a
+{
+	color: #666666;
+}
+
+
+
+/* META
+
+--------------------------------------------------------- */
+
+.article-toolswrap
+{
+	display: block;
+	margin: 0 0 10px;
+	padding: 0;
+	position: relative;
+}
+
+
+
+.article-tools
+{
+	display: block;
+	padding: 0 10px 0 0;
+}
+
+
+
+.article-meta
+{
+	width: 70%;
+	float: left;
+	color: #999999;
+}
+
+
+
+.createby
+{
+}
+
+
+
+.createdate
+{
+	padding-right: 6px;
+	margin-right: 5px;
+	background: url(../images/vline.gif) no-repeat right;
+}
+
+
+
+.modifydate
+{
+	width: 100%;
+	display: block;
+	color: #CC0000;
+	margin: 15px 0;
+}
+
+
+
+.article-section
+{
+	padding-left: 6px;
+	margin-left: 5px;
+	background: url(../images/vline.gif) no-repeat left center;
+}
+
+
+
+.article-section a
+{
+	color: #999999;
+}
+
+
+
+.article-category a
+{
+	color: #999999;
+}
+
+
+
+div.buttonheading
+{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+
+
+.buttonheading img
+{
+	margin: 0 0 0 5px;
+	border: 0;
+	float: right;
+}
+
+
+
+/* MAIN LAYOUT DIVS
+
+--------------------------------------------------------- */
+
+#ja-wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+}
+
+
+
+.narrow #ja-wrapper
+{
+	width: 760px;
+	margin: 0 auto;
+}
+
+
+
+
+
+#ja-container
+{
+	background: #F1F1F1;
+}
+
+
+
+#ja-mainbody
+{
+	width: 78%;
+	float: left;
+}
+
+
+
+/* PRIMARY COLUMN
+
+--------------------------------------------------------- */
+
+#ja-content
+{
+	clear: both;
+	display: block;
+	float: right;
+	width: 72%;
+	background: url(../images/content-center.gif) repeat-y center;
+}
+
+
+
+#ja-content-top
+{
+	background: url(../images/content-top.gif) no-repeat center top;
+}
+
+
+
+#ja-content-bot
+{
+	background: url(../images/content-bot.gif) no-repeat center bottom;
+}
+
+
+
+.narrow #ja-content
+{
+	background: url(../images/content-center-n.gif) repeat-y center;
+}
+
+
+
+.narrow #ja-content-top
+{
+	background: url(../images/content-top-n.gif) no-repeat top center;
+}
+
+
+
+.narrow #ja-content-bot
+{
+	background: url(../images/content-bot-n.gif) no-repeat bottom center;
+}
+
+
+
+#ja-current-content
+{
+	padding: 20px 20px 10px;
+}
+
+
+
+/* COLUMNS
+
+--------------------------------------------------------- */
+
+#ja-col1
+{
+	float: left;
+	overflow: hidden;
+	width: 28%;
+}
+
+
+
+#ja-col1 div.ja-innerpad
+{
+}
+
+
+
+#ja-col2
+{
+	float: right;
+	overflow: hidden;
+	width: 22%;
+}
+
+
+
+#ja-col2 div.ja-innerpad
+{
+}
+
+
+
+/*common style for column*/
+
+
+
+
+
+/* COLLAPSIBLE LAYOUT
+
+--------------------------------------------------------- */
+
+#ja-containerwrap, #ja-containerwrap-fr, #ja-containerwrap-fl, #ja-containerwrap-f
+{
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+
+
+/*content + left*/
+
+#ja-containerwrap-fr #ja-mainbody
+{
+	width: 100%;
+}
+
+
+
+#ja-containerwrap-fr #ja-col1
+{
+	width: 22%;
+}
+
+
+
+#ja-containerwrap-fr #ja-content
+{
+	width: 78%;
+	background: url(../images/content-center2.gif) repeat-y center;
+}
+
+
+
+#ja-containerwrap-fr #ja-content-top
+{
+	background: url(../images/content-top2.gif) no-repeat center top;
+}
+
+
+
+#ja-containerwrap-fr #ja-content-bot
+{
+	background: url(../images/content-bot2.gif) no-repeat center bottom;
+}
+
+
+
+.narrow #ja-containerwrap-fr #ja-content
+{
+	background: url(../images/content-center2-n.gif) repeat-y center;
+}
+
+
+
+.narrow #ja-containerwrap-fr #ja-content-top
+{
+	background: url(../images/content-top2-n.gif) no-repeat center top;
+}
+
+
+
+.narrow #ja-containerwrap-fr #ja-content-bot
+{
+	background: url(../images/content-bot2-n.gif) no-repeat center bottom;
+}
+
+
+
+/*content + right*/
+
+#ja-containerwrap-fl #ja-content
+{
+	width: 100%;
+	background: url(../images/content-center2.gif) repeat-y center;
+}
+
+
+
+#ja-containerwrap-fl #ja-content-top
+{
+	background: url(../images/content-top2.gif) no-repeat center top;
+}
+
+
+
+#ja-containerwrap-fl #ja-content-bot
+{
+	background: url(../images/content-bot2.gif) no-repeat center bottom;
+}
+
+
+
+.narrow #ja-containerwrap-fl #ja-content
+{
+	background: url(../images/content-center2-n.gif) repeat-y center;
+}
+
+
+
+.narrow #ja-containerwrap-fl #ja-content-top
+{
+	background: url(../images/content-top2-n.gif) no-repeat center top;
+}
+
+
+
+.narrow #ja-containerwrap-fl #ja-content-bot
+{
+	background: url(../images/content-bot2-n.gif) no-repeat center bottom;
+}
+
+
+
+/*full*/
+
+#ja-containerwrap-f #ja-mainbody
+{
+	width: 100%;
+}
+
+
+
+#ja-containerwrap-f #ja-content
+{
+	width: 100%;
+	background: url(../images/content-center1.gif) repeat-y center;
+}
+
+
+
+#ja-containerwrap-f #ja-content-top
+{
+	background: url(../images/content-top1.gif) no-repeat center top;
+}
+
+
+
+#ja-containerwrap-f #ja-content-bot
+{
+	background: url(../images/content-bot1.gif) no-repeat center bottom;
+}
+
+
+
+#ja-containerwrap-f #ja-current-content
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+.narrow #ja-containerwrap-f #ja-content
+{
+	background: url(../images/content-center1-n.gif) repeat-y center;
+}
+
+
+
+.narrow #ja-containerwrap-f #ja-content-top
+{
+	background: url(../images/content-top1-n.gif) no-repeat center top;
+}
+
+
+
+.narrow #ja-containerwrap-f #ja-content-bot
+{
+	background: url(../images/content-bot1-n.gif) no-repeat center bottom;
+}
+
+
+
+/* MODULE
+
+--------------------------------------------------------- */
+
+div.module h3, div.module_text h3, div.module_menu h3, div.module_hilite h3, div.ja-box-br h3
+{
+	margin: 3px 0;
+	padding: 0px 0 0px 15px;
+	font-size: 175%;
+}
+
+
+
+div.module, div.module_text, div.module_menu, div.module_hilite, div.ja-box-br
+{
+	padding: 0;
+	float: left;
+	clear: both;
+	width: 100%;
+	background: url(../images/box-br.gif) no-repeat bottom right #FFFFFF;
+	overflow: hidden;
+}
+
+
+
+div.module div, div.module_text div, div.module_menu div, div.module_hilite div, div.ja-box-bl
+{
+	padding: 0;
+	background: url(../images/box-bl.gif) no-repeat bottom left;
+}
+
+
+
+div.module div div, div.module_text div div, div.module_menu div div, div.module_hilite div div, div.ja-box-tr
+{
+	padding: 0;
+	background: url(../images/box-tr.gif) no-repeat top right;
+}
+
+
+
+div.module div div div, div.module_text div div div, div.module_menu div div div, div.module_hilite div div div, div.ja-box-tl
+{
+	padding: 4px 3px 4px 4px;
+	background: url(../images/box-tl.gif) no-repeat top left;
+}
+
+
+
+div.module div div div div, div.module_text div div div div, div.module_menu div div div div, div.module_hilite div div div div
+{
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+
+
+div.ja-box-ct
+{
+	background: url(../images/box-bg.gif) repeat-x top left !important;
+	padding: 10px 15px !important;
+}
+
+
+
+div.module_menu div.ja-box-ct
+{
+	padding: 2px 0 0 !important;
+}
+
+
+
+/* mis */
+
+div.banneritem_text
+{
+	padding: 5px 0 !important;
+}
+
+
+
+div.advs
+{
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+
+
+div.moduletable li, div.moduletable_menu li, div.moduletable_text li
+{
+	padding-left: 13px;
+	background-position: 5px 7px;
+}
+
+
+
+/* HEADER
+
+--------------------------------------------------------- */
+
+#ja-header
+{
+	line-height: normal;
+	position: relative;
+	padding: 20px 0 0;
+	z-index: 999;
+	
+	background: url(../images/header_bg.jpg) no-repeat;
+}
+
+
+
+h1.logo, div.logo-text
+{
+	margin: 0 20px 20px;
+	padding: 0;
+}
+
+h1.logo
+{
+	margin: -20px 20px 0 20px;
+}
+
+h1.logo a
+{
+	width: 338px;
+	height: 118px;
+	display: block;
+	/*background: url(../images/logo.jpg) no-repeat center;*/
+	background: transparent !important;
+}
+
+
+
+h1.logo a span
+{
+	position: absolute;
+	top: -1000px;
+}
+
+
+
+div.logo-text
+{
+	outline: none;
+}
+
+
+
+div.logo-text h1
+{
+	font-size: 250%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+div.logo-text h1 a
+{
+	color: #333333;
+	text-transform: uppercase;
+}
+
+
+
+.site-slogan
+{
+	color: #999999;
+	margin: 0 0 -2px 10px;
+	padding: 0;
+	letter-spacing: 1px;
+}
+
+
+
+#ja-topnav
+{
+	position: absolute;
+	top: 10px;
+	right: 40px;
+}
+
+
+
+#ja-topnav ul
+{
+	margin: 0;
+	padding: 2px 0;
+}
+
+
+
+#ja-topnav li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	background: url(../images/vline.gif) no-repeat center left;
+}
+
+
+
+#ja-topnav li a
+{
+	display: inline;
+	padding: 0 10px;
+}
+
+
+
+/* MAIN NAVIGATION
+
+--------------------------------------------------------- */
+
+#ja-mainnav
+{
+	padding: 0;
+	background: url(../images/grad-2.gif) repeat-x top #333333;
+	width: 100%;
+	position: relative;
+}
+
+
+
+#ja-mainnav a, #ja-subnav a
+{
+	outline: none;
+	line-height: normal;
+}
+
+
+
+#ja-subnav
+{
+	background: #FFFFFF;
+	clear: both;
+}
+
+
+
+#ja-subnav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#ja-subnav li
+{
+	background: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+
+
+#ja-subnav a
+{
+	display: block;
+	float: left;
+	outline: none;
+	padding: 7px 15px 5px;
+	margin: 0;
+	text-decoration: none;
+	background: url(../images/vline.gif) no-repeat left 9px;
+}
+
+
+
+#ja-subnav a:hover, #ja-subnav a:active, #ja-subnav a:focus
+{
+	text-decoration: underline;
+}
+
+
+
+#ja-subnav li.active a
+{
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+/* breadcrumbs */
+
+#ja-pathway
+{
+	color: #999999;
+}
+
+
+
+#ja-pathway strong
+{
+	margin-right: 5px;
+}
+
+
+
+#ja-pathway img
+{
+	margin: 1px 5px;
+}
+
+
+
+/* Default Joomla! Menu */
+
+ul.menu
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+
+
+ul.menu li
+{
+	display: block;
+	background: none;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	border-bottom: 1px solid #F1F1F1;
+}
+
+
+
+ul.menu li a
+{
+	display: block;
+	outline: none;
+	padding: 8px 25px;
+	margin: 0;
+	text-decoration: none;
+	color: #333333;
+	background: url(../images/arrow.png) no-repeat 16px 12px;
+}
+
+
+
+ul.menu li a:hover, ul.menu li a:active, ul.menu li a:focus
+{
+	color: #CC0000;
+	text-decoration: none;
+	background: url(../images/arrow.gif) no-repeat 16px 12px #F7F7F7;
+}
+
+
+
+ul.menu li.active a
+{
+	font-weight: bold;
+	background: url(../images/arrow.gif) no-repeat 16px 12px #F7F7F7;
+	color: #CC0000;
+}
+
+
+
+ul.menu li ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ul.menu li li
+{
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+
+
+ul.menu li li a
+{
+	border: none;
+	padding: 5px 5px 5px 35px !important;
+	text-transform: none;
+	font-weight: normal !important;
+	background: url(../images/arrow.gif) no-repeat 25px 10px #F7F7F7 !important;
+}
+
+
+
+ul.menu li li a:hover, ul.menu li li a:active, ul.menu li li a:focus
+{
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+
+
+ul.menu li li.active a
+{
+	color: #CC0000;
+	font-weight: bold;
+}
+
+
+
+ul.menu li li li a
+{
+	color: #000000 !important;
+	font-weight: normal !important;
+	padding-left: 45px !important;
+	background: url(../images/bullet.gif) no-repeat 35px 10px !important;
+}
+
+
+
+ul.menu li li li.active a
+{
+	font-weight: bold !important;
+}
+
+
+
+/* SPOTLIGHT
+
+--------------------------------------------------------- */
+
+/* Spotlight Box Style */
+
+.ja-box-full, .ja-box-left, .ja-box-center, .ja-box-right
+{
+	float: left;
+	overflow: hidden;
+}
+
+
+
+/* Bottom spotlight */
+
+#ja-botsl
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#ja-botsl .ja-box-tl
+{
+	padding: 0 15px;
+}
+
+
+
+#ja-botsl div.module h3
+{
+	margin: 0 -14px;
+	padding: 0 0 7px 15px;
+	font-size: 150%;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+
+
+#ja-botsl div.module
+{
+	margin: 20px 5px;
+	padding: 0;
+	float: none;
+	width: auto;
+	background: url(../images/box-r-br.gif) no-repeat bottom right #FFFFFF;
+	overflow: hidden;
+}
+
+
+
+#ja-botsl div.module div
+{
+	background: url(../images/box-r-bl.gif) no-repeat bottom left;
+}
+
+
+
+#ja-botsl div.module div div
+{
+	background: url(../images/box-r-tr.gif) no-repeat top right;
+}
+
+
+
+#ja-botsl div.module div div div
+{
+	padding: 10px 15px;
+	background: url(../images/box-r-tl.gif) no-repeat top left;
+}
+
+
+
+#ja-botsl div.module div div div div
+{
+	padding: 0;
+	background: none;
+}
+
+
+
+/* FOOTER
+
+--------------------------------------------------------- */
+
+#ja-footer
+{
+	clear: both;
+	position: relative;
+	padding: 15px 20px;
+	color: #999999;
+	text-align: center;
+}
+
+
+
+#ja-footer small
+{
+	font-size: 100%;
+}
+
+
+
+/* MISCELLANOUS
+
+----------------------------------------------------------- */
+
+ul.accessibility
+{
+	position: absolute;
+	top: -100%;
+}
+
+
+
+li.ja-firstitem, #ja-subnav li.first-item a, #ja-subnav a.first-item
+{
+	background: none !important;
+}
+
+
+
+/* Login */
+
+#form-login p
+{
+	margin: 0 0 5px;
+}
+
+
+
+#form-login ul
+{
+	margin: 5px 0 0;
+}
+
+
+
+#modlgn_username, #modlgn_passwd
+{
+	width: 90%;
+}
+
+
+
+/*usertools*/
+
+#ja-usertools
+{
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+
+
+
+#ja-usertools ul
+{
+	margin: 0;
+	padding: 0 10px 0 0;
+	display: inline;
+}
+
+
+
+#ja-usertools ul li
+{
+	margin: 0;
+	padding: 0 2px;
+	float: right;
+	background: none;
+}
+
+
+
+/* Search */
+
+#ja-search
+{
+	background: url(../images/search-bg.gif) no-repeat;
+	position: absolute;
+	right: 50px;
+	top: 35px;
+	height: 24px;
+	width: 276px;
+}
+
+
+
+#ja-search .inputbox
+{
+	margin: 2px 3px 0 5px;
+	border: none;
+	background: none;
+	width: 198px;
+}
+
+
+
+#ja-search .button
+{
+	border: none;
+	background: none;
+}
+
+
+
+/*others*/
+
+#ja-banner
+{
+	padding: 20px 0 0;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	clear: both;
+}
+
+
+
+div.back_button a, div.back_button a:hover, div.back_button a:active
+{
+	background: none !important;
+	display: block;
+	margin: 10px 0;
+	text-decoration: none !important;
+}
+
+
+
+.clr
+{
+	clear: both;
+}
+
+
+
+.hasTip img
+{
+	border: none;
+}
+
+
+
+div.ja-innerdiv
+{
+	padding: 10px 0 12px !important;
+	background: url(../images/dot.gif) repeat-x bottom !important;
+}
+
+
+
+div.ja-innerdiv img.border
+{
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	margin-right: 10px;
+}
+
+
+
+/* Tooltips */
+
+.tool-tip
+{
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	float: left;
+	max-width: 200px;
+	padding: 5px;
+	z-index: 999;
+	color: #333333;
+}
+
+
+
+.tool-title
+{
+	background: url(../../system/images/selector-arrow.png) no-repeat;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+
+
+
+.tool-text
+{
+	font-size: 100%;
+	margin: 0;
+}
+
+
+
+#system-message dd.message ul, #system-message dd.error ul, #system-message dd.notice ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#system-message dd.message ul li, #system-message dd.error ul li, #system-message dd.notice ul li
+{
+	background: none;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 5px;
+}
+
+
+
+/* System Standard Messages */
+
+#system-message dd.message ul
+{
+	background: #666666;
+	border: none;
+}
+
+
+
+/* System Error Messages */
+
+#system-message dd.error ul
+{
+	background: #666666;
+	border: none;
+}
+
+
+
+/* System Notice Messages */
+
+#system-message dd.notice ul
+{
+	background: #666666;
+	border: none;
+}
+
+
+
+/* Clearfix */
+
+.clearfix:after
+{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+
+* html > body .clearfix
+{
+	display: block;
+	width: 100%;
+}
+
+
+
+* html .clearfix
+{
+	height: 1%;
+}
+
+
+
+/* DWP modifikace */
+/* top content mod_custom blok - user 7 */
+#headerMediaBanner
+{
+	text-align: center;
+	height: auto;
+	margin: 0;
+}
+
+/* wrap upraven na relaticni pozici kvuli posunu baneru advs */
+#ja-wrapper
+{
+	position: relative;
+}
+
+/* odsaazeni centralniho a praveho bloku kvuli baneru */
+#ja-col1
+{
+	margin-top: -243px;
+}
+
+
+#ja-content, #ja-col2
+{
+	margin-top: 0px !important;
+}
+
+/* banner - pozition 'user9' */
+#ja-container #block-advs_banner
+{
+	width: 759px;
+	float: right;
+	margin-bottom: 0;
+}
+.page-other #ja-container #block-advs_banner{ width: 757px; }
+
+#ja-container #block-advs_banner .ja-box-tr {
+	padding: 0 !important;
+}
+#ja-container #block-advs_banner .ja-box-ct{
+	margin: 0  !important;
+	padding: 3px 0 0 0 !important;
+	text-align: center;
+}
+
+
+/* Informacni lista - pozition 'user8' */
+#ja-container #block-newsflash{
+	/*background:url("../images/content-center.gif") repeat-y scroll center center transparent;*/
+	clear:both;
+	display:block;
+	float:right;
+	width:72%;
+	/*height: 120px;*/
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.page-front #ja-container #block-newsflash{}
+.page-other #ja-container #block-newsflash{	width: 757px; }
+#ja-container #block-newsflash #newsflash.roknewsflash
+{
+	/* Override styleshett modules/mod_roknewsflash/tmpl/themes/light/roknewsflash.css */
+	height: 75px; /* !important; */
+	margin: 0 0 0 0;
+	padding: 0 !important;
+	border-top: 1px dotted silver;
+	margin-top: 28px;
+}
+
+#ja-container #block-newsflash #newsflash.roknewsflash .controls{ 
+	margin: -30px -5px 0 0; 
+}
+
+#ja-container #block-newsflash #newsflash.roknewsflash .flashing
+{
+	margin: -26px 14px 0 0;
+	color : #999999;
+	font-size : 90%;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: transparent url(../images/arrow2.png) no-repeat scroll right center;
+	padding-right: 14px;
+}
+#ja-container #block-newsflash #newsflash.roknewsflash ul
+{
+	display: block;
+	width: 100%;
+	margin: 5px 0 0 0 !important;
+}
+#ja-container #block-newsflash #newsflash.roknewsflash ul li
+{
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+	color: #000000 !important;
+	font-weight: 600;
+}
+#ja-container #block-newsflash #newsflash.roknewsflash ul li a
+{
+	color: #000000 !important;
+	font-size: 110%;
+}
+
+/* JaNews */
+#ja-content .ja-newscontent
+{
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+}
+#ja-content .ja-newscontent h4.jazin-title
+{
+}
+#ja-content .ja-newscontent img
+{
+	float: left !important;
+	margin: 0 10px 0px 0 !important;
+}
+#ja-content .ja-newscontent h3
+{
+	font-size: 100%;
+}
+#ja-content .ja-newscontent p, #ja-content .ja-newscontent div, #ja-content .ja-newscontent h3
+{
+	width: 195px !important;
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-top: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	float: right !important;
+	clear: none !important;
+}
+
+/*Fix li symbol to invisible */
+#ja-content #newsflash.roknewsflash ul li a,
+#ja-content .div_lnd_list li.lnd_latestnews > strong
+{	
+	background: white; 
+}
+
+/* Remove bullet */
+#ja-container #block-newsflash #newsflash.roknewsflash ul li,
+#ja-content #newsflash.roknewsflash ul li,
+#ja-col1 .module ul li
+{
+	background-image: none !important;
+}

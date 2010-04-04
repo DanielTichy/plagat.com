@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Veevaa Module</name>
+	<author>solo</author>
+	<creationDate>May 2009</creationDate>
+	<copyright>Copyright (C) 2005 - 2009 www.veevaa.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>solorush@gmail.com</authorEmail>
+	<authorUrl>www.solord.com</authorUrl>
+	<version>1.1</version>
+	<description>DON NOT FORGET TO ENABLE THIS PLUGIN</description>
+	<files>
+		<filename plugin="veevaamodule">veevaamodule.php</filename>
+	</files>
+	<params>
+		<param name="style" type="list" default="raw" label="Style" description="Code that will wrap modules">
+			<option value="raw">No wrapping - raw output</option>
+			<option value="table">Wrapped by Table - Column</option>
+			<option value="xhtml">Wrapped by Divs</option>
+			<option value="rounded">Wrapped by Multiple Divs</option>
+		</param>
+	</params>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_content_veevaamodule.ini</language>
+		<language tag="zh-CN">languages/zh-CN/zh-CN.plg_content_veevaamodule.ini</language>
+		<language tag="zh-TW">languages/zh-TW/zh-TW.plg_content_veevaamodule.ini</language>
+	</languages>
+</install>

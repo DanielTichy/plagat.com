@@ -1,0 +1,25 @@
+<?php
+/**
+ * @version $Id: new.tmpl 180 2009-10-06 11:24:12Z webamoeba $
+ * @copyright Copyright (C) James Kennard
+ * @license GNU/GPL, see LICENSE.php
+ * @package wats-plugins
+ * @subpackage mailnotification
+ */
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+$wats =& WFactory::getConfig();
+?>
+<?php echo JText::sprintf("TO %s", $this->recipient->name); ?> 
+<?php echo JText::_("NEW TICKET HAS ARRIVED"); ?> 
+------------------------------------------------------------
+<?php echo JText::_("Ticket Name"); ?>: <?php echo $this->ticket->name; ?> 
+<?php echo JText::_("WATS_TICKETS_ID"); ?>: WATS-<?php echo $this->ticket->ticketId; ?> 
+<?php echo JText::_("Submitted"); ?>: <?php echo JHTML::_('date', $this->ticket->datetime, $wats->get('date')); ?>
+<?php echo JText::_("Submitted By"); ?>: <?php echo $this->ticketOwner->username; ?> 
+------------------------------------------------------------
+<?php echo $this->ticket->_msgList[0]->msg; ?> 
+------------------------------------------------------------
+<?php echo $wats->get( 'copyright' )?> 

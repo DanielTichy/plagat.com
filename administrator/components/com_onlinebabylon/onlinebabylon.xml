@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component">
+  <name>onlinebabylon</name>
+  <creationDate>19 March 2008</creationDate>
+  <author>Masih.ad</author>
+  <copyright>This component is released under the GNU/GPL License</copyright>
+  <authorEmail>masih.ad@gmail.com</authorEmail>
+  <authorUrl></authorUrl>
+  <version>1.6.0</version>
+  <description>
+  	<![CDATA[
+	<span style="color: #008000"><strong>Online Babylon Dictionary</strong></span><br />
+Translate All language to&nbsp;:   Chinese(s) | Chinese(t) |   English |    Persian (Farsi) |  French | <br />
+  Italian |   Spanish |   Dutch |   Portuguese |   German |   Russian |   Japanese |   Greek |   Korean |   Turkish |<br />
+  Hebrew |   Arabic |   Thai |   Polish |   Hungarian |   Czech |   Latvian |   Catalan |   Croatian |   Serbian |   Albanian |<br />
+  Urdu |   Slovenian |   Estonian |   Bulgarian |   Danish |   Finnish |   Norwegian |   Romanian |   Swedish |   Ukrainian  |   Afrikaans 
+<br />
+Enjoy it<br />
+<p style="color: #0000FF">masih.ad@gmail.com</p>
+		]]>
+   </description>
+  <install />
+  <uninstall />
+    <files>
+    <filename>onlinebabylon.html.php</filename>
+    <filename>onlinebabylon.php</filename>
+    <filename>index.html</filename>
+	</files>
+  <images>
+  	  </images>
+  <administration>
+		<menu>OnlineBabylon</menu>
+		<files>
+			<filename>admin.onlinebabylon.php</filename>
+			<filename>admin.onlinebabylon.html.php</filename>
+			<filename>tmpl/onlinebabylon.html</filename>
+					</files>
+	  </administration>
+  <params />
+</mosinstall>

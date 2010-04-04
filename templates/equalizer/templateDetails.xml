@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+	<name>Equalizer</name>
+	<creationDate>11/30/07</creationDate>
+	<author>youjoomla.com</author>
+	<copyright>youjoomla.com</copyright>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0</version>
+	<description>Hosting Joomla Template by Youjoomla.com. Unique layout options and color variations.
+		<![CDATA[
+			<h1>Equalizer Joomla   Template by Youjoomla.com</h1>
+
+			<img src="../templates/equalizer/images/logotm.jpg" /><br />Equalizer Joomla  Template by Youjoomla.com.   This  template is for members of the Youjoomla Joomla Template Club only. <a href="http://www.youjoomla.com">Youjoomla Temlplates Club</a> home page.
+<br></br>
+			
+			<b>Version 1.0.0</b><br />
+			<ul>
+			<li>Initial Release</li>
+			</ul>
+
+			]]></description>
+	<files>
+		<filename>settings.php</filename>
+		<filename>styleswitcher.php</filename>
+		<filename>suckerfish.php</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>css/iepngfix.htc</filename>
+		<filename>css/index.html</filename>
+		<filename>images/index.html</filename>
+		<filename>images/typ/index.html</filename>
+		<filename>src/ie.js</filename>
+		<filename>src/index.html</filename>
+		<filename>src/reflection.js</filename>
+		<filename>index.php</filename>
+	</files>
+		<positions>
+			<position>top</position>
+			<position>header</position>
+			<position>footer</position>
+			<position>inset</position>
+			<position>top</position>
+			<position>left</position>
+			<position>right</position>
+			<position>user1</position>
+			<position>user2</position>
+			<position>user3</position>
+			<position>user4</position>
+			<position>user5</position>
+			<position>user6</position>
+			<position>user7</position>
+			<position>user8</position>
+			<position>user9</position>
+		</positions>
+	<images>
+		<filename>css/blank.gif</filename>
+		<filename>images/activeal.gif</filename>
+		<filename>images/activeal_all.gif</filename>
+		<filename>images/activeal_all_hover.gif</filename>
+		<filename>images/activear.gif</filename>
+		<filename>images/activehl.gif</filename>
+		<filename>images/activehr.gif</filename>
+		<filename>images/ahoverl.gif</filename>
+		<filename>images/ahoverr.gif</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/bl.gif</filename>
+		<filename>images/bl.png</filename>
+		<filename>images/blue.gif</filename>
+		<filename>images/bl_dark.gif</filename>
+		<filename>images/bl_dark2.gif</filename>
+		<filename>images/bl_h.gif</filename>
+		<filename>images/bl_hr.gif</filename>
+		<filename>images/botl.gif</filename>
+		<filename>images/botr.gif</filename>
+		<filename>images/bottomsh_bg.jpg</filename>
+		<filename>images/br.gif</filename>
+		<filename>images/br.png</filename>
+		<filename>images/br_dark.gif</filename>
+		<filename>images/br_dark2.gif</filename>
+		<filename>images/br_h.gif</filename>
+		<filename>images/br_hr.gif</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/eq.gif</filename>
+		<filename>images/eqfot.png</filename>
+		<filename>images/footer_bg.gif</filename>
+		<filename>images/green.gif</filename>
+		<filename>images/h3.gif</filename>
+		<filename>images/h3dark.gif</filename>
+		<filename>images/h3dark_blue.gif</filename>
+		<filename>images/h3dark_green.gif</filename>
+		<filename>images/header_bg.jpg</filename>
+		<filename>images/header_bg_blue.jpg</filename>
+		<filename>images/header_bg_green.jpg</filename>
+		<filename>images/ico_leftnav_arrow.gif</filename>
+		<filename>images/inswrbg.gif</filename>
+		<filename>images/jednako.gif</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/logoplay.gif</filename>
+		<filename>images/logo_blue.png</filename>
+		<filename>images/logo_green.png</filename>
+		<filename>images/logotm.jpg</filename>
+		<filename>images/mainb_bg.gif</filename>
+		<filename>images/mainb_bg_left.gif</filename>
+		<filename>images/mainb_bg_left_narrow.gif</filename>
+		<filename>images/mainb_bg_narrow.gif</filename>
+		<filename>images/mainb_bg_right.gif</filename>
+		<filename>images/mainb_bg_right_narrow.gif</filename>
+		<filename>images/menudot.gif</filename>
+		<filename>images/menudot.png</filename>
+		<filename>images/menudot_bl.png</filename>
+		<filename>images/midl.png</filename>
+		<filename>images/midr.png</filename>
+		<filename>images/minus.gif</filename>
+		<filename>images/narrow.gif</filename>
+		<filename>images/orange.gif</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/plus.gif</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/readon.gif</filename>
+		<filename>images/searchbg.jpg</filename>
+		<filename>images/searchbg.png</filename>
+		<filename>images/sitebg.gif</filename>
+		<filename>images/sitebg_nomid.gif</filename>
+		<filename>images/titles.gif</filename>
+		<filename>images/titles_blue.gif</filename>
+		<filename>images/titles_green.gif</filename>
+		<filename>images/tl.gif</filename>
+		<filename>images/tl.png</filename>
+		<filename>images/tl_dark.gif</filename>
+		<filename>images/tl_dark2.gif</filename>
+		<filename>images/tl_h.gif</filename>
+		<filename>images/tl_hr.gif</filename>
+		<filename>images/tr.gif</filename>
+		<filename>images/tr.png</filename>
+		<filename>images/tr_dark.gif</filename>
+		<filename>images/tr_dark2.gif</filename>
+		<filename>images/tr_h.gif</filename>
+		<filename>images/tr_hr.gif</filename>
+		<filename>images/wide.gif</filename>
+		<filename>images/wrapbg.gif</filename>
+		<filename>images/typ/checkg.gif</filename>
+		<filename>images/typ/clip.jpg</filename>
+		<filename>images/typ/down.jpg</filename>
+		<filename>images/typ/pin.gif</filename>
+		<filename>images/typ/pin.jpg</filename>
+		<filename>images/typ/qlg.gif</filename>
+		<filename>images/typ/qrg.gif</filename>
+		<filename>images/typ/stargray.jpg</filename>
+		<filename>images/typ/sticky.jpg</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/blue.css</filename>
+		<filename>css/green.css</filename>
+		<filename>css/iesucks.css</filename>
+		<filename>css/iesucks2.css</filename>
+		<filename>css/orange.css</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/wide.css</filename>
+		<filename>css/narrow.css</filename>
+	</css>
+	<params>
+			<param name="menuName" type="text" default="mainmenu" label="Default Suckerfish Menu" description="Can be any Joomla menu" />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="templateTools" type="list" default="1" label="Display Template Tools" description="Show/Hide template tools">
+<option value="0">No Tools</option>
+<option value="1">All Tools</option>
+<option value="2">Color and width</option>
+<option value="3">Color and font</option>
+<option value="4">Width and font</option>
+<option value="5">Width only</option>
+<option value="6">Font only</option>
+<option value="7">Color only</option>
+</param>
+	<param name="defaultcolor" type="list" default="orange" label="Default color" description="Change Default Color">
+<option value="blue">blue</option>
+<option value="orange">orange</option>
+<option value="green">green</option>
+</param>
+<param name="@spacer" type="spacer" default="Site Width" label="Set Default Width" description="Set Default Width" />
+<param name="sitewidth" type="radio" default="wide" label="Default Site Width" description="Change Default Site Width">
+<option value="wide">1024</option>
+<option value="narrow">800</option>
+</param>
+
+<param name="@spacer" type="spacer" default="Font Size" label="Set Default Font Size" description="Set Default Font Size" />
+<param name="fontsize" type="radio" default="medium" label="Default Font Size" description="Change Default Font Size">
+<option value="small">Small</option>
+<option value="medium">Medium</option>
+<option value="big">Big</option>
+</param>
+
+
+<param name="@spacer" type="spacer" default="SEO Settings" label="" description="" />
+            <param name="seo" type="text" default="Joomla Hosting Template" label="Enter your site description " description="This is SEO part:  Enter your site description here" />
+            <param name="tags" type="text" default="Joomla Hosting, Joomla Templates, Youjoomla" label="Enter,your,site,keywords" description="This is SEO part:   Enter,your,site,keywords,here" />
+
+
+
+
+			</params>
+</install>

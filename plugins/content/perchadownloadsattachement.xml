@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" group="content" version="1.5">
+	<name>Content - Percha DOWNLOADS Attach</name>
+	<author>Cristian Grañó Reder</author>
+	<creationDate>December 14, 2009</creationDate>
+	<copyright>(C) 2010 Cristian Grañó Reder. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>cristian@percha.com</authorEmail>
+	<authorUrl>http://www.percha.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PERCHA IMAGE ATTACHMENT PLUGIN INSTALLED</description> 
+	<files>
+		<filename plugin="perchadownloadsattachement">perchadownloadsattachement.php</filename>
+		<filename>perchadownloadsattachement.css</filename>
+		<filename>perchadownloads/file.png</filename> 
+	</files>
+        <params>
+                <param name="listclass" type="text" default="" label="Class to list image" description="Class to list image">
+		</param>
+  		<param name="position" type="list" default="list" label="Position respect the article" description="Position respect the article">
+			<option value="above">Above</option>
+			<option value="below">Below</option>
+		</param>
+                <param name="float" type="list" default="list" label="Position float" description="Position float">
+			<option value="">None</option>
+			<option value="perchadownloadsattachement_right">Right</option>
+                        <option value="perchadownloadsattachement_left">Left</option>
+		</param>
+	</params>
+
+</install>

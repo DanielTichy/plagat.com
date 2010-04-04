@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JA News 1.3.1</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Match 2008</creationDate>
+	<copyright>(C) 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.3.1</version>
+	<description>
+	JA News module version 1.3.1  come with JA Teline II. JA News Frontpage should be installed to used with this module. JA News Frontpage is a part of JA News packages (JA News + JA News frontpage = JA News 1.3 and released with JA Teline II). For Userguide, please visit http://www.joomlart.com/forums/showthread.php?t=11946
+	</description>
+	<files>
+		<filename module="mod_janews">mod_janews.php</filename>
+		<filename module="mod_janews">helper.php</filename>
+		<filename module="mod_janews">index.html</filename>
+		<filename module="mod_janews">ja.news/index.html</filename>
+		<filename module="mod_janews">ja.news/ja.news.css</filename>
+		<filename module="mod_janews">tmpl/index.html</filename>
+		<filename module="mod_janews">tmpl/blog.php</filename>
+		<filename module="mod_janews">tmpl/blog_item.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="hiddenClasses" type="textarea" default="" rows="10" cols="30" label="Hidden Classes" description="Classes that have property such display: none. Separated by |" />
+		
+		<param name="ordering" type="list" default="ordering" label="Article Order" description="Order by date or by ordering">
+			<option value="ordering">Ordering</option>
+			<option value="created desc">Created Date</option>
+			<option value="modified desc">Modified Date</option>
+		</param>
+		<param name="catorsec" type="radio" default="1" label="Group by Category or Section" description="Group by Category or Section. Section recommended">
+			<option value="1">Category</option>
+			<option value="0">Section</option>
+		</param>
+		<param name="catid" type="textarea" cols="30" rows="10" default="" label="Category (Section) ID" description="Selects items from a specific Category (Section) or set of Categories (Sections), line by line. In each line, put ID and color theme, seperated by a : (Example of settings in Demo site: 13:red 14:orange 8:deepblue 12:cyan 5:green 9:pink 11:lime)" />
+		<param name="showcattitle" type="radio" default="1" label="Show Category (Section) title" description="Show Category (Section) title">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+
+		<param name="introitems" type="text" default="1" label="Intro Items" description="Number of intro items." />
+		<param name="linkitems" type="text" default="3" label="Link Items" description="Number of link items." />
+		<param name="maxchars" type="text" default="0" label="Max Chars" description="Maximum number character display" />
+		<param name="showimage" type="radio" default="1" label="Show image" description="Show/Hide image">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="align" type="radio" default="left" label="Image Align" description="Set align of images.">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="0">None</option>
+		</param>
+		<param name="autoresize" type="radio" default="1" label="Auto resize" description="Auto resize image?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showcontentfrontpage" type="radio" default="1" label="Show front page article" description="Show front page article">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="width" type="text" default="100" label="Image Width" description="Fixed width of the image in pixel (set to -1 if you want to leave the image's default size" />
+		<param name="height" type="text" default="100" label="Image Height" description="Fixed height of the image in pixel (set to -1 if you want to leave the image's default size" />
+
+		<param name="cols" type="text" default="2" label="Columns" description="How many columns per row (Set to zero if you want to disable other news items)" />
+		<param name="showreadmore" type="radio" default="0" label="Show Readmore" description="Show/Hide Readmore button on category news">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+	</params>
+</install>

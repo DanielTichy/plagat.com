@@ -1,0 +1,16 @@
+Changelog
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+-------------------- 1.0 Stable Release [Sep-2008] ---------------------
+
+09-Sep-2008
+
+#  Fixed  jatabs plugin bug : error then install , missing pyrite folder in /plugins/content/ja_tabs/themes/. 
+
+

@@ -1,0 +1,59 @@
+/* css for pPGallery*/
+
+
+.pp_gallery { 
+clear: both; 
+display: table-cell; 
+}
+
+.ppg_clr { 
+clear: both; 
+}
+
+.ppg_thb { 
+float :left; 
+position: relative; bottom: 2px; right: 2px; 
+margin: 4px 0 0 4px; /* bc. shadow, if adjusting here do also in ppgallery.php aHREF tag (~155) for fixed_width*/
+background-color: #CCCCCC; /*img drop shadow*/
+}
+
+.ppg_thb img { 
+display: block; 
+position: relative; bottom: 2px; right: 2px; 
+margin: 0; 
+padding: 4px; /* canvas around img*/
+background: #FFFFFF; 
+border: 1px solid #BBBBBB; 
+}
+
+.ppg_thb :hover img {
+border: 1px solid navy; /*#666666*/
+}
+
+.ppg_thb :hover span { /*hover border-color-change for caption bottom*/
+border: 1px solid navy;
+}
+.ppg_captop {
+display: block;
+text-align: center; 
+font-size: 90%;
+height: 1.5em;
+}
+
+.ppg_caplbl {
+display: block; 
+position: absolute; bottom: 8px; left: 2px;
+padding: 2px 4px; 
+color: black; 
+background: white; 
+border: 1px solid #666666; 
+font-style: italic; 
+font-size: 90%; 
+z-index: 10;
+}
+
+.ppg_capbot {
+display: block;
+text-align: center; 
+font-size: 90%;
+}

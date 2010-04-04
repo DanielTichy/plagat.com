@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params >
+	 <param name="number_list" type="list" default="1" label="Num of news in lists ">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                </param></params>
+</config>

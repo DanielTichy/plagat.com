@@ -1,0 +1,65 @@
+<?php
+/**
+ * @version $Id: assign.tmpl 199 2009-11-29 03:02:11Z webamoeba $
+ * @copyright Copyright (C) James Kennard
+ * @license GNU/GPL, see LICENSE.php
+ * @package wats-plugins
+ * @subpackage mailnotification
+ */
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+$wats =& WFactory::getConfig();
+
+// create the URL, make suire this includes the host!
+$uri =& JURI::getInstance();
+$url = JRoute::_('index.php?option=com_waticketsystem&act=ticket&task=view&ticketid='.$this->ticket->ticketId);
+$url = $uri->toString(array('scheme', 'user', 'pass', 'host', 'port')) . ((!preg_match('~^/~', $url)) ? '/' : '') . $url;
+?>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php echo $this->ticket->name; ?></title>
+</head>
+<body style="background-color: #8FACC9; 
+             margin: 20px; 
+             font-family: Arial;
+             font-size: small;">
+    <div style="background-color: #EBF0F5; 
+                border: 1px solid #FFFFFF; 
+                font-family: Arial;
+                font-size: small;">
+        <p><?php echo JText::sprintf("TO %s", $this->recipient->name); ?></p>
+        <?php if ($this->assignee->id == $this->recipient->id) : ?>
+        <p><?php echo JText::_("TICKET ASSIGNED TO YOU"); ?></p>
+        <?php else: ?>
+        <p><?php echo JText::sprintf("TICKET ASSIGNED TO %s", $this->assignee->username); ?></p>
+        <?php endif; ?>
+        <table border="0"
+               width="100%" 
+               style="font-family: Arial;
+                      font-size: small;">
+            <tbody>
+                <tr>
+                    <td><strong><?php echo JText::_("Ticket Name"); ?></strong></td>
+                    <td><a href="<?php echo $url; ?>"><?php echo $this->ticket->name; ?></a></td>
+                </tr>
+                <tr>
+                    <td><strong><?php echo JText::_("WATS_TICKETS_ID"); ?></strong></td>
+                    <td>WATS-<?php echo $this->ticket->ticketId; ?></td>
+                </tr>
+                <tr>
+                    <td><strong><?php echo JText::_("Submitted By"); ?></strong></td>
+                    <td><?php echo $this->ticketOwner->username; ?></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br /><br />
+    <hr />
+    <p><?php echo $wats->get( 'copyright' )?></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="editors-xtd">
+	<name>Editor Button -Percha downloads attachment</name>
+	<author>Cristian Grañó</author>
+	<creationDate>August 17, 2009</creationDate>
+	<copyright>(C)  2009 Cristian Grañó All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>cristian@percha.com</authorEmail>
+	<authorUrl>http://joomlacode.org/gf/project/attachments/</authorUrl>
+	<version>1.0.0</version>
+	<description>ADD DOWNLOADS ATTACHMENT BUTTON PLUGIN INSTALLED</description>
+	 
+	<files>
+		<filename plugin="perchadownloadsattachment">perchadownloadsattachment.php</filename>
+		<filename>perchadownloadsattachment.png</filename>
+		<filename>perchadownloadsattachment.css</filename>
+
+	</files>
+</install>

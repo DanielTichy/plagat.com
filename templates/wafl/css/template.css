@@ -1,0 +1,257 @@
+body { 
+    color : #333; 
+    background : #F2F2F2; 
+    font-family : Arial, Helvetica, sans-serif; 
+    line-height : 150%; 
+    font-size : 11px; 
+} 
+ 
+
+body.contentpane { 
+    width : auto; 
+    line-height : 1.3em; 
+    font-size : 11px; 
+    color : #333; 
+    margin : 0; 
+} 
+ 
+ 
+a { 
+    color : #069; 
+    text-decoration : underline; 
+} 
+ 
+a:hover,a:active,a:focus { 
+    color : #333; 
+    text-decoration : underline; 
+} 
+ 
+.contentheading,.componentheading,.blog_more strong,h1,h2,h3,h4 { 
+    font-family : "Segoe UI", Arial, Helvetica, sans-serif; 
+} 
+ 
+small,.small,.smalldark,.mosimage_caption,.createby,.createdate,.modifydate,a.readon,.img_caption { 
+    color : #666; 
+    font-size : 11px; 
+} 
+ 
+h1 { 
+    font-size : 11px; 
+} 
+ 
+h3 { 
+    font-size : 11px; 
+} 
+ 
+h4 { 
+    font-size : 11px; 
+    text-transform : uppercase; 
+} 
+ 
+p,pre,blockquote,ul,ol,h1,h2,h3,h4,h5,h6 { 
+    margin : 1em 0; 
+    padding : 0; 
+} 
+ 
+ul li { 
+    line-height : 180%; 
+} 
+ 
+ol li { 
+    line-height : 180%; 
+} 
+ 
+th { 
+    font-weight : 700; 
+    text-align : left; 
+} 
+ 
+hr { 
+    border-right : 0; 
+    border-left : 0; 
+    border-bottom : 0; 
+} 
+ 
+td,div { 
+    font-size : 11px; 
+} 
+ 
+form label { 
+    cursor : pointer; 
+} 
+ 
+input,select,textarea,.inputbox { 
+    font-family : Tahoma, Arial, Helvetica, sans-serif; 
+    font-size : 11px; 
+} 
+ 
+ 
+pre,.code { 
+    background : #FFF; 
+    font : 1em/1.5 "Courier News", monospace; 
+} 
+ 
+div.bubble3 div div div div { 
+    background : url(../../ja_purity/images/bub3-tl.gif) no-repeat top left ; 
+} 
+ 
+div.bubble3 div div div div div { 
+    width : auto; 
+    margin : 0; 
+} 
+ 
+table.contenttoc { 
+    width : auto; 
+    float : right; 
+    padding : 0; 
+} 
+ 
+table.pollstableborder img { 
+    vertical-align : baseline; 
+} 
+ 
+table.pollstableborder td { 
+    border-collapse : collapse; 
+    border-spacing : 0; 
+} 
+ 
+table.pollstableborder tr.sectiontableentry1 td { 
+    background : #ECECEC; 
+} 
+ 
+table.searchintro { 
+    width : auto; 
+} 
+ 
+h2.contentheading,.contentheading { 
+    font-weight : 400; 
+    margin : 0; 
+} 
+ 
+
+ 
+a.contentpagetitle,a.contentpagetitle:hover,a.contentpagetitle:active,a.contentpagetitle:focus { 
+    text-decoration : none!important; 
+} 
+ 
+a.readon { 
+    float : left; 
+    display : block; 
+    color : #069; 
+    font-weight : 700; 
+    text-decoration : none; 
+    text-transform : uppercase; 
+} 
+ 
+a.readon:hover,a.readon:active,a.readon:focus { 
+} 
+ 
+table.contentpaneopen,table.contentpane,table.blog { 
+    width : auto; 
+} 
+ 
+ul.pagination a:hover,ul.pagination a:active,ul.pagination a:focus { 
+    background : #FFF; 
+} 
+ 
+.pagenavbar { 
+} 
+ 
+.pagenavcounter { 
+} 
+ 
+div.buttonheading { 
+    float : right; 
+    width : auto; 
+} 
+ 
+.buttonheading img { 
+    border : 0; 
+    float : right; 
+} 
+ 
+h1.logo,h1.logo-text { 
+    font-size : 11px; 
+    text-transform : uppercase; 
+    padding : 0; 
+} 
+ 
+h1.logo a { 
+    width : auto; 
+    display : block; 
+    position : relative; 
+    z-index : 100; 
+} 
+ 
+h1.logo a span { 
+    position : absolute; 
+} 
+ 
+h1.logo-text a { 
+    color : #CCC!important; 
+    text-decoration : none; 
+    outline : none; 
+    position : absolute; 
+} 
+ 
+p.site-slogan { 
+    color : #FFF; 
+    background : #444; 
+    font-size : 11px; 
+    position : absolute; 
+    left : 0; 
+    margin : 0; 
+} 
+ 
+ 
+ 
+* html > body .clearfix { 
+    width : auto; 
+    display : block; 
+} 
+ 
+* html .clearfix { 
+    height : 1%; 
+} 
+ 
+html { 
+    height : 100%!important; 
+} 
+ 
+html,body,form,fieldset,form,.blog_more ul,div.module_blue ul,div.module_blue ol,div.module_red ul,div.module_red ol,div.module_black ul,div.module_black ol,div.module_green ul,div.module_green ol { 
+    margin : 0; 
+    padding : 0; 
+} 
+ 
+h2,table.blog .contentheading { 
+    font-size : 11px; 
+} 
+ 
+ul,ul.checklist,ul.small-checklist,ul.stars { 
+    list-style : none; 
+} 
+ 
+fieldset a,.category { 
+    font-weight : 700; 
+} 
+ 
+img,.ja-cert a img { 
+    border : none; 
+} 
+ 
+* html .button,*+html .button { 
+} 
+ 
+table.contenttoc a,#ja-pathway a { 
+    text-decoration : none; 
+} 
+ 
+#waflpage { 
+
+    width: 240px; 
+
+    min-width: 240px; 
+
+    max-width: 240px; 
+ 
+ }

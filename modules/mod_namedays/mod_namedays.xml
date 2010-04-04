@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+    <name>Name Days</name>
+    <creationDate>2009-01-01</creationDate>
+    <author>Vytautas Krivickas</author>
+    <copyright>Copyright (C) 2008 Open Source Matters. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>webmaster@vytux.com</authorEmail>
+    <authorUrl>http://www.vytux.com</authorUrl>
+    <version>1.0.6</version>
+    <description>MODULE : NAMEDAYS</description>
+    <files>
+		<filename module="mod_namedays">mod_namedays.php</filename>
+		<filename>index.html</filename>
+		<filename>date/index.html</filename>
+		<filename>date/names_sk_SK.php</filename>
+		<filename>date/names_cz_CZ.php</filename>
+		<filename>date/names_se_SE.php</filename>
+		<filename>date/names_hu_HU.php</filename>
+		<filename>date/names_at_AT.php</filename>
+		<filename>date/names_fr_FR.php</filename>
+		<filename>date/names_fi_FI.php</filename>
+		<filename>date/names_pl_PL.php</filename>
+		<filename>date/names_de_DE.php</filename>
+		<filename>date/names_lv_LV.php</filename>
+		<filename>date/names_it_IT.php</filename>
+		<filename>date/names_lt_LT.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_namedays.ini</language>
+	</languages>
+	<params>
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A Suffix to be applied the CSS class of this module, this allow individual nodule styling" />
+
+		<param name="@spacer_a" type="spacer" default="" label="" description="" />
+
+		<param name="nameday_list" type="list" default="8" label="Select country" description="Select country for namedays listing" >
+			<option value="0">Austrian Namedays</option>
+			<option value="1">Czech Namedays</option>
+			<option value="2">Finnish Namedays</option>
+			<option value="3">French Namedays</option>
+			<option value="4">German Namedays</option>
+			<option value="5">Hungarian Namedays</option>
+			<option value="6">Italian Namedays</option>
+			<option value="7">Latvian Namedays</option>
+			<option value="8">Lithuanian Namedays</option>
+			<option value="9">Polish Namedays</option>
+			<option value="10">Slovakian Namedays</option>
+			<option value="11">Swedish Namedays</option>
+		</param>
+		
+		<param name="@spacer_b" type="spacer" default="" label="" description="" />    
+
+		<param name="show_pre_yesterday" type="radio" default="1" label="Show Before yesterday" description=" Show day before yesterday">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>    
+		<param name="label_pre_yesterday" type="text" default="Before yesterday {@date@} :" label="Label for day before yesterday" description="Day before yesterday" />
+		<param name="br_pre_yesterday" type="radio" default="1" label="New line" description="New line">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		
+		<param name="@spacer_c" type="spacer" default="" label="" description="" />				 		
+		
+		<param name="show_yesterday" type="radio" default="1" label="Show yesterday" description=" Show yesterday">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>    
+		<param name="label_yesterday" type="text" default="Yesterday {@date@} :" label="Label for yesterday" description="Day before yesterday" />
+		<param name="br_yesterday" type="radio" default="1" label="New line" description="New line">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		
+		<param name="@spacer_d" type="spacer" default="" label="" description="" />				 								
+		
+		<param name="show_today" type="radio" default="1" label="Show today" description=" Show today">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>    
+		<param name="label_today" type="text" default="Today {@date@} :" label="Label for today" description="Day before today" />
+		<param name="br_today" type="radio" default="1" label="New line" description="New line">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		
+		<param name="@spacer_e" type="spacer" default="" label="" description="" />				 								
+		
+		<param name="show_tomorrow" type="radio" default="1" label="Show tomorrow" description=" Show tomorrow">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>    
+		<param name="label_tomorrow" type="text" default="Tomorrow {@date@} :" label="Label for tomorrow" description="Day before tomorrow" />
+		<param name="br_tomorrow" type="radio" default="1" label="New line" description="New line">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		
+		<param name="@spacer_f" type="spacer" default="" label="" description="" />				 								
+
+		<param name="show_post_tomorrow" type="radio" default="1" label="Show After tomorrow" description=" Show after tomorrow">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>    
+		<param name="label_post_tomorrow" type="text" default="After Tomorrow {@date@} :" label="Label for after tomorrow" description="Day before after tomorrow" />
+		<param name="br_post_tomorrow" type="radio" default="1" label="New line" description="New line">
+			<option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>
+		
+		<param name="@spacer_g" type="spacer" default="" label="" description="" />				 								
+
+		<param name="seperator" type="text" default=" " label="Separating" description="Separator between days" />			
+		<param name="align" type="radio" default="center" label="Display" description="This alignment applies for all elements">
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="width" type="text" default="" label="Width(px)" description="Width(px)" />
+		<param name="height" type="text" default="" label="Height(px)" description="Height(px)" />
+		
+		<param name="@spacer_h" type="spacer" default="" label="" description="" />
+		
+		<param name="label_pre" type="textarea" cols="20" rows="4" default=" " label="Pre text " description="Text before" />
+		<param name="label_post" type="textarea" cols="20" rows="4" default=" " label="Post text" description="Text after" />
+		
+		<param name="@spacer_i" type="spacer" default="" label="" description="" />
+		
+		<param name="date_format" type="text" default="Y-m-d" label="Date Format" description="Replace {@date@} with date in this format" />			
+		
+		<param name="@spacer_j" type="spacer" default="" label="" description="" />
+		
+		<param name="createdby" type="radio" default="1" label="Display author" description="Turn credits on or off - Please help us by showing this link on your live site">
+			<option value="0">On</option>
+			<option value="1">Off</option>
+		</param>	
+	</params>     	
+</install>

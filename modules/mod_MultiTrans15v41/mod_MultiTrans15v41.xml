@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>MultiTrans15v41</name>
+	<author>Bob Galway</author>
+	<creationDate>January 2010</creationDate>
+	<copyright>Bob Galway</copyright>
+	<license>http://www.gnu.org/licenses/</license>
+	<version>15v41</version>
+	<description>Module for using Yahoo/AltaVista and Google translation
+		servers. www.blackdale.com</description>
+	<files>
+		<filename module="mod_MultiTrans15v41">mod_MultiTrans15v41.php</filename>
+		<filename>index.html</filename>
+		<filename>gpl-3.0.txt</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+
+
+	<params>
+
+
+
+
+		<param name="server1" type="radio" default="g1"
+			label="Site Translation provider" description=" translation provider">
+			<option value="g1">Google - New</option>
+			<option value="O">Others(Advanced Parameters section)</option>
+
+		</param>
+		<param name="west" type="radio" default="1"
+			label="West European Languages" description=" West European Languages ">
+
+			<option value="1">Translate Option - Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="east" type="radio" default="1"
+			label="East European Languages" description=" East European Languages ">
+
+			<option value="1">Translate Option - Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="asia" type="radio" default="1" label="Asian Languages"
+			description="Asian Languages ">
+
+			<option value="1">Translate Option - Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="other" type="radio" default="1" label="Other Languages"
+			description="Other Languages ">
+
+			<option value="1">Translate Option - Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="langg1" type="list" default="en"
+			label="Site originating Language"
+			description='Site originating language. Can be set to "many" for sites with more than one language.'>
+			<option value=""> Many	</option>
+			<option value="af"> Afrikaans	</option>
+			<option value="sq"> Albanian	</option>
+			<option value="ar"> Arabic	</option>
+			<option value="be"> Belarusian	</option>
+			<option value="bg"> Bulgarian	</option>
+			<option value="ca"> Catalan	</option>
+			<option value="zh-CN"> Chinese(Simplified)	</option>
+			<option value="zh-TW"> Chinese(Traditional)	</option>
+			<option value="hr"> Croatian	</option>
+			<option value="cs"> Czech	</option>
+			<option value="da"> Danish	</option>
+			<option value="nl"> Dutch	</option>
+			<option value="en"> English	</option>
+			<option value="et"> Estonian	</option>
+			<option value="tl"> Filipino	</option>
+			<option value="fi"> Finnish	</option>
+			<option value="fr"> French	</option>
+			<option value="gl"> Galician	</option>
+			<option value="de"> German	</option>
+			<option value="el"> Greek	</option>
+			<option value="iw"> Hebrew	</option>
+			<option value="hi"> Hindi	</option>
+			<option value="hu"> Hungarian	</option>
+			<option value="is"> Icelandic	</option>
+			<option value="id"> Indonesian	</option>
+			<option value="ga"> Irish	</option>
+			<option value="it"> Italian	</option>
+			<option value="ja"> Japanese	</option>
+			<option value="ko"> Korean	</option>
+			<option value="lv"> Latvian	</option>
+			<option value="lt"> Lithuanian	</option>
+			<option value="mk"> Macedonian	</option>
+			<option value="ms"> Malay	</option>
+			<option value="mt"> Maltese	</option>
+			<option value="no"> Norwegian	</option>
+			<option value="fa"> Persian	</option>
+			<option value="pl"> Polish	</option>
+			<option value="pt"> Portuguese	</option>
+			<option value="ro"> Romanian	</option>
+			<option value="ru"> Russian	</option>
+			<option value="sr"> Serbian	</option>
+			<option value="sk"> Slovak	</option>
+			<option value="sl"> Slovenian	</option>
+			<option value="es"> Spanish	</option>
+			<option value="sw"> Swahili	</option>
+			<option value="sv"> Swedish	</option>
+			<option value="th"> Thai	</option>
+			<option value="tr"> Turkish	</option>
+			<option value="uk"> Ukrainian	</option>
+			<option value="vi"> Vietnamese	</option>
+			<option value="cy"> Welsh	</option>
+			<option value="yi"> Yiddish	</option>
+
+
+		</param>
+		<param name="general" type="radio" default="" label="-----------------------"
+			description="">
+		</param>
+
+<param name="general" type="radio" default="" label="Module Positioning etc"
+			description="Some fine tuning for module appearance">
+		</param>
+
+		<param name="margin-leftmodule" type="list" default="0px"
+			label="Module Position Left" description="Module Position Left">
+
+			<option value="-30px;">-30</option>
+			<option value="-20px;">-20</option>
+			<option value="-10px;">-10</option>
+			<option value="0px;">0</option>
+			<option value="5px;">5</option>
+			<option value="10px;">10</option>
+			<option value="15px;">15</option>
+			<option value="20px;">20</option>
+			<option value="25px;">25</option>
+			<option value="30px;">30</option>
+		</param>
+
+
+		<param name="paddingleft" type="text" default="0" label="Padding Left"
+			description="Padding Left, positive integer.">
+		</param>
+
+		<param name="paddingright" type="text" default="0" label="Padding Right"
+			description="Padding Right, positive integer.">
+		</param>
+
+		<param name="paddingtop" type="text" default="0" label="Padding Top"
+			description="Padding Top, positive integer.">
+		</param>
+
+		<param name="paddingbottom" type="text" default="0" label="Padding Bottom"
+			description="Padding Bottom, positive integer.">
+		</param>
+
+		<param name="margin-top" type="list" default="0px" label="Top Margin"
+			description="Top Margin, can be positive or negative integer.">
+			<option value="-30px;">-30</option>
+			<option value="-25px;">-25</option>
+			<option value="-20px;">-20</option>
+			<option value="-15px;">-15</option>
+			<option value="-10px;">-10</option>
+			<option value="-5px;">-5</option>
+			<option value="0px;">0</option>
+			<option value="5px;">5</option>
+			<option value="10px;">10</option>
+			<option value="15px;">15</option>
+			<option value="20px;">20</option>
+			<option value="25px;">25</option>
+			<option value="30px;">30</option>
+		</param>
+
+		<param name="margin-bottom" type="list" default="0px" label="Bottom Margin"
+			description="Bottom Margin, can be positive or negative integer.">
+
+			<option value="-30px;">-30</option>
+			<option value="-25px;">-25</option>
+			<option value="-20px;">-20</option>
+			<option value="-15px;">-15</option>
+			<option value="-10px;">-10</option>
+			<option value="-5px;">-5</option>
+			<option value="0px;">0</option>
+			<option value="5px;">5</option>
+			<option value="10px;">10</option>
+			<option value="15px;">15</option>
+			<option value="20px;">20</option>
+			<option value="25px;">25</option>
+			<option value="30px;">30</option>
+		</param>
+
+
+		<param name="colour2" type="text" default=""
+			label="Module colour background" description="Module colour background">
+		</param>
+
+		<param name="moduleclass_sfx" type="text" default=""
+			label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="frame" type="radio" default="1" label="Remove Frames"
+			description=" Remove frames ">
+
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="server2" type="radio" default="g1"
+			label="Site Translation provider" description=" translation provider">
+
+			<option value="g2">Google - Old</option>
+			<option value="y">Yahoo</option>
+			<option value="a">Alta Vista</option>
+		</param>
+
+
+		<param name="langg2" type="list" default="en" label="Google options"
+			description=" Google options site originating language">
+			<option value="en">English</option>
+			<option value="fr">French</option>
+			<option value="de">German</option>
+			<option value="it">Italian</option>
+			<option value="es">Spanish</option>
+			<option value="pt">Portuguese</option>
+			<option value="nl">Dutch</option>
+			<option value="sv">Swedish</option>
+			<option value="no">Norwegian</option>
+			<option value="da">Danish</option>
+
+			<option value="ca">Catalan</option>
+			<option value="tl">Filipino</option>
+			<option value="iw">Hebrew</option>
+			<option value="id">Indonesian</option>
+			<option value="lv">Latvian</option>
+			<option value="lt">Lithuanian</option>
+			<option value="sr">Serbian</option>
+			<option value="sk">Slovak</option>
+			<option value="sl">Slovenian</option>
+			<option value="uk">Ukrainian</option>
+			<option value="vi">Vietnamese</option>
+
+			<option value="fi">Finnish</option>
+			<option value="el">Greek</option>
+			<option value="ro">Romanian</option>
+			<option value="cs">Czech</option>
+			<option value="hr">Croatian</option>
+			<option value="po">Polish</option>
+			<option value="bg">Bulgarian</option>
+			<option value="ru">Russian</option>
+			<option value="ar">Arabic</option>
+			<option value="ja">Japanese</option>
+			<option value="ko">Korean</option>
+			<option value="hi">Hindi</option>
+			<option value="zh-CN">Chinese(Simple)</option>
+			<option value="zh-TW">Chinese(Trad)</option>
+
+		</param>
+		<param name="langy" type="list" default="en" label="Yahoo options"
+			description=" Yahoo options site originating language">
+			<option value="en">English</option>
+			<option value="fr">French</option>
+			<option value="de">German</option>
+			<option value="it">Italian</option>
+			<option value="es">Spanish</option>
+			<option value="pt">Portuguese</option>
+		</param>
+
+
+
+
+		<param name="langa" type="list" default="engl" label="Alta Vista options"
+			description=" Alta Vista options site originating language">
+			<option value="engl">English</option>
+			<option value="french">French</option>
+			<option value="italien">Italian</option>
+			<option value="spanish">Spanish</option>
+			<option value="portugese">Portuguese</option>
+
+		</param>
+	</params>
+
+</install>

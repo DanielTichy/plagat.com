@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="mambot" group="content">
+	<name>mosbanner</name>
+	<author>keep</author>
+	<creationDate>September 2007</creationDate>
+	<copyright>(C) 2004- 2005 keeps</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>joomla@keep.hu</authorEmail>
+	<authorUrl>http://joomla.blog.hu</authorUrl>
+	<version>0.3</version>
+	<description>
+There are some standard banner sizes like bilboard which are displayed within content items, for what the currently available advertising extensions are not usable. With this mambot you can sell advertising place within your articles. It will select a banner from the core Banners component by the specified parameters. The banners can be selected randomly, by single or multple IDs or by clients. The made impressions are recorded.
+<br /><br />
+Instructions:<br />
+{mosbanner} - a banner is displayed in random order<br />
+{mosbanner:id=x} - a banner with the specified ID will be displyed after replacing 'x' with the ID of the required banner<br />
+{mosbanner:id=x,y,z} - a banner to be displayed is randomly selected from the specified IDs. Any number of IDs can be specified.<br />
+{mosbanner:cid=x} - a banner assigned to a client is displayed in random order<br />
+{mosbanner:cid=x,y,z} - a banner of several clients is selected and displayed. Any number of IDs can be specified. <br />
+    </description>
+	<files>
+		<filename mambot="mosbanner">mosbanner.php</filename>
+	</files>
+</mosinstall>

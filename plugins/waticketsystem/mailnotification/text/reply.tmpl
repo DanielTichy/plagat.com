@@ -1,0 +1,29 @@
+<?php
+/**
+ * @version $Id: reply.tmpl 180 2009-10-06 11:24:12Z webamoeba $
+ * @copyright Copyright (C) James Kennard
+ * @license GNU/GPL, see LICENSE.php
+ * @package wats-plugins
+ * @subpackage mailnotification
+ */
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+$wats =& WFactory::getConfig();
+?>
+
+<?php echo JText::sprintf("TO %s", $this->recipient->name); ?> 
+<?php echo JText::_("NEW REPLY HAS ARRIVED"); ?> 
+<?php if (JRequest::getInt("close", 0) == 1) : ?>
+<?php echo JText::_("TICKET HAS BEEN CLOSED"); ?> 
+<?php endif; ?>
+------------------------------------------------------------ 
+<?php echo JText::_("Ticket Name"); ?>: <?php echo $this->ticket->name; ?> 
+<?php echo JText::_("WATS_TICKETS_ID"); ?>: WATS-<?php echo $this->ticket->ticketId; ?> 
+<?php echo JText::_("REPLY SUBMITTED"); ?>: <?php echo JHTML::_('date', $this->lastMessage->datetime, $wats->get('date')); ?>
+<?php echo JText::_("REPLY SUBMITTED BY"); ?>: <?php echo $this->lastMessageOwner->username; ?> 
+<?php echo JText::_("REPLY BODY"); ?>:  
+<?php echo $this->lastMessage->msg; ?> 
+------------------------------------------------------------ 
+<?php echo $wats->get( 'copyright' )?> 

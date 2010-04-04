@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+    <name>mavik Thumbnails</name>
+    <author>Vitaliy Marenkov</author>
+    <creationDate>Marth 2009</creationDate>
+    <copyright>Vitaliy Marenkov</copyright>
+    <authorEmail>admin@mavik.com.ua</authorEmail>
+    <authorUrl>www.mavik.com.ua</authorUrl>
+    <version>0.9</version>
+    <description>This plugin generate thumbnails for big images.</description>
+    <files>
+        <filename plugin="mavikthumbnails">mavikthumbnails.php</filename>
+		<filename>mavikthumbnails/index.html</filename>
+		<filename>mavikthumbnails/modal.php</filename>
+		<filename>mavikthumbnails/slimbox.php</filename>
+		<filename>mavikthumbnails/highslide.php</filename>
+		<filename>mavikthumbnails/bloglink.php</filename>
+		<filename>mavikthumbnails/imgtag.class.php</filename>
+		<filename>mavikthumbnails/style.php</filename>
+		<filename>mavikthumbnails/images/index.html</filename>
+		<filename>mavikthumbnails/images/zoomin.cur</filename>
+		<filename>mavikthumbnails/images/zoomin.gif</filename>
+		<filename>mavikthumbnails/thumbnails/index.html</filename>
+		<filename>mavikthumbnails/slimbox/index.html</filename>
+		<filename>mavikthumbnails/slimbox/css/index.html</filename>
+		<filename>mavikthumbnails/slimbox/css/closelabel.gif</filename>
+		<filename>mavikthumbnails/slimbox/css/loading.gif</filename>
+		<filename>mavikthumbnails/slimbox/css/nextlabel.gif</filename>
+		<filename>mavikthumbnails/slimbox/css/prevlabel.gif</filename>
+		<filename>mavikthumbnails/slimbox/css/slimbox.css</filename>
+		<filename>mavikthumbnails/slimbox/js/index.html</filename>
+		<filename>mavikthumbnails/slimbox/js/slimbox.js</filename>
+		<filename>mavikthumbnails/highslide/index.html</filename>
+		<filename>mavikthumbnails/highslide/highslide.css</filename>
+		<filename>mavikthumbnails/highslide/highslide-ie6.css</filename>
+		<filename>mavikthumbnails/highslide/highslide-with-gallery.packed.js</filename>
+		<filename>mavikthumbnails/highslide/graphics/index.html</filename>
+		<filename>mavikthumbnails/highslide/graphics/close.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/closeX.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar-black-border.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar-text-buttons.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar-white-small.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar-white.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar2.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar3.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar4-hover.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/controlbar4.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/fullexpand.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/geckodimmer.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/icon.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/loader.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/loader.white.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/resize.gif</filename>
+		<filename>mavikthumbnails/highslide/graphics/scrollarrows.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/zoomin.cur</filename>
+		<filename>mavikthumbnails/highslide/graphics/zoomout.cur</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/beveled.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/drop-shadow.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/glossy-dark.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/index.html</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/outer-glow.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/rounded-black.png</filename>
+		<filename>mavikthumbnails/highslide/graphics/outlines/rounded-white.png</filename>
+    </files>
+	<languages>
+		<language tag="ru-RU">ru-RU.plg_content_mavikthumbnails.ini</language>
+		<language tag="uk-UA">uk-UA.plg_content_mavikthumbnails.ini</language>
+		<language tag="sr-RS">sr-RS.plg_content_mavikthumbnails.ini</language>
+		<language tag="sr-YU">sr-YU.plg_content_mavikthumbnails.ini</language>
+		<language tag="bg-BG">bg-BG.plg_content_mavikthumbnails.ini</language>
+		<language tag="tr-TR">tr-TR.plg_content_mavikthumbnails.ini</language>
+		<language tag="ca-ES">ca-ES.plg_content_mavikthumbnails.ini</language>
+		<language tag="es-ES">es-ES.plg_content_mavikthumbnails.ini</language>
+		<language tag="de-DE">de-DE.plg_content_mavikthumbnails.ini</language>
+		<language tag="el-GR">el-GR.plg_content_mavikthumbnails.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_mavikthumbnails.ini</language>
+		<language tag="et-EE">et-EE.plg_content_mavikthumbnails.ini</language>
+	</languages>
+    <params>
+		<param name="popuptype" type="list" default="slimbox" label="Type of popup" description="Select type of popup for full image">
+			<option value="none">None</option>
+			<option value="slimbox">Slimbox</option>
+			<option value="highslide">Highslide (for non-commercial sites)</option>
+			<option value="modal">Joomla Modal</option>
+		</param>
+		<param name="thumbputh" type="text" default="plugins/content/mavikthumbnails/thumbnails" label="Directory for thumbnails" description="Existent directory for thumbnails" />
+		<param name="blog_link" type="radio" default="0" label="Link to article for blog" description="Images is links to full text in blogs">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="zoomin_img" type="radio" default="0" label="Magnifying glass at thumbnails (experimental)" description="Show magnifying glass at thumbnails">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="zoomin_cur" type="radio" default="0" label="Show special cursor" description="Show cursor magnifying glass at thumbnails">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="link_scripts" type="radio" default="1" label="Link to scripts" description="Set it No if scripts conflict with other components">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+    </params>
+</install>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+  <name>JoomlaComment CleanCache</name>
+  <author>Daniel Dimitrov</author>
+  <creationDate>february 2009</creationDate>
+  <copyright>Copyright(C) Alain Georgette All rights reserved!</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>danielsd_bg@yahoo.fr</authorEmail>
+  <authorUrl>www.compojoom.com</authorUrl>
+  <version>4.0.0</version>
+  <description />
+  <files>
+    <filename mambot="josccleancache">josccleancache.php</filename>
+  </files>
+</install>

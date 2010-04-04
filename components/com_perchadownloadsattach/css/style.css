@@ -1,0 +1,16 @@
+ul.list_members{ list-style: none;}
+ul.list_members li{ padding:5px 0 5px 0;}
+
+ul.list_members a{text-decoration: none; }
+
+.contentpane{ background-color: transparent; text-align: left; background-image: url(../img/popup_up.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+padding:20px 0 0 0;}
+.contentpane h2{color:#ffffff; border-bottom: #fff dotted 1px; font-size: 25px;}
+
+.contentpane #unidad{   padding: 20px;
+        background-color:#bbbb00 ;
+        background-image: url(../img/popup_bottom.png);
+        background-repeat: no-repeat;
+        background-position: 0 bottom;}

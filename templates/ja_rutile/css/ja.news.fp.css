@@ -1,0 +1,127 @@
+/*------------------------------------------------------------------------
+# JA Teline II 1.0 - April, 2008
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+
+#jazin-fp {
+}
+
+#jazin-hlwrap {
+	clear: both;
+}
+
+/* DEFAULT HEADLINE (jazin-fp)
+--------------------------------------------- */
+#jazin-hlfirst {
+	width: 49.9%;
+	float: left;
+	background: #F7F7F7;
+}
+
+#jazin-hlfirst img {
+	margin: 0 0 10px !important;
+	padding: 0 !important;
+}
+
+#jazin-hlnext {
+	width: 49%;
+	float: right;
+}
+
+#jazin-hlwrap .jazin-content {
+	padding: 10px;
+}
+
+#jazin-hlnext .jazin-content {
+	padding: 10px 0 5px 10px;
+}
+
+#jazin-hlnext .jazin-content img {
+	float: right;
+	padding: 0;
+	margin: 5px 0 5px 15px;
+}
+
+#jazin-fp a.readon {
+	margin-top: 5px;
+}
+
+/* OLD HEADLINE (jazin-fp)
+--------------------------------------------- */
+#jahl-newsitem {
+	padding: 0;
+}
+
+div.ja-newscat {
+	display: block;
+	padding: 0 0 3px;
+	margin: 0;
+	position: relative;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+div.ja-newscat span {
+	font-weight: bold;
+	background: url(../images/arrow2.png) no-repeat right center;
+	padding-right: 14px;
+	font-size: 92%;
+	letter-spacing: 1px;
+}
+
+#jahl-newsitem a.ja-newstitle { 
+	font-size: 150%;
+}
+
+.ja-newscontent {
+	background: #FFFFFF;
+}
+
+#jahl-newsitem img { 
+	margin: 2px 0 0 0;
+}
+
+/* Control bar
+--------------------------------------------- */
+.jahl-newscontrol {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 92px;
+	height: 18px;
+	background: url(../images/control-bg.gif) no-repeat center;
+}
+
+.jahl-newscontrol ul {
+	margin: 0;
+	padding: 1px 0 0 5px;
+	float: left;
+	line-height: normal;
+}
+
+.jahl-newscontrol li {
+	margin: 0;
+	padding: 0 0 0 5px;
+	background: none;
+	display: inline;
+}
+
+#loading-indicator {
+	float: left;
+}
+
+#jahl-indicator {
+	float: left;
+	padding: 0 0 0 7px;
+	font-size: 10px;
+	line-height: 18px;
+	margin-left: 10px;
+	display: block;
+	color: #FFFFFF;
+	background: #999999;
+}

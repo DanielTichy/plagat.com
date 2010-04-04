@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>JA Rutile</name>
+	<creationDate>19 Sep 08</creationDate>
+	<author>JoomlArt.com</author>
+	<copyright>JoomlArt Design Team</copyright>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0</version>
+	<description>Plagat</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>css/ie6.php</filename>
+		<filename>css/index.html</filename>
+		<filename>favicon.ico</filename>
+		<filename>html/com_content/archive/default.php</filename>
+		<filename>html/com_content/archive/index.html</filename>
+		<filename>html/com_content/article/default.php</filename>
+		<filename>html/com_content/article/form.php</filename>
+		<filename>html/com_content/article/index.html</filename>
+		<filename>html/com_content/category/blog.php</filename>
+		<filename>html/com_content/category/blog_item.php</filename>
+		<filename>html/com_content/category/default.php</filename>
+		<filename>html/com_content/category/index.html</filename>
+		<filename>html/com_content/frontpage/default.php</filename>
+		<filename>html/com_content/frontpage/default_item.php</filename>
+		<filename>html/com_content/frontpage/index.html</filename>
+		<filename>html/com_content/index.html</filename>
+		<filename>html/com_content/section/blog.php</filename>
+		<filename>html/com_content/section/blog_item.php</filename>
+		<filename>html/com_content/section/default.php</filename>
+		<filename>html/com_content/section/index.html</filename>
+		<filename>html/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>html/mod_banners/default.php</filename>
+		<filename>html/mod_banners/index.html</filename>
+		<filename>html/mod_footer/default.php</filename>
+		<filename>html/mod_footer/index.html</filename>
+		<filename>html/pagination.php</filename>
+		<filename>images/icons_license.txt</filename>
+		<filename>images/index.html</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>ja_menus/Base.class.php</filename>
+		<filename>ja_menus/CSSmenu.class.php</filename>
+		<filename>ja_menus/DLmenu.class.php</filename>
+		<filename>ja_menus/ja_cssmenu/img/index.html</filename>
+		<filename>ja_menus/ja_cssmenu/index.html</filename>
+		<filename>ja_menus/ja_cssmenu/ja.cssmenu.js</filename>
+		<filename>ja_menus/ja_moomenu/img/index.html</filename>
+		<filename>ja_menus/ja_moomenu/index.html</filename>
+		<filename>ja_menus/ja_moomenu/ja.moomenu.js</filename>
+		<filename>ja_menus/ja_scriptdlmenu/img/index.html</filename>
+		<filename>ja_menus/ja_scriptdlmenu/index.html</filename>
+		<filename>ja_menus/ja_scriptdlmenu/ja.scriptdlmenu.js</filename>
+		<filename>ja_menus/ja_splitmenu/img/index.html</filename>
+		<filename>ja_menus/ja_splitmenu/index.html</filename>
+		<filename>ja_menus/Moomenu.class.php</filename>
+		<filename>ja_menus/Splitmenu.class.php</filename>
+		<filename>ja_templatetools_1.5.php</filename>
+		<filename>ja_vars_1.5.php</filename>
+		<filename>js/ja.script.js</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<images>
+		<filename>images/arrow.gif</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/arrow2.png</filename>
+		<filename>images/blank.png</filename>
+		<filename>images/blue/arrow.gif</filename>
+		<filename>images/blue/logo.jpg</filename>
+		<filename>images/blue/mainnav-active.gif</filename>
+		<filename>images/blue/readon-bg.gif</filename>
+		<filename>images/blue/search-bg.gif</filename>
+		<filename>images/box-bg.gif</filename>
+		<filename>images/box-bl.gif</filename>
+		<filename>images/box-br.gif</filename>
+		<filename>images/box-r-bl.gif</filename>
+		<filename>images/box-r-br.gif</filename>
+		<filename>images/box-r-tl.gif</filename>
+		<filename>images/box-r-tr.gif</filename>
+		<filename>images/box-tl.gif</filename>
+		<filename>images/box-tr.gif</filename>
+		<filename>images/bub1-bl.gif</filename>
+		<filename>images/bub1-br.gif</filename>
+		<filename>images/bub1-tl.gif</filename>
+		<filename>images/bub1-tr.gif</filename>
+		<filename>images/bub2-bl.gif</filename>
+		<filename>images/bub2-br.gif</filename>
+		<filename>images/bub2-tl.gif</filename>
+		<filename>images/bub2-tr.gif</filename>
+		<filename>images/bub3-bl.gif</filename>
+		<filename>images/bub3-br.gif</filename>
+		<filename>images/bub3-tl.gif</filename>
+		<filename>images/bub3-tr.gif</filename>
+		<filename>images/bub4-bl.gif</filename>
+		<filename>images/bub4-br.gif</filename>
+		<filename>images/bub4-tl.gif</filename>
+		<filename>images/bub4-tr.gif</filename>
+		<filename>images/bullet.gif</filename>
+		<filename>images/content-bg-top2.gif</filename>
+		<filename>images/content-bot-n.gif</filename>
+		<filename>images/content-bot.gif</filename>
+		<filename>images/content-bot1-n.gif</filename>
+		<filename>images/content-bot1.gif</filename>
+		<filename>images/content-bot2-n.gif</filename>
+		<filename>images/content-bot2.gif</filename>
+		<filename>images/content-center-n.gif</filename>
+		<filename>images/content-center.gif</filename>
+		<filename>images/content-center1-n.gif</filename>
+		<filename>images/content-center1.gif</filename>
+		<filename>images/content-center2-n.gif</filename>
+		<filename>images/content-center2.gif</filename>
+		<filename>images/content-top-n.gif</filename>
+		<filename>images/content-top.gif</filename>
+		<filename>images/content-top1-n.gif</filename>
+		<filename>images/content-top1.gif</filename>
+		<filename>images/content-top2-n.gif</filename>
+		<filename>images/content-top2.gif</filename>
+		<filename>images/control-bg.gif</filename>
+		<filename>images/dot.gif</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/grad-1.gif</filename>
+		<filename>images/grad-2.gif</filename>
+		<filename>images/grad-3.gif</filename>
+		<filename>images/green/arrow.gif</filename>
+		<filename>images/green/logo.jpg</filename>
+		<filename>images/green/mainnav-active.gif</filename>
+		<filename>images/green/readon-bg.gif</filename>
+		<filename>images/green/search-bg.gif</filename>
+		<filename>images/headline-bg.gif</filename>
+		<filename>images/icon-arrow.gif</filename>
+		<filename>images/icon-arrow2.gif</filename>
+		<filename>images/icon-author.gif</filename>
+		<filename>images/icon-checklist.gif</filename>
+		<filename>images/icon-circle.gif</filename>
+		<filename>images/icon-date.gif</filename>
+		<filename>images/icon-download.gif</filename>
+		<filename>images/icon-error.gif</filename>
+		<filename>images/icon-film.gif</filename>
+		<filename>images/icon-help.gif</filename>
+		<filename>images/icon-info.gif</filename>
+		<filename>images/icon-key.gif</filename>
+		<filename>images/icon-max.gif</filename>
+		<filename>images/icon-min.gif</filename>
+		<filename>images/icon-pages.gif</filename>
+		<filename>images/icon-plus.gif</filename>
+		<filename>images/icon-rss.gif</filename>
+		<filename>images/icon-search.gif</filename>
+		<filename>images/icon-star.gif</filename>
+		<filename>images/icon-tips.gif</filename>
+		<filename>images/icon-user.gif</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/logo.jpg</filename>
+		<filename>images/mainnav-active.gif</filename>
+		<filename>images/mainnav-hover.gif</filename>
+		<filename>images/mainnav-sep.gif</filename>
+		<filename>images/ol-bg.gif</filename>
+		<filename>images/opaque.png</filename>
+		<filename>images/orange/arrow.gif</filename>
+		<filename>images/orange/logo.jpg</filename>
+		<filename>images/orange/mainnav-active.gif</filename>
+		<filename>images/orange/readon-bg.gif</filename>
+		<filename>images/orange/search-bg.gif</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printbutton.png</filename>
+		<filename>images/readon-bg.gif</filename>
+		<filename>images/sc-q.gif</filename>
+		<filename>images/search-bg.gif</filename>
+		<filename>images/sep.gif</filename>
+		<filename>images/shadow.gif</filename>
+		<filename>images/so-q.gif</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/sticky-bg.gif</filename>
+		<filename>images/trans-bg.png</filename>
+		<filename>images/user-decrease.png</filename>
+		<filename>images/user-increase.png</filename>
+		<filename>images/user-reset.png</filename>
+		<filename>images/vline.gif</filename>
+		<filename>ja_menus/ja_cssmenu/img/arrow-1.gif</filename>
+		<filename>ja_menus/ja_moomenu/img/arrow-1.gif</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/colors/blue.css</filename>
+		<filename>css/colors/default.css</filename>
+		<filename>css/colors/green.css</filename>
+		<filename>css/colors/orange.css</filename>
+		<filename>css/ja.bulletin.css</filename>
+		<filename>css/ja.news.css</filename>
+		<filename>css/ja.news.fp.css</filename>
+		<filename>css/template.css</filename>
+		<filename>css/typo.css</filename>
+		<filename>ja_menus/ja_cssmenu/ja.cssmenu.css</filename>
+		<filename>ja_menus/ja_moomenu/ja.moomenu.css</filename>
+		<filename>ja_menus/ja_scriptdlmenu/ja.scriptdlmenu.css</filename>
+		<filename>ja_menus/ja_splitmenu/ja.splitmenu.css</filename>
+	</css>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_ja_rutile.ini</language>
+	</languages>
+	<administration>
+    	<languages>
+			<language tag="en-GB">admin/en-GB.tpl_ja_rutile.ini</language>
+		</languages>
+    </administration>
+
+	<positions>
+		<position>hornav</position>
+		<position>breadcrumbs</position>
+		<position>banner</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>ja-tabs</position>
+		<position>ja-news</position>
+		<position>topsl</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		<position>footer</position>
+		<position>syndicate</position>
+		<position>debug</position>
+	</positions>
+
+	<params>
+		<param name="logoType" type="list" default="image" label="Logo type" description="LOGO TYPE DESCRIPTION">
+			<option value="image">Image</option>
+			<option value="text">Text</option>
+		</param>
+		<param name="logoText" type="text" default="" size="50" label="Logo text" description="LOGO TEXT DESCRIPTION" />
+		<param name="sloganText" type="text" default="" size="50" label="Slogan" description="SLOGAN DESCRIPTION" />
+
+		<param name="ja_font" type="list" default="3" label="Font size" description="FONT SIZE DESCRIPTION">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</param>
+
+		<param name="ja_screen" type="list" default="950" label="Template Width" description="TEMPLATE WIDTH DESCRIPTION">
+			<option value="narrow">Narrow Screen</option>
+			<option value="wide">Wide Screen</option>
+		</param>
+		
+		<param name="ja_color" type="list" default="default" label="Color Variation" description="Color variation to use">
+			<option value="default">Default</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+		</param>
+
+		<param name="usertool_font" type="list" default="0" label="Show Font tools" description="Display Font tools">
+		  <option value="0">No</option>
+		  <option value="2">Yes</option>
+		</param>
+
+		<param name="menutype" type="menu" default="mainmenu" label="Menu Type" description="MENU TYPE DESCRIPTION" />
+		<param name="ja_menu" type="list" default="2" label="Menu Module" description="MENU'S TYPE">
+		  <option value="none">Disable</option>
+		  <option value="split">Split Menu</option>
+		  <option value="css">CSS Menu</option>
+		  <option value="moo">Moo Menu</option>
+		  <option value="dl">Dropline Menu</option>
+		</param>
+
+	</params>
+</install>

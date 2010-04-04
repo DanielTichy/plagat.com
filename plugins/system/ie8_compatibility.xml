@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - IE8 Compatibility</name>
+	<author>Jeremy.J</author>
+	<creationDate>June 2009</creationDate>
+	<copyright>Copyright (C) 2009 Jeremy.J</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joly.jeremy@gmail.com</authorEmail>
+	<version>1.1</version>
+	<description>For more informations about IE8 compatibility modes, please visit http://msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx.</description>
+	<files>
+		<filename plugin="ie8_compatibility">ie8_compatibility.php</filename>
+	</files>
+	
+	<params>
+
+		<param name="method" type="radio" default="meta" label="Integration method" >
+			<option value="meta">Meta tag</option>
+			<option value="header">HTTP header</option>
+	    </param>
+	    
+	    
+		<param name="compatibility_mode" type="list" default="EmulateIE7" label="IE 8 compatibility mode" description="">
+			<option value="EmulateIE7">Emulate IE7</option>
+			<option value="7">IE 7</option>
+			<option value="EmulateIE8">Emulate IE8</option>
+			<option value="8">IE 8</option>
+			<option value="5">IE 5</option>
+			<option value="5">edge</option>			 
+		</param>
+
+	</params>
+</install>

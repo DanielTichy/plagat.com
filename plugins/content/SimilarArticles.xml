@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+
+	<name>Content - Similar Articles</name>
+	<author>Roman Gelembjuk</author>
+	<creationDate>Sep 2009</creationDate>
+	<copyright>Copyright (C) 2009 www.news4trader.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>http://www.news4trader.com/</authorUrl>
+	<version>1.0</version>
+	<description>Similar articles is plugin that shows the list of similar articles for opened article. Similarity is calculated by Subject</description>
+	<files>
+		<filename plugin="SimilarArticles">SimilarArticles.php</filename>
+	</files>
+	
+	<params>	
+	 <param name="The_list_title" type="text" default="Similar articles" label="SIMILAR_ARTICLES_LIST_TITLE" description="SIMILAR_ARTICLES_LIST_TITLE_DESC"/>
+	 <param name="Similar_Articles_max_count" type="text" default="5" label="SIMILAR_ARTICLES_COUNT_TITLE" description="SIMILAR_ARTICLES_COUNT_TITLE_DESC"/>
+      <param name="Enabled_Front_Page" type="radio" default="1" label="ENABLED_FRONT_PAGE_LABEL" description="ENABLED_FRONT_PAGE_DESC">
+         <option value="1">YES</option>
+         <option value="0">NO</option>
+      </param>
+      <param name="Exclude_Article_Ids" type="text" default="" label="EXCLUDE_ARTICLE_IDS_LABEL" description="EXCLUDE_ARTICLE_IDS_DESC"/>
+      <param name="Exclude_Category_Ids" type="text" default="" label="EXCLUDE_CATEGORY_IDS_LABEL" description="EXCLUDE_CATEGORY_IDS_DESC"/>
+      <param name="Exclude_Section_Ids" type="text" default="" label="EXCLUDE_SECTION_IDS_LABEL" description="EXCLUDE_SECTION_IDS_DESC"/>
+      <param name="Similar_Articles_class" type="text" default="" label="SIMILAR_ARTICLES_DIV_CLASS" description="SIMILAR_ARTICLES_DIV_CLASS_DESC"/>
+	</params>
+
+	<languages folder="language">
+	  <language tag="en-GB">en-GB.plg_content_SimilarArticles.ini</language>
+   </languages>
+   
+</install>

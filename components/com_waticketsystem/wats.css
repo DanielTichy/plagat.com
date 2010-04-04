@@ -1,0 +1,249 @@
+#watsCategorySetSelect
+{
+font-size: 10px;
+border: 1px solid #8FACC9;
+background-color: #D9E3ED;
+}
+
+.watsCategoryView
+{
+width: 99%;
+background-color: #8FACC9;
+border-bottom: 1px solid #6677BB;
+}
+
+.watsCategoryView th a
+{
+color: #FFFFFF;
+}
+
+.watsCategoryViewWithTicketSet
+{
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.watsTicketSetView
+{
+width: 99%;
+background-color: #EBF0F5;
+}
+
+.watsTicketSetView th
+{
+text-align: left;
+border-bottom: 1px solid #6677BB;
+background-color: #D9E3ED;
+}
+
+.watsTicketSetViewRow0
+{
+background-color: #F5F9FC;
+}
+
+#watsAssignedTickets .watsCategoryView
+{
+width: 99%;
+background-color: #C88F99;
+border-bottom: 1px solid #BA6D65;
+}
+
+#watsAssignedTickets .watsTicketSetView
+{
+width: 99%;
+background-color: #F4EBEC;
+}
+
+#watsAssignedTickets .watsTicketSetView th
+{
+text-align: left;
+border-bottom: 1px solid #BA6D65;
+background-color: #ECD9DC;
+}
+
+#watsAssignedTickets .watsTicketSetViewRow0
+{
+background-color: #FBF4F6;
+}
+
+.watsUsersView
+{
+width: 99%;
+background-color: #8FC8B3;
+border-bottom: 1px solid #65BAB5;
+}
+
+.watsUsersView th a
+{
+color: #FFFFFF;
+}
+
+.watsUserSetViewRow0
+{
+background-color: #F4FBF8;
+}
+
+.watsUserSetView
+{
+width: 99%;
+background-color: #EBF4F1;
+}
+
+.watsUserSetView th
+{
+text-align: left;
+border-bottom: 1px solid #65BAB5;
+background-color: #D9ECE5;
+}
+
+.watsHeading1
+{
+display: block;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: bold;
+padding-bottom: 6px;
+padding-top: 3px;
+}
+
+.watsHeading2
+{
+display: block;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+padding-bottom: 6px;
+padding-top: 3px;
+}
+
+.watsDate
+{
+font-style: italic;
+font-weight: normal;
+}
+
+#watsTicketView
+{
+display: block;
+width: 99%;
+}
+
+div .watsMsgView
+{
+background-color: #EBF0F5;
+padding: 2px;
+margin-bottom: 10px;
+}
+
+.watsMsgViewTable
+{
+width: 100%;
+background-color: #EBF0F5;
+}
+
+.watsMsgViewTable th
+{
+width: 100%;
+background-color: #8FACC9;
+text-align: left;
+color: #FFFFFF;
+border: 1px solid #FFFFFF;
+padding: 2px;
+}
+
+#watsTicketMake
+{
+display: block;
+width: 99%;
+background-color: #EBF0F5;
+}
+
+.watsFormSubmit
+{
+border: 1px solid #000000;
+background-color: #8FACC9;
+color: #FFFFFF;
+font-size: 10px;
+font-weight: bold;
+}
+
+#watsNavigation
+{
+display: block;
+width: 98%;
+background-color: #EBF0F5;
+padding: 2px;
+text-align: center;
+}
+
+#watsNavigation form, input, select
+{
+display: inline;
+}
+
+#watsNavigation select
+{
+border: 1px solid #000000;
+background-color: #8FACC9;
+color: #FFFFFF;
+font-size: 10px;
+font-weight: bold;
+}
+
+#watsReply
+{
+background-color: #EBF0F5;
+padding: 2px;
+width: 98%;
+display: block;
+margin-top: 10px;
+}
+
+.watsTicketHighlight
+{
+color: #FF0000;
+font-weight: bold;
+}
+
+.watsSelectedPage
+{
+font-weight: bold;
+}
+
+.watsViewAssignTo select
+{
+border: 1px solid #000000;
+background-color: #8FACC9;
+color: #FFFFFF;
+font-size: 10px;
+font-weight: bold;
+}
+
+.watsTicketAssign
+{
+font-size: 10px;
+color: #666666;
+}
+
+.watsTicketId
+{
+display: block;
+font-size: 10px;
+color: #666666;
+padding: 0px;
+margin: 0px;
+font-style: italic;
+}
+
+#watsUserDelete
+{
+border: 1px solid #FF0000;
+padding: 2px;
+width: 98%;
+}
+
+.watsUserView
+{
+width: 99%;
+}
+

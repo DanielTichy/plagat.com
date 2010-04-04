@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5">
+  <name>GraphicMail Subscription Form</name>
+  <author>Masroor Sadiq</author>
+  <creationDate>2009-03-10</creationDate>
+  <copyright>(c) 2009 GraphicMail</copyright>
+  <license>GPL</license>
+  <authorEmail>masroor@graphicmail.net</authorEmail>
+  <authorURL>http://www.graphicmail.com</authorURL>
+  <version>1.0</version>
+<description>Allows the user to sign up for a GraphicMail mailing list.</description>
+<files>
+<filename module="mod_GraphicMail">ajax.js</filename>
+<filename module="mod_GraphicMail">GraphicMail.class.php</filename>
+<filename module="mod_GraphicMail">ajax-loader.gif</filename>
+  <filename module="mod_GraphicMail">bullet_grey.gif</filename>
+<filename module="mod_GraphicMail">mod_GraphicMail.php</filename>
+<filename module="mod_GraphicMail">mod_GraphicMail_helper.php</filename>
+<filename module="mod_GraphicMail">GraphicMail_Api.php</filename>
+<filename module="mod_GraphicMail">elements/mod_GraphicMail_helper.php</filename>
+
+  
+
+<filename>elements/GMMailingListParm.php</filename>
+
+</files>
+
+  <params addpath="/modules/mod_GraphicMail/elements/">
+    <param name="GMAPIusername" type="text" default="" label="API Username" description="Your GraphicMail Username for authentication of your account for your maillists." size="30" />
+    <param name="GMAPIpassword" type="password" default="" label="API Password" description="Your GraphicMail Password for authentication of your account for your maillists." size="30"/>
+    <param name="GMSelectedMailingList" type="GMMailingListParm" default="0" label="Select Mailing List" description="Show the name of your GraphicMail list in the signup module." size="30"/>
+    <param name="GMFrontEndBlurb" type="text" default="Please provide a valid email address for the following mailing list." label="Mailinglist heading" size="60" description="Show this text on frontend for header text of selected mailing list." />
+  </params>
+
+</install>

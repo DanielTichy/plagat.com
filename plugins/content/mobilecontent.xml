@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Mobile Content</name>
+	<author>WAFL Development</author>
+	<authorEmail>info@wafl.be</authorEmail>
+	<authorUrl>http://www.wafl.ugent.be</authorUrl>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.1.0</version>
+	<description>Extend standard Joomla! readmore if WAFL session is mobile</description>
+	<files>
+		<filename plugin="mobilecontent">mobilecontent.php</filename>
+	</files>
+	<params>
+		<param type="spacer" default="Mobile content parameters" />
+		<param name="showtitle" type="radio" default="1" label="Show title" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showauthor" type="radio" default="1" label="Show author" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showcreatedate" type="radio" default="1" label="Show create date" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showmodifydate" type="radio" default="1" label="Show modify date" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showpdficon" type="radio" default="1" label="Show pdf icon" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showmailicon" type="radio" default="1" label="Show mail icon" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showprinticon" type="radio" default="1" label="Show print icon" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="spacer" default="Mobile readmore parameters" />
+		<param name="readmore" type="radio" default="0" label="Enable mobile readmore" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="autoreadmore" type="radio" default="0" label="Enable auto-readmore" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="base" type="list" default="0" label="Based on" description="">
+			<option value="words">Words</option>
+			<option value="sentences">Sentences</option>
+			<option value="paragraphs">Paragraphs</option>
+		</param>
+		<param name="number" type="text" default="50" size="5" label="Number" description="" />
+	</params>
+</install>
+

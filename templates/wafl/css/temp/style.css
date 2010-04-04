@@ -1,0 +1,272 @@
+/*
+* 	Other than setting the template's widths, in most cases this is the only stylesheet we should need to edit in order to build our custom Joomla 1.5.x template.
+*/
+
+/* @group logo image */
+
+/* 	Uncomment this block if you are using a logo image in place of the site title */
+/*
+div#header h1 a:link,div#header h1 a:visited,div#header h1 a:hover,{background:url('../images/logo-image.png') left top no-repeat;height:100px;width: 50px;display: block;text-decoration: none;text-indent:-9000em;}			}
+div#header h1 a:focus {outline: none;}
+*/
+
+/*	1. Set the background property url to the path of your logo image (relative to this css file). 
+	2. Set the height to the height of your logo image. 
+	3. Set the width to the width of your logo image.
+	4. We set the display to block so that the region becomes clickable
+	6. We set the text-decoration to none so that our logo image is not underlined even if our links are. 
+	7. We set the text to indent by negative 9000ems to take it off our screen 
+	8. We don't want an outline for our image upon focus (click) as the outline will try to extend 9000 ems to the left of our screen because of the text-indent rule 
+*/
+		
+/* @end logo image */
+
+/* @group Menus */
+/* @group Horizontal dropdown suckerfish menu */
+
+/* common styling */
+#nav {border:1px solid #b6b6b6;}
+	#nav ul {}
+		#nav ul li {}
+			#nav ul li a, #nav ul li a:visited {color:#333;padding:0 10px; height:30px;border-right:1px solid #b6b6b6;line-height:30px;}
+			#nav ul li a:hover, #nav ul li#current a, #nav a#active_menu-nav {color:#ff0000;}
+			#nav ul li:hover a, #nav ul li.iehover a {background:#e9e9e9;}
+/* top level parent */
+			#nav ul li.parent a:after {content: " +";}
+			#nav ul li.parent li a:after {content: none;}
+			
+/* first sub-level list (tier 2 links) */
+				#nav ul li ul {border-top:1px solid #b6b6b6;}
+				#nav ul li:hover ul, #nav ul li.iehover ul {top:30px; left:-1px; width:200px;}
+				#nav ul li:hover ul li a, #nav ul li.iehover ul li a {background:#e9e9e9;color:#333;width:200px;padding: 0px;text-indent:10px;border:1px solid #b6b6b6;border-top:0px;}
+				#nav ul li:hover ul li:hover a, #nav ul li.iehover ul li.iehover a {color:#ff0000;}
+/* first sub-level parent */
+					#nav ul li li.parent a:after {content: " +";}
+					#nav ul li li.parent li a:after {content: none;}
+
+/* Second sub-level list (tier 3 links)*/
+						#nav ul li:hover ul li ul, #nav ul li.iehover ul li ul {}
+							#nav ul li:hover ul li a, #nav ul li.iehover ul li a {color:#333;}
+							#nav ul li:hover ul li a:hover, #nav ul li.iehover ul li a:hover {color:#ff0000;}
+							#nav ul li:hover ul li:hover ul, #nav ul li.iehover ul li.iehover ul {display:block; position:absolute; left:201px; top:-1px;}
+/* second sub-level parent */
+									#nav ul li li li.parent a:after {content: " +";}
+									#nav ul li li li.parent li a:after {content: none;}
+/* @end horizontal menu */
+									
+/* @group Left Column Vertical fly-out suckerfish menu */
+
+#left ul.menu ul, 
+	#left ul.menu ul ul, 
+		#left ul.menu ul ul ul {background:#ffffff;list-style: none;}
+	#left ul#mainlevel li, 
+	#left ul.menu li {list-style:none;padding:0;margin:0;text-indent:0px;}
+		#left ul#mainlevel li a:link, 
+		#left ul#mainlevel li a:visited, 
+		#left ul.menu li a:link, 
+		#left ul.menu li a:visited {color:#414141;font-weight:400;padding:0 0 6px 0;width: 100%;text-decoration:none;}
+		#left ul#mainlevel li a:hover, 
+		#left ul.menu li a:hover {text-decoration:underline;}
+		#left ul#mainlevel li a#active_menu, 
+		#left ul.menu li#current a {text-decoration:none;color:#B61D20;}
+			#left ul.menu ul li {background:none;}
+
+/* Root Menu */
+		#left ul#mainlevel a, 
+		#left ul.menu a {}
+/* Root Menu Hover Persistence */
+		#left ul.menu a:hover,
+		#left ul.menu li:hover a,
+		#left ul.menu li.iehover a {}
+/* top level parent */
+		#left ul.menu li.parent:hover, #left ul.menu li.parent.iehover {background:#e9e9e9;}
+		#left ul.menu li.parent a:after {content: " +";}
+		#left ul.menu li.parent li a:after {content: none;}
+
+/* 2nd Menu */
+			#left ul.menu ul {border-top: 1px solid #b6b6b6;width: 150px;margin: 0;padding: 0;}
+			#left ul.menu li:hover li {background:#e9e9e9;border:1px solid #b6b6b6;border-top:0px;padding:0px;margin: 0px;}
+			#left ul.menu li:hover li a,
+			#left ul.menu li.iehover li a {color:#333;margin: 0.25em 0.5em 0;}
+/* 2nd Menu Hover Persistence */
+			#left ul.menu li:hover li a:hover,
+			#left ul.menu li:hover li:hover a,
+			#left ul.menu li.iehover li a:hover,
+			#left ul.menu li.iehover li.iehover a {}
+/* first sub-level parent */
+			#left ul.menu li li.parent a:after {content: " +";}
+			#left ul.menu li li.parent li a:after {content: none;}
+
+/* 3rd Menu */
+				#left ul.menu li:hover li:hover li a,
+				#left ul.menu li.iehover li.iehover li a {}
+/* 3rd Menu Hover Persistence */
+				#left ul.menu li:hover li:hover li a:hover,
+				#left ul.menu li:hover li:hover li:hover a,
+				#left ul.menu li.iehover li.iehover li a:hover,
+				#left ul.menu li.iehover li.iehover li.iehover a {}
+/* second sub-level parent */
+				#left ul.menu li li li.parent a:after {content: " +";}
+				#left ul.menu li li li.parent li a:after {content: none;}
+
+/* 4th Menu */
+					#left ul.menu li:hover li:hover li:hover li a,
+					#left ul.menu li.iehover li.iehover li.iehover li a {}
+/* 4th Menu Hover Persistence*/
+					#left ul.menu li:hover li:hover li:hover li a:hover,
+					#left ul.menu li.iehover li.iehover li.iehover li a:hover {}
+
+/* Submenu positioning */
+	#left ul.menu ul,
+		#left ul.menu ul ul,
+			#left ul.menu ul ul ul {top: 10px;left: 75%;}
+/* @end left menu */
+
+/* @group Right Column Vertical fly-out suckerfish menu */
+
+#right ul.menu ul,
+	#right ul.menu ul ul,
+		#right ul.menu ul ul ul {background:#ffffff;}
+	#right ul#mainlevel li, 
+	#right ul.menu li {list-style:none;padding:0;margin:0;text-align:right;text-indent:none;}
+		#right ul#mainlevel li a:link, 
+		#right ul#mainlevel li a:visited, 
+		#right ul.menu li a:link, 
+		#right ul.menu li a:visited {color:#414141;font-weight:400;padding:0 0 6px 0;text-decoration:none;}
+		#right ul#mainlevel li a:hover, 
+		#right ul.menu li a:hover {text-decoration:underline;}
+		#right ul#mainlevel li a#active_menu, 
+		#right ul.menu li#current a {text-decoration:none;color:#B61D20;}
+			#right ul.menu ul li {background:none;}
+
+/* Root = Vertical, Secondary = Vertical */
+#right ul#mainlevel,
+#right ul.menu,
+	#right ul.menu li,
+		#right ul.menu ul {list-style: none;}
+
+/* Root Menu */
+		#right ul#mainlevel a,
+		#right ul.menu a {}
+/* Root Menu Hover Persistence */
+		#right ul.menu a:hover,
+		#right ul.menu li:hover a,
+		#right ul.menu li.iehover a {}
+/* top level parent */
+		#right ul.menu li.parent:hover {background:#e9e9e9;}
+		#right ul.menu li.parent a:before {content: "+ ";}
+		#right ul.menu li.parent li a:before {content: none;}
+
+/* 2nd Menu */
+			#right ul.menu ul {border-top: 1px solid #b6b6b6;width: 150px;margin: 0;padding: 0;}
+			#right ul.menu li:hover li {background:#e9e9e9;border:1px solid #b6b6b6;border-top:0px;padding:0px;padding-right: 0.5em;}
+			#right ul.menu li:hover li a,
+			#right ul.menu li.iehover li a {margin: 0.25em 0.5em 0 0;}
+/* 2nd Menu Hover Persistence */
+			#right ul.menu li:hover li a:hover,
+			#right ul.menu li:hover li:hover a,
+			#right ul.menu li.iehover li a:hover,
+			#right ul.menu li.iehover li.iehover a {}
+/* first sub-level parent */
+			#right ul.menu li li.parent a:before {content: "+ ";}
+			#right ul.menu li li.parent li a:before {content: none;}
+
+/* 3rd Menu */
+				#right ul.menu li:hover li:hover li a,
+				#right ul.menu li.iehover li.iehover li a {}
+/* 3rd Menu Hover Persistence */
+				#right ul.menu li:hover li:hover li a:hover,
+				#right ul.menu li:hover li:hover li:hover a,
+				#right ul.menu li.iehover li.iehover li a:hover,
+				#right ul.menu li.iehover li.iehover li.iehover a {}
+/* second sub-level parent */
+				#right ul.menu li li li.parent a:before {content: "+ ";}
+				#right ul.menu li li li.parent li a:before {content: none;}
+
+/* 4th Menu */
+					#right ul.menu li:hover li:hover li:hover li a,
+					#right ul.menu li.iehover li.iehover li.iehover li a {}
+/* 4th Menu Hover Persistence */
+					#right ul.menu li:hover li:hover li:hover li a:hover,
+					#right ul.menu li:hover li:hover li:hover li:hover a,
+					#right ul.menu li.iehover li.iehover li.iehover li a:hover {}
+					#right ul.menu li.iehover li.iehover li.iehover li.iehover a {}
+					
+/* Submneu positioning */
+	#right ul.menu ul,
+		#right ul.menu ul ul,
+			#right ul.menu ul ul ul {top: 10px;left: -75%;}
+/* @end right menu*/
+/* @end Menus */
+
+/* @group Pathway */
+div#breadcrumbs {border: 1px solid #b6b6b6;}
+	div#breadcrumbs p {margin: 0.25em 0.5em;padding: 0;}
+/* @end */
+
+/* @group article and blog layout */
+p.buttonheading {float: right;}
+p.iteminfo {}
+	span.createdby {display: block;}
+	span.createdate {display: block;}
+	span.modifydate {display: block;}
+
+div.column2 h2.contentheading {margin-top: 0px;}
+
+div.article_row {clear: both;}
+	.article_column p {text-align: justify;}
+	div.column1,
+	div.column2,
+	div.column3,
+	div.column4 {float: left;margin: 0;padding-right:10px;}
+	div.cols2 {width: 47%;}
+	div.cols3 {width: 33%;}
+	div.cols4 {width: 24%;}
+
+ul.pagination {}
+	ul.pagination li {list-style-type: none;float: left;}
+/* @end article and blog layout */
+
+/* @group Tables */
+	.sectiontableheader {background:#e9e9e9;border:1px solid #b6b6b6;padding: 0.5em;}
+		.sectiontableentry1 td {border:1px solid #b6b6b6;padding: 0.5em;}
+		.sectiontableentry2 td {background:#f3f3f3;border:1px solid #b6b6b6;padding: 0.5em;}
+
+	td.sectiontableheader:first-child,
+		.sectiontableentry1 td:first-child,
+		.sectiontableentry2 td:first-child {}
+	td.sectiontableheader:last-child,
+		.sectiontableentry1 td:last-child,
+		.sectiontableentry2 td:last-child {}
+		.sectiontableentry1 img, .sectiontableentry2 img {vertical-align: middle;}
+	
+	.sectiontablefooter {border:1px solid #b6b6b6;border-top: 0px;}
+/* @end tables */
+
+/* @group Forms */
+form         { margin:0; padding:0; }
+	textarea     { font-size:100%; font-family: arial, serif; }
+	input.button   { padding:3px  5px; }
+
+/* -- Joomla Contact Form override -- */
+.contact fieldset { width: 440px; border-width: 0px; }
+	.contact legend { color: #00A4DF; font-size: 120%; font-weight: bold; padding: 1em 0; }
+	.contact label { font-weight: bold; line-height: 150%; padding:  0 0  1px; }
+	.contact .req { color: red !important; float: none; font-weight: bold; padding-left: 5px; }
+	.contact .field { display: inline; }
+	.contact .inputbox { width: 100%; margin-bottom: 15px; border-color: #7C7C7C rgb(195, 195, 195) rgb(221, 221, 221); border-style: solid; border-width: 1px; padding: 2px; line-height: 1.4em; font-size: 1.2em;  }
+	.contact .contact_email { text-align: left; }
+	.contact .contact { padding: 0 1em;  }
+/* @end forms */
+
+/* @group Tooltips */
+.tool-tip {text-align: left;background: #ffc;border: 1px solid #D4D5AA;padding: 5px;max-width: 200px;line-height:110%;}
+	.tool-title {padding: 0;margin: 0;font-weight: bold;margin-top: -15px;margin-bottom: 5px;padding-top: 15px;padding-bottom: 5px;background: url(../../system/images/selector-arrow.png) no-repeat;border-bottom: 1px solid #d4d5aa;}
+	.tool-text  {margin: 0;}
+/* @end tooltips */
+
+/* @group Error Messages */
+dl#system-message {clear:both;text-align: left;	padding: 5px 20px;border-top: 2px solid #FEABB9;border-bottom: 2px solid #FEABB9;}
+	dt.error { }
+		dd.error { }
+/* @end error messages */

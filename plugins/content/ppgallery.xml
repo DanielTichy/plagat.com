@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+  <name>Content - pPGallery</name>
+  <author>CS</author>
+  <creationDate>November 2009</creationDate>
+  <copyright>This plugin is released under the GNU/GPL License</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>cs.sh34@googlemail.com</authorEmail>
+  <authorUrl>http://joomlacode.org/gf/project/ppgallery/</authorUrl>
+  <version>0.815 RC4</version>
+  <description>
+  Content-Plugin to create an simple image gallery based on 'prettyPhoto' display engine (a jQuery lightbox clone). Images from folders or directly inserted into the content/article can be processed with automatic thumbnail generation. 
+  Install and activate this plugin as usual. Insert {ppgallery}*folder* or *images*{/ppgallery} in the content/article where the gallery shall appear. 
+  More detailed information about each parameter setting and inline override parameters can be found in the popup help text of the plugin parameter settings pane or via "http://joomlacode.org/gf/project/ppgallery/".
+  [Bundled with prettyPhoto 2.5.6 and jQuery 1.3.2]
+  </description>
+  <files>
+    <filename plugin="ppgallery">ppgallery.php</filename>
+    <folder plugin="ppgallery">ppgallery/</folder>
+  </files>
+  <params>
+    <param name="@spacer" type="spacer" default="&lt;b&gt;Thumbnail Parameters&lt;/b&gt;" label="" description="" />
+    <param name="width" type="text" default="200" size="5" label="Width" description="State the maximum width of thumbnails (in px without the unit).&lt;br /&gt;[width=]" />
+    <param name="height" type="text" default="200" size="5" label="Height" description="State the maximum height of thumbnails (in px without the unit).&lt;br /&gt;[height=]." />
+    <param name="fixed_w" type="radio" default="0" label="Fiexed thubmnail spacing" description="State if all thumbnail-'boxes' shall have the same width (portrait-image-thumbnails will occupy the same space as the landscape thumbs).&lt;br /&gt;[fixed_w=]-[0|1] (0=no, 1=yes)">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="quality_jpg" type="text" default="75" size="5" label="JPG thumbnail quality" description="State the desired quality for jpg thumbnail generation in percent (without '%' sign).&lt;br /&gt;(0-100)&lt;br /&gt;[quality_j=]" />
+    <param name="quality_png" type="text" default="6" size="5" label="PNG thumbnail quality" description="State the desired compression-rate for png thumbnail generation.&lt;br /&gt;(0-9)&lt;br /&gt;[quality_p=]" />
+    <param name="padd_h" type="text" default="5" size="5" label="Horizontal padding" description="State the desired lateral padding between thumbnails (in px without the unit).&lt;br /&gt;[padding_h=]" />
+    <param name="padd_v" type="text" default="5" size="5" label="Vertical padding" description="State the desired vertical padding between thumbnails (in px without the unit).&lt;br /&gt;[padding_v=]" />
+    <param name="caption" type="list" default="none" label="Caption" description="State if a caption (taken from the images 'alt'-tag) shall be displayed with the thumbnail.&lt;br /&gt;[caption=]-[none|top|label|bottom]">
+      <option value="none">None</option>
+      <option value="top">Top</option>
+      <option value="label">Label</option>
+      <option value="bottom">Bottom</option>
+    </param>
+    <param name="t_limit" type="text" default="" size="5" label="No. of thumbnails" description="State the max. number of thumbnails to be shown on the content/item page (the remaining images will be displayed in the gallery, of course!). Leave blank to show all images. When choosing '0' no thumbnails will generated at all, only the scripts for prettyPhoto will be loaded (in this case prettyPhoto engine can be used as 'standalone' and the links have to be entered as described on the prettyPhoto homepage!)&lt;br /&gt;[limit=]" />
+    <param name="pre_txt" type="text" default="" size="35" label="Prefix text" description="The inserted text will be displayed in front of all image-descriptions.&lt;br /&gt;[prefix_txt=]" />
+    <param name="lnk_pop" type="text" default="" size="35" label="Link popup text" description="The inserted text will always be displayed as link popup text when moving the cursor overhead a thumbnail image. If left blank either the 'caption-text' (taken from the images 'alt'-tag) or the filename will be used.&lt;br /&gt;[link_popup=]" />
+    <param name="t_only" type="radio" default="0" label="Thumbnails only" description="State if only thumbnails shall be displayed, in this case PrettyPhoto Gallery will not be used.&lt;br /&gt;[t_only=]-[0|1] (0=no, 1=yes)">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="@spacer" type="spacer" default="&lt;b&gt;prettyPhoto Parameters&lt;/b&gt;" label="" description="" />
+    <param name="ppTitle" type="radio" default="1" label="Show title" description="Select weather or not the 'caption-text' (taken from the images 'alt'-tag) or the filename shall be displayed as title at the top of the image-box.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="ppResize" type="radio" default="1" label="Allow resize" description="Select if the image will be displayed in real-size or will fit into the window (in this case a zoom-button is available in the top right corner).">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="ppSep" type="text" default="/" size="5" label="Separator label for image counter" description="Insert the desired separator letter or word for the gallery image counter (e.g. 1 'of' 7 or 1'/'7)." />
+    <param name="ppTheme" type="folderlist" default="light_rounded" label="Theme" directory="plugins/content/ppgallery/images/prettyPhoto" hide_none="1" hide_default="1" description="Choose the desired themes." />
+    <param name="ppAni" type="list" default="0" label="Animation speed" description="Select the desired speed for the image-box to appear.">
+      <option value="normal">Normal</option>
+      <option value="fast">Fast</option>
+      <option value="slow">Slow</option>
+    </param>
+    <param name="ppOpac" type="text" default="0.35" size="5" label="Background opacity" description="Select the desired opacity factor for the background fading. [0-1] (0=no opacity, 1=black)" />
+    <param name="ppHidef" type="radio" default="0" label="Hide flash objects" description="Select 'yes' if flash objects appear over prettyPhoto display box and background.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+  </params>
+  <params group="advanced">
+    <param name="@spacer" type="spacer" default="&lt;b&gt;System settings&lt;/b&gt;" label="" description="" />
+    <param name="plgstring" type="text" default="ppgallery" size="35" label="Plugin string" description="&lt;b&gt;Attention: use with caution!&lt;/b&gt;&lt;br /&gt;Insert the desired plugin string (content/article string between the {...}) to be used for identifying the gallery in the content/article (only useful when already having large amount of images used with other gallery plugins)." />
+    <param name="noconflict" type="radio" default="1" label="No-Conflict mode" description="Select 'yes' if jQuery 'no conflict' mode shall be activated (e.g. with 'purity' based templates or other javascript based extensions).">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+  </params>
+</install>
+<!-- [ani=]-[fast|normal|slow] &lt;br /&gt;[pad=] (in px without the unit) &lt;br /&gt;[opac=]-[0-1] (0=no opacity, 1=black) &lt;br /&gt;[title=]-[true|false] &lt;br /&gt;[resize=]-[true|false] &lt;br /&gt;[separator=] &lt;br /&gt;[theme=] -->

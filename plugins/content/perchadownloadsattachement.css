@@ -1,0 +1,15 @@
+/*
+ul#perchadownloadsattachement {height:auto;list-style: none; overflow: hidden;}
+
+
+*/
+
+.perchadownloadsattachementbox ul{margin:0; list-style: none; }
+ul.perchadownloadsattachement {height:auto; list-style: none; overflow: hidden; margin:0; padding:0; }
+.perchadownloadsattachement_right{float:right; margin-left:10px;}
+.perchadownloadsattachement_left{float:left; margin-right:10px;}
+.perchadownloadsattachementbox ul li{ margin-bottom: 5px;}
+.perchadownloadsattachementbox ul a{background-image: url(perchadownloads/file.png); background-repeat: no-repeat; padding-left: 20px;}
+/*.perchadownloadsattachementbox ul a.zip{ background-image: url(perchadownloads/zip.png); background-repeat: no-repeat; padding-left: 20px;}
+.perchadownloadsattachementbox ul a.doc, .perchadownloadsattachementbox ul a.odt{ background-image: url(perchadownloads/doc.png); background-repeat: no-repeat; padding-left: 20px;}
+*/

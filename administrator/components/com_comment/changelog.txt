@@ -1,0 +1,5 @@
+************ 2000/02 : !jocomment 4.0 alpha 2
+- compatible with joomla 1.5
+- changed the functions for the length parameter - now UTF-8 aware.
+- several lists fixes for backend
+- added a table class folder

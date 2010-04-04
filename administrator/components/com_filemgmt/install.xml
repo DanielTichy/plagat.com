@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>File Mgmt</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>December 2009</creationDate>
+	<author>Decrypt Web</author>
+	<authorEmail>blog@decryptweb.com</authorEmail>
+	<authorUrl>http://blog.decryptweb.com</authorUrl>
+	<copyright>(C) 2009 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[<p>This is component for File Uploading.</p>]]></description> 	
+	
+	<installfile>install.filemgmt.php</installfile>
+	
+	<!-- Install Database Section -->
+	<install folder="admin">
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.filemgmt.sql</file>		
+		</sql>
+	</install>
+	<!-- Uninstall Database Section-->
+	<uninstall folder="admin">
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.filemgmt.sql</file>		
+		</sql>			
+	</uninstall>
+	
+	<files folder="site">
+		<filename>index.html</filename>		
+	</files>
+	
+    <administration>
+	
+		<!-- Administration Menu Section -->
+		<menu link="option=com_filemgmt">File Upload</menu>		
+		
+		<files folder="admin">
+		<filename>sql/install.filemgmt.sql</filename>
+	    <filename>sql/uninstall.filemgmt.sql</filename>     
+		<filename>assets/index.html</filename>
+		<filename>controller.php</filename>
+		<filename>admin.filemgmt.php</filename>
+		<filename>index.html</filename>		
+		<filename>views/index.html</filename>
+			
+		<filename>views/filemgmt/index.html</filename>
+		<filename>views/filemgmt/view.html.php</filename>
+		<filename>views/filemgmt/tmpl/default.php</filename>
+		<filename>views/filemgmt/tmpl/index.html</filename>
+		
+		<filename>models/index.html</filename>
+		<filename>models/filemgmt.php</filename>
+		
+		<filename>help/en-GB/filehelp.html</filename>
+    </files>
+	</administration>
+</install>

@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<install version="1.5" type="plugin" group="waticketsystem">
+    <name>Webamoeba Ticket System - Email Notification</name>
+    <version>1.0.5</version>
+    <creationDate>December 2009</creationDate>
+    <author>James Kennard</author>
+    <authorEmail>james@webamoeba.co.uk</authorEmail>
+    <authorUrl>http://www.webamoeba.co.uk</authorUrl>
+    <copyright>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</copyright>
+    <license>GPL</license>
+    <description>Notifies user's by email about updates to tickets</description>
+    <files>
+        <filename plugin="mailnotification">mailnotification.php</filename>
+        <folder>mailnotification</folder>
+    </files>
+    <params>
+        <param name="email-allow-html"
+               type="radio" 
+               default="1"
+               label="ALLOW HTML LABEL"
+               description="ALLOW HTML DESCRIPTION">
+             <option value="1">YES</option>
+             <option value="0">NO</option>
+         </param>
+        <param name="new-enabled" 
+               type="radio" 
+               default="1" 
+               label="NEW ENABLED LABEL" 
+               description="NEW ENABLED DESCRIPTION">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="reply-enabled" 
+               type="radio" 
+               default="1" 
+               label="REPLY ENABLED LABEL" 
+               description="REPLY ENABLED DESCRIPTION">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="reopen-enabled"
+               type="radio"
+               default="1"
+               label="REOPEN ENABLED LABEL"
+               description="REOPEN ENABLED DESCRIPTION">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="assign-enabled"
+               type="radio"
+               default="1"
+               label="ASSIGN ENABLED LABEL"
+               description="ASSIGN ENABLED DESCRIPTION">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </param>
+        <param name="email-others"
+               type="text" 
+               default="" 
+               label="OTHER EMAILS LABEL"
+               description="OTHER EMAILS DESCRIPTION" />
+    </params>
+    <params group="advanced">
+        <!-- New Ticket -->
+        <param name="new-tmpl-html"
+               type="filelist" 
+               default="new" 
+               label="NEW HTML TEMPLATE LABEL"
+               description="NEW HTML TEMPLATE DESCRIPTION" 
+               directory="plugins/waticketsystem/mailnotification/html"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="new-tmpl-text"
+               type="filelist" 
+               default="new" 
+               label="NEW TEXT TEMPLATE LABEL"
+               description="NEW TEXT TEMPLATE DESCRIPTION" 
+               directory="plugins/waticketsystem/mailnotification/text"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="new-subject"
+               type="text" 
+               default="SUBJECT NEW %s" 
+               label="NEW SUBJECT LABEL"
+               description="NEW SUBJECT DESCRIPTION" />
+        <param type="spacer" />
+        <!-- Reply to ticket -->
+        <param name="reply-tmpl-html"
+               type="filelist" 
+               default="reply" 
+               label="REPLY HTML TEMPLATE LABEL"
+               description="REPLY HTML TEMPLATE DESCRIPTION" 
+               directory="plugins/waticketsystem/mailnotification/html"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="reply-tmpl-text"
+               type="filelist" 
+               default="reply" 
+               label="REPLY TEXT TEMPLATE LABEL"
+               description="REPLY TEXT TEMPLATE DESCRIPTION" 
+               directory="plugins/waticketsystem/mailnotification/text"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="reply-subject"
+               type="text" 
+               default="SUBJECT REPLY %s" 
+               label="REPLY SUBJECT LABEL"
+               description="REPLY SUBJECT DESCRIPTION" />
+        <param type="spacer" />
+        <!-- Reopen ticket -->
+        <param name="reopen-tmpl-html"
+               type="filelist" 
+               default="reopen" 
+               label="REOPEN HTML TEMPLATE LABEL"
+               description="REOPEN HTML TEMPLATE DESCRIPTION" 
+               directory="plugins/waticketsystem/mailnotification/html"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="reopen-tmpl-text"
+               type="filelist" 
+               default="reopen" 
+               label="REOPEN TEXT TEMPLATE LABEL"
+               description="REOPEN TEXT TEMPLATE DESCRIPTION" 
+               directory="plugins/waticketsystem/mailnotification/text"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="reopen-subject"
+               type="text" 
+               default="SUBJECT REOPEN %s" 
+               label="REOPEN SUBJECT LABEL"
+               description="REOPEN SUBJECT DESCRIPTION" />
+        <param type="spacer" />
+        <!-- Assign ticket -->
+        <param name="assign-tmpl-html"
+               type="filelist"
+               default="assign"
+               label="ASSIGN HTML TEMPLATE LABEL"
+               description="ASSIGN HTML TEMPLATE DESCRIPTION"
+               directory="plugins/waticketsystem/mailnotification/html"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="assign-tmpl-text"
+               type="filelist"
+               default="assign"
+               label="ASSIGN TEXT TEMPLATE LABEL"
+               description="ASSIGN TEXT TEMPLATE DESCRIPTION"
+               directory="plugins/waticketsystem/mailnotification/text"
+               filter="\.tmpl$"
+               hide_default="1"
+               hide_none="1"
+               stripExt="1"/>
+        <param name="assign-subject"
+               type="text"
+               default="SUBJECT ASSIGN %s"
+               label="ASSIGN SUBJECT LABEL"
+               description="ASSIGN SUBJECT DESCRIPTION" />
+    </params>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.plg_waticketsystem_mailnotification.ini</language>
+    </languages>
+</install>

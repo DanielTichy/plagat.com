@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Nice Constant Contact Signup</name>
+    <author>Michael Babcock</author>
+    <creationDate>2009-07-01</creationDate> 
+    <copyright>Copyright (c) 2009 TriniTronic. All Rights Reserved.</copyright> 
+    <license>GPL 2.0</license> 
+    <authorEmail>info@trinitronic.com</authorEmail> 
+    <authorUrl>trinitronic.com</authorUrl>
+    <version>1.5.1</version>
+    <description>A Constant Contact newsletter sign-up form. Please enable the module and specify your Constant Contact Account ID for proper usage.</description>
+    <files>
+      <filename>mod_ccsignup.xml</filename>
+      <filename module="mod_ccsignup">mod_ccsignup.php</filename>
+      <filename>index.html</filename>
+      <filename>helper.php</filename>
+      <filename>tmpl/default.php</filename>
+      <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+      <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+      <param name="ccid" type="text" default="#############" label="Constant Contact ID" description="The account client ID provided by Constant Contact" />
+      <param name="mod_desc" type="text" default="Sign up for our FREE newsletters now!" label="Module Description" description="This text is display above the newsletter sign up form." />
+      <param name="email_desc" type="text" default="Email Address" label="Email Field Text" description="This text displays in the email input text field." />
+      <param name="submit_btn" type="text" default="Go" label="Submit Button Text" description="This text is the label for the submit button." />
+    </params>
+</install>
+

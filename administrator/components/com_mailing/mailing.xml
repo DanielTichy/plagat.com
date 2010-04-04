@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="component" version="1.5.0">
+<name>Mailing</name>
+<creationDate>16/2/2009</creationDate>
+<author>Chris Michaelides</author>
+<copyright>This component is released under the GNU/GPL License</copyright>
+<authorEmail>grvulture@yahoo.com</authorEmail>
+<authorUrl>www.axxis.gr</authorUrl>
+<version>3.7</version>
+    <description>Component for creating contact lists, and sending them messages? Not just that!</description>
+
+<install>
+</install>
+
+<uninstall>
+</uninstall>
+
+    <installfile>install.mailing.php</installfile>
+    <uninstallfile></uninstallfile>
+    <languages></languages>
+    
+<files>
+  <filename>index.html</filename>
+	<filename>frontcontroller.php</filename>
+	<filename>mailing.php</filename>
+  <folder>language</folder>
+</files>
+
+<administration>
+	<menu img="components/com_mailing/images/menu.png">Ultimate Mailing Lists</menu>
+	<submenu>
+		<menu act="emails">Contacts</menu>
+		<menu act="groups">Contact Lists</menu>
+		<menu act="message">Send to Assigned List</menu>
+		<menu act="success">Emails sent</menu>
+		<menu act="fail">Failures</menu>
+		<menu act="maintenance">Maintenance</menu>
+	</submenu>
+<files>
+  <filename>index.html</filename>
+	<filename>controller.php</filename>
+	<filename>admin.mailing.php</filename>
+	<filename>admin.mailing.html.php</filename>
+  <folder>css</folder>
+  <folder>images</folder>
+  <folder>tables</folder>
+</files>
+</administration>
+<params/>
+</install>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+  <!-- ========================== Pipelines ================================ -->
+  <map:pipelines>
+    <map:pipeline>
+      <map:match pattern="home">
+        <!-- This resource contains a generic set of transformations 
+		     that should be done before your own transformations. -->
+		<map:generate type="sirunaGenerator" />
+		<!-- extract CSS and JS so that transformations can be done on them -->
+		<map:transform type="sirunaScriptExtractor" />
+		<!-- make site xhtml compliant -->
+		<map:transform type="sirunaCleaner" />
+		<!-- linearize tables -->
+		<map:transform type="sirunaTableTransformer">
+			<map:parameter name="task0" value="linearize(//p:table,true)" />
+		</map:transform>      
+
+
+        <!-- 
+        		 ****************************
+        		 *** WAFL Transformations ***
+        		 ****************************
+        		 *****************************
+		-->
+        <!-- make menu -->
+        <map:transform type="sirunaDropdownTransformer">
+            <map:parameter name="cleanup_names" value="true" />
+            <map:parameter name="parent" value="//p:ul[@id='mainlevel-nav']" />
+            <map:parameter name="new_parent" value="//p:div[@id='nav']" />
+            <map:parameter name="form_name" value="topMenu" />
+            <map:parameter name="dropdown_title" value="--Main Menu--" />
+            <map:parameter name="rel_name_node" value=".." />
+        </map:transform>
+        <!-- remove menu source -->
+        <map:transform type="sirunaElementTransformer">
+            <map:parameter name="task0" value="remove(//p:ul[@id='mainlevel-nav'])" />
+        </map:transform>
+
+        <!-- Grouping menus together in the second dropbox -->
+        <map:transform type="sirunaElementTransformer">
+            <!-- group all <ul class='menu'> together in one tag -->
+            <map:parameter name="task0" value="wrapElements(//p:ul[@class='menu'], siruna_wafl_menu)" />
+            <map:parameter name="task1" value="removeKeepChildren(//p:siruna_wafl_menu/p:ul[@class='menu'])" />
+        </map:transform>
+        <!-- Dropdown for all <ul class='menu'> -->
+        <map:transform type="sirunaDropdownTransformer">
+            <map:parameter name="cleanup_names" value="true" />
+            <map:parameter name="parent" value="//p:siruna_wafl_menu" />
+            <map:parameter name="form_name" value="siruna_wafl_menu" />
+            <map:parameter name="dropdown_title" value="--Navigation--" />
+            <map:parameter name="rel_name_node" value=".." />
+        </map:transform>
+
+        <!-- Grouping the latest news links together in a dropdown -->
+        <map:transform type="sirunaElementTransformer">
+            <!-- group all <ul class='latestnews'> together in one tag -->
+            <map:parameter name="task0" value="wrapElements(//p:ul[@class='latestnews'], siruna_wafl_latestnews)" />
+            <map:parameter name="task1" value="removeKeepChildren(//p:siruna_wafl_latestnews/p:ul[@class='latestnews'])" />
+        </map:transform>
+        <!-- Dropdown for all <ul class='latestnews'> -->
+        <map:transform type="sirunaDropdownTransformer">
+            <map:parameter name="cleanup_names" value="true" />
+            <map:parameter name="parent" value="//p:siruna_wafl_latestnews" />
+            <map:parameter name="form_name" value="siruna_wafl_latestnews" />
+            <map:parameter name="dropdown_title" value="--Latest News--" />
+            <map:parameter name="rel_name_node" value=".." />
+        </map:transform>
+
+        <!-- Grouping the most read in a dropdown -->
+        <map:transform type="sirunaElementTransformer">
+            <!-- group all <ul class='mostread'> together in one tag -->
+            <map:parameter name="task0" value="wrapElements(//p:ul[@class='mostread'], siruna_wafl_mostread)" />
+            <map:parameter name="task1" value="removeKeepChildren(//p:siruna_wafl_mostread/p:ul[@class='mostread'])" />
+        </map:transform>
+        <!-- Dropdown for all <ul class='mostread'> -->
+        <map:transform type="sirunaDropdownTransformer">
+            <map:parameter name="cleanup_names" value="true" />
+            <map:parameter name="parent" value="//p:siruna_wafl_mostread" />
+            <map:parameter name="form_name" value="siruna_wafl_mostread" />
+            <map:parameter name="dropdown_title" value="--Most Read--" />
+            <map:parameter name="rel_name_node" value=".." />
+        </map:transform>
+
+        <!-- Cleaning up empty div's etc. -->
+        <map:transform type="sirunaElementTransformer">
+            <map:parameter name="task0" value="removeEmptyElements(//p:div[@class='mainmenu'],true)" />
+        </map:transform>
+
+
+		<!-- This resource contains a generic set of transformations 
+		     that should be done after your own transformations. -->
+		<!-- scale images -->
+		<map:transform type="sirunaImageTransformer">
+			<map:parameter name="task0" value="scale(//p:img,95)" />
+		</map:transform>
+		<!-- make sure all url's in the page are rewritten, so that they to will lead to an adapted webpage -->
+		<map:transform type="sirunaLinkRewriter" />
+		<!-- delete unused css -->
+		<map:transform type="sirunaCSSCompactTransformer" />
+		<!-- make sure no width's are set in css > screenwidth -->
+		<map:transform type="sirunaMakeCSSFit">
+        	<map:parameter name="removeWidths" value="true" />
+        	<map:parameter name="removeFloats" value="true" />
+		</map:transform>
+		<map:serialize type="sirunaXHTMLSerializer">
+        	<map:parameter name="enableJS" value="false" />
+		</map:serialize>
+
+      </map:match>
+      <!--+
+			| Mount everything else by calling the sitemap.xmap file located
+			| in the requested folder.
+			+-->
+      <map:match pattern="*/**">
+        <map:mount check-reload="${sitemap-mount.check-reload}" src="{1}/" uri-prefix="{1}" />
+      </map:match>
+    </map:pipeline>
+  </map:pipelines>
+  
+</map:sitemap>

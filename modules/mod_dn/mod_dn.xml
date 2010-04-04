@@ -1,0 +1,235 @@
+<?xml version="1.0" ?>
+  <install type="module"  version="1.5.0">
+    <name>Display News</name>
+    <author>BK</author>
+    <creationDate>March 2009</creationDate>
+    <copyright>(C) 2006 - 2009 BK. All rights reserved.</copyright>  
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>bkomraz1@gmail.com</authorEmail>
+    <authorUrl>http://joomlacode.org/gf/project/display_news/</authorUrl>
+    <version>1.5.12</version>
+    <description>MODDN_DESCR</description>
+    <files>
+           <filename module="mod_dn">mod_dn.php</filename>
+           <filename module="mod_dn">helper.php</filename>
+    </files>
+    <languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_dn.ini</language>
+    </languages>
+
+	<params>
+	<param name="ordering" type="list" default="mostrecent" label="Order" description="Article Order">
+	       <option value="mostrecent">Most recent first</option>
+	       <option value="mostold">Oldest first</option>
+	       <option value="mostread">Most Hits</option>
+	       <option value="ordering">Ordering</option>
+	       <option value="frontpageordering">Front page ordering</option>
+	       <option value="title">Title alphabetical</option>
+	       <option value="random">Random</option>
+	       <option value="rating">Rating</option>
+	       <option value="voting">Voting</option>
+	</param>
+		<param name="style" type="list" default="flat" label="Style" description="The style to display the content items">
+			<option value="flat">Flat</option>
+			<option value="flatarrow">Flat Arrow</option>
+			<option value="flatlist">Flat List</option>
+			<option value="vert">Vertical</option>
+			<option value="horiz">Horizontal</option>
+		</param>
+        <param name="css_type" type="list" default="content" label="CSS schema" description="Type of CSS schema">
+	       <option value="content">Content</option>
+	       <option value="table">Table</option>
+	       <option value="latestnews">Latestnews</option>
+	       <option value="dedicated">Dedicated</option>
+	    </param>
+            <param name="show_frontpage" type="list" default="y" label="Fontpage items">
+                   <option value="n">Hide</option>
+                   <option value="y">Show</option>
+                   <option value="only">Only</option>
+            </param>
+            <param name="set_count" type="text" default="5" label="No. of Items" description="Set how many items you wish to have displayed. Default is 5. 0 is unlimited" />
+            <param name="minus_leading" type="text" default="" label="Minus leading" description="Parameter that allows you have a certain number of the initial items not to be displayed  (E.g. the first 2, or 5 items will not be shown)" />
+            <param name="hide_current" type="radio" default="0" label="Current content item" description="Hide current content item">
+                  <option value="1">Hide</option>
+                  <option value="0">Show</option>
+            </param>
+            <param name="show_tooltips" type="radio" default="0" label="Link tooltips">
+                   <option value="0">Hide</option>
+                   <option value="1">Show</option>
+            </param>
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="format" type="textarea" rows="3" cols="20" default="%s - %c&lt;br&gt;%t &lt;br&gt;%a - %d&lt;br&gt;%i" label="Module template" description="Format string tags: %s - section, &lt;br&gt; %c - category, %d - date, &lt;br&gt; %a - author, %t - title, &lt;br&gt; %h - hits, %r - rating &lt;br&gt;  %i - text, %m - read more" />
+            <param name="show_full_text" type="list" default="0" label="Text of article" description="">
+                   <option value="0">Intro only</option>
+                   <option value="1">Full text</option>
+            </param>
+            <param name="use_modify_date" type="radio" default="0" label="Use modify date" description="By setting to y (yes) the module will use modification date instead of createtion for sorting, filtering anddisplaying">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="set_date_today" type="radio" default="0" label="Set date today" description="Only the items published today will be displayed">
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+            </param>
+            <param name="set_date_range" type="text" default="" label="Set date range" description="(1) daysPreviously - Items published today to an x number of days previously&lt;br&gt;(2) daysFrom-daysTo Items published to a period of days previously" />
+            <param name="set_date_month" type="list" default="" label="Set date month" description="Parameter that specifies that only the items published for the current month or a specific month will be displayed">
+                <option value=""></option>
+                   <option value="0">current</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+                   <option value="11">11</option>
+                   <option value="12">12</option>
+            </param>
+            <param name="set_date_year" type="text" default="" label="Set date year" description="Parameter that specifies that only the items published for the current year or a specific year will be displayed. “0” will show the current years items.  To show a specific year you must enter the year as a 4 digit number." />
+            <param name="set_section_id" type="section" default="" label="Set section" description="By selection a Section, you limit the items displayed to those from the particular Section" />
+            <param name="set_section_id_extra" type="text" default="" label="Additional section ID's" description="By entering a additional Section Id number, you extend list the items displayed to those from the particular Section. You can enter a SET of IDs." />
+            <param name="set_category_id" type="category" default="" label="Set category" description="By selectiong a Category, you limit the Items displayed to those from the particular Category. You can enter a SET of Names." />
+            <param name="set_category_id_extra" type="text" default="" label="Additional category ID's" description="By entering a additional Category Id number, you extent list the Items displayed to those from the particular Category. You can enter a SET of IDs." />
+            <param name="set_article_id" type="text" default="" label="Set article ID's" description="Article Id number. You can enter a coma separated SET of IDs." />
+            <param name="set_author_id" type="text" default="" label="Set author ID" description="By entering a Author Id number, you limit the Items displayed to those created by that particular Author Id. You can enter a SET of IDs." />
+            <param name="set_author_name" type="text" default="" label="Set author name" description="By entering a Author Name, you limit the Items displayed to those created by that particular Author Name. You can enter a SET of Names." />
+            <param name="set_auto_author" type="list" default="" label="Set auto author " description="
+			By setting  value to 'by article author' the module will automatically detect the Author of the item you are viewing and will display the Items by that particular Author.
+		&lt;br&gt; 
+		&lt;br&gt; 
+   By setting value to 'by article name' the module will automatically detect the title of the item you are viewing (that will be interpreted as author name of shown articles) and will display the Items by that particular Author. Useful for automatic showing articles of specific author near of author description article. For linking to author article bk_authorbot may be used.
+		&lt;br&gt; 
+		&lt;br&gt; 
+	This function will only be active on a item page (task = view) For non items pages (front page, component pages, typed content pages) it will simply display the default of the items from all sections and categories.">
+                   <option value=""></option>
+                   <option value="1">by article author</option>
+                   <option value="2">by article title</option>
+            </param>
+            <param name="set_auto" type="radio" default="0" label="Set auto section/category" description="By setting to y (yes) the module will automatically detect the Section/Category of the items page where it is located and it will display the Items for that particular section/category. If it is on a section display page it will display items from the section; on a category display page it will display the items from the category; on a item page it will display the items from the category. For non items pages (front page, component pages, typed content pages) it will simply display the default of the items from all sections and categories.">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+         
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="format_date" type="text" default="" label="Date format" description="Controls the format that the date will be displayed in.  Uses the formatting and specifiers of php (a full list is included at the end of this file). Default is %d %b %y" />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="link_section" type="list" default="" label="Section Linkable" description="Control whether the Section of the Item is a clickable url that links to the Section.">
+                   <option value="">Use Global</option>
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+            <param name="text_hover_section" type="text" default="" label="Section hover prefix" description="The hover text that is displayed for the Section link of each items." />
+            <param name="text_hover_more_section" type="text" default="" label="Text hover more from section" description="The hover text that is displayed for the More link of  the whole module." />
+            <param name="link_category" type="list" default="" label="Category Linkable" description="Control whether the Category of the Item is a clickable url that links to the Category.">
+				<option value="">Use Global</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </param>
+            <param name="text_hover_category" type="text" default="" label="Category hover prefix" description="The hover text that is displayed for the Category link of each items." />
+            <param name="text_hover_more_category" type="text" default="" label="Text hover more from category" description="View more from Category" />
+            <param name="show_more_auto" type="radio" default="0" label="Show more section/category auto" description="You can choose whether to have a More link at the bottom of the module, which links to the section/category of the page - it automatically determines from the page whether to show a link to a section or a category. If it is on a section display page it will display a More link to the section; on a category display page it will display a More link to the category; on a item page it will display a More link to the category.">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+            <param name="text_more" type="text" default="" label="Text more" description="The text that is displayed for the more link of the whole module." />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="link_titles" type="list" default="" label="Title Linkable" description="Make the Item titles linkable">
+			<option value="">Use Global</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+            <param name="show_title_nextline" type="radio" default="0" label="Show title nextline" description="You can choose whether you wish to have the Title of the  items split over two lines - this is useful for items with long titles.">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+            <param name="text_hover_title" type="text" default="" label="Text hover title" description="The hover text that is displayed for the Title link of each items." />
+            <param name="filter_title" type="list" default="0" label="Filter and limit title" description="Removes any html formatting and special characters in the intro text.  Useful if you are having problems using limit_intro because of the html formatting in the text. You can choose whether to limit the length of the Title that is displayed. This is useful when you have very long Titles. ">
+                   <option value="0">No</option>
+                   <option value="1">Filter only</option>
+                   <option value="2">Filter and limit by chars</option>
+                   <option value="3">Filter and limit by words</option>
+            </param>
+            <param name="length_limit_title" type="text" default="20" label="Length limit title" description="This limits the length of Title of each item that is displayed, in terms of number of above parameter." />
+            <param name="show_title_auto" type="radio" default="0" label="Title auto" description="You can choose whether to have an automated Title top of the module, which displays the name of the section/category of the page - it automatically determines from the page whether to show the name of the section or a category. If it is on a section display page it will display the name of the section; on a category display page it will display the name of the category; on a item page it will display the name of the category.">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+            <param name="text_title_auto_pre" type="text" default="" label="Text title auto prefix" description="The prefix text that goes before the auto selected Section/Category name." />
+            <param name="text_title_auto_suf" type="text" default="" label="Text title auto suffix" description="The suffix text that goes before the auto selected Section/Category name." />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="link_text" type="radio" default="0" label="Text Linkable" description="Control whether the Intro Text of the Item is a clickable url that links to the item.">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+            </param>
+			<param name="image" type="list" default="0" label="Show images" description="Display Article images">
+				<option value="0">No</option>
+				<option value="1">as is</option>
+				<option value="2">width scaled</option>
+				<option value="3">height scaled</option>
+			</param>
+			<param name="image_size" type="text" default="115" label="Image size" description="Image scaling size">
+			</param>
+			<param name="image_align" type="list" default="0" label="Image alignment" description="Image alignment">
+				<option value="0">As Is</option>
+				<option value="1">No</option>
+				<option value="2">Left</option>
+				<option value="3">Right</option>
+			</param>
+            <param name="filter_text" type="list" default="0" label="Filter and limit text" description="Removes any html formatting and special characters in the intro text.  Useful if you are having problems using limit_intro because of the html formatting in the text. You can choose whether to limit the length of the intro text that is displayed. This is useful when you have very long intro text.">
+                   <option value="0">No</option>
+                   <option value="1">Filter only</option>
+                   <option value="2">Filter and limit by chars</option>
+                   <option value="3">Filter and limit by words</option>
+            </param>
+            <param name="length_limit_text" type="text" default="30" label="Limit text length" description="This limits the length of Intro Text of each item that is displayed, in terms of number of characters." />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="show_readmore" type="list" default="2" label="Read More" description="You can choose whether to have a Read More link for the items visible.">
+                   <option value="0">Hide</option>
+                   <option value="1">Show</option>
+                   <option value="2">Auto</option>
+            </param>
+            <param name="text_readmore" type="text" default="" label="Text readmore" description="The text that is displayed for the Readmore link of each items." />
+            <param name="text_hover_readmore" type="text" default="" label="Text hover readmore" description="The hover text that is displayed for the Readmore link of each items." />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="bottom_link_text" type="text" default="" label="Bottom link title" description="Allow to have linkable url at bottom of the module" />
+            <param name="bottom_link_url" type="text" default="" label="Bottom link url" description="This control the url link for the link at the bottom of the module" />
+            <param name="text_module_description" type="text" default="" label="Text module desciption" description="Allows you to write a custom description for the module" />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="scroll_direction" type="list" default="no" label="Scroll" description="You can choose in which direction the module data will be scrolled.">
+                   <option value="no">No</option>
+                   <option value="up">Up</option>
+                   <option value="down">Down</option>
+                   <option value="left">Left</option>
+                   <option value="right">Right</option>
+            </param>
+            <param name="scroll_speed" type="list" default="1" label="Scroll speed" description="The scrolling speed in pixels.  The higher the number the quicker the speed.">
+                   <option value="0">none</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+                   <option value="7">7</option>
+                   <option value="8">8</option>
+                   <option value="9">9</option>
+                   <option value="10">10</option>
+            </param>
+            <param name="scroll_delay" type="text" default="30" label="Scroll delay" description="The delay in displaying/refreshing the scrolling data in milliseconds.  The lower the number the quicker the speed." />
+            <param name="scroll_height" type="text" default="100" label="Scroll_height" description="The height of the scroll window in pixels." />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+	</params>
+	<params  group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

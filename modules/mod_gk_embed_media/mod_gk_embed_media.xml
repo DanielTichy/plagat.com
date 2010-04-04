@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+        <name>GK Embed Media</name>
+        <creationDate>31/07/2008</creationDate>
+        <author>Gavick.com</author>
+        <copyright>(C) 2008 Gavick.com</copyright>
+        <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+        <authorEmail>info@gavick.com</authorEmail>
+        <authorUrl>www.gavick.com</authorUrl>
+        <version>1.0.1</version>
+        <description>
+            Gavick extension to adding videos from popular video services.   
+        </description>
+        <files>
+                <filename module="mod_gk_embed_media">mod_gk_embed_media.php</filename>
+                <filename module="mod_gk_embed_media">helper.php</filename>
+                <filename module="mod_gk_embed_media">index.html</filename>
+                <filename module="mod_gk_embed_media">tmpl/index.html</filename>
+                <filename module="mod_gk_embed_media">tmpl/dailymotion.php</filename>
+                <filename module="mod_gk_embed_media">tmpl/other.php</filename>
+                <filename module="mod_gk_embed_media">tmpl/googlevideo.php</filename>
+                <filename module="mod_gk_embed_media">tmpl/revver.php</filename>
+                <filename module="mod_gk_embed_media">tmpl/veoh.php</filename>
+                <filename module="mod_gk_embed_media">tmpl/viddler.php</filename>
+                <filename module="mod_gk_embed_media">tmpl/youtube.php</filename>
+        </files>
+        <params>
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+                <param name="module_unique_id" type="text" default="gk_embed_media" label="Module unique ID" description="Use this options to set unique ID for module..." />
+                
+                <param name="@spacer" type="spacer" default="" label="Basic player params" description="Basic player params" />
+                
+                <param name="url" type="text" default="" size="30" label="Media URL" description="Put here URL of media which will be embed on module"/>
+                
+				<param name="width" type="text" default="0" size="5" label="Player width" description="The width of embed player. Leave 0 if you want to use standard width of player (480px)"/>
+				
+                <param name="height" type="text" default="0" size="5" label="Player height" description="The height of embed player. Leave 0 if you want to use standard height of player (320px)"/>
+                
+                <param name="type" type="list" default="1" label="Media source" description="Selec source of linked media">
+                        <option value="youtube">YouTube</option>
+						<option value="googlevideo">Google Video</option>
+                        <option value="veoh">Veoh</option>
+                        <option value="viddler">Viddler</option>
+                        <option value="revver">Revver</option>
+                        <option value="dailymotion">Daily motion</option>
+						<option value="other">Other(metacafe, vimeo, flickr)</option>
+                </param>
+                      
+        </params>
+		
+		
+        <params group="advanced">
+            <param name="@spacer" type="spacer" default="Here you can set advanced options of player" label="Advanced configuration" description="Advanced configuration" />
+            
+			<param name="@spacer" type="spacer" default="YOUTUBE" label="YOUTUBE" description="YOUTUBE" />
+			
+			<param name="yt_related" type="radio" default="1" label="Show related videos" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="yt_border" type="radio" default="1" label="Show player border" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+            
+            <param name="yt_style" type="list" default="0" label="Select player style" description="">
+                    <option value="0">Standard</option>
+					<option value="1">Dark gray</option>
+                    <option value="2">Dark blue</option>
+                    <option value="3">Light blue</option>
+                    <option value="4">Green</option>
+                    <option value="5">Orange</option>
+                    <option value="6">Pink</option>
+                    <option value="7">Violet</option>
+                    <option value="8">Red</option>
+                    <option value="9">Your own style</option>
+            </param>
+            
+            <param name="yt_color1" type="text" default="0x000000" label="Color 1" description="Color in hex format with 0x prefix"/>
+			
+			<param name="yt_color2" type="text" default="0x000000" label="Color 2" description="Color in hex format with 0x prefix"/>
+			
+			<param name="@spacer" type="spacer" default="GOOGLE VIDEO" label="GOOGLE VIDEO" description="GOOGLE VIDEO" />
+			
+			<param name="gv_fs" type="radio" default="1" label="Allow fullscreen" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="@spacer" type="spacer" default="VEOH" label="VEOH" description="VEOH" />
+			
+			<param name="veoh_fs" type="radio" default="1" label="Allow fullscreen" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="veoh_bg" type="text" default="#000000" label="Player background" description="Color in hex format with # prefix"/>
+			
+			<param name="veoh_autoplay" type="radio" default="1" label="Video autoplay" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="@spacer" type="spacer" default="DAILY MOTION" label="DAILY MOTION" description="DAILY MOTION" />
+			
+			<param name="dm_size" type="radio" default="1" label="Daily motion player size" description="">
+                    <option value="0">Small</option>
+                    <option value="1">Medium</option>
+					<option value="2">Large</option>
+            </param>
+			
+			<param name="dm_fs" type="radio" default="1" label="Allow fullscreen" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="dm_bg" type="text" default="000000" label="Player background color" description="Color in hex format without # prefix"/>
+			<param name="dm_glow" type="text" default="000000" label="Player glow color" description="Color in hex format without # prefix"/>
+			<param name="dm_fg" type="text" default="FFFFFF" label="Player foreground color" description="Color in hex format without # prefix"/>
+			<param name="dm_special" type="text" default="000000" label="Player special color" description="Color in hex format without # prefix"/>
+			
+			<param name="dm_autoplay" type="radio" default="1" label="Video autoplay" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="dm_related" type="radio" default="1" label="Show related videos" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="@spacer" type="spacer" default="REVVER" label="REVVER" description="REVVER" />
+			
+			<param name="rev_fs" type="radio" default="1" label="Allow fullscreen" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="@spacer" type="spacer" default="VIDDLER" label="VIDDLER" description="VIDDLER" />
+			
+			<param name="vid_fs" type="radio" default="1" label="Allow fullscreen" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="vid_autoplay" type="radio" default="1" label="Video autoplay" description="">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </param>
+			
+			<param name="vid_player" type="radio" default="1" label="Player type" description="">
+                    <option value="0">Simple player</option>
+                    <option value="1">Default player</option>
+            </param>
+			
+			<param name="@spacer" type="spacer" default="OTHER" label="OTHER" description="OTHER" />
+			
+			<param name="other" type="textarea" default="" rows="20" cols="40" label="Embed code for other players" description="For other players width/height/url options doesn't work"/>
+			
+        </params>
+</install>

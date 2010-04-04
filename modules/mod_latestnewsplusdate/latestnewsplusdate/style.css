@@ -1,0 +1,24 @@
+a.lndtitle { font-size:14px;
+background:url(title.gif) no-repeat left top;
+padding-left:20px;
+color:#CC9900;
+}
+.lnd_introdate {
+	font-size:10px;}
+li.lnd_latestnews {
+	padding:0 3px;
+	border-bottom:1px solid #cccccc;
+	color:#CC9900;}
+li.lnd_latestnews a {
+	color: #003366;
+	font-weight:400; }
+div.lnd_more_ind {
+	text-align:right;
+	font-size:11px;
+	padding-top:5px;
+}
+.morein {
+	background:url(more.gif) no-repeat left top;
+	padding-left:20px;}
+.div_lnd_intro img{
+	margin:4px;}

@@ -1,0 +1,44 @@
+/*full*/
+#mainbody {
+float:left;
+width:596px;
+}
+#right {
+float:right;
+width:170px;
+overflow:hidden;
+margin-right:5px;
+}
+
+#left {
+float:right;
+width:170px;
+overflow:hidden;
+margin-right:4px;
+}
+/*left only*/
+
+#left_L {
+float:right;
+width:170px;
+overflow:hidden;
+margin-right:4px;
+}
+/*right only*/
+
+#right_R {
+float:right;
+width:170px;
+overflow:hidden;
+margin-right:5px;
+}
+#bottomshelf{
+width:772px;
+text-align:left;
+height:183px;
+overflow:hidden;
+clear:both;
+background: url(../images/bottomsh_bg.jpg) repeat-x left top;
+margin:0 auto;
+margin-bottom:-5px;
+}

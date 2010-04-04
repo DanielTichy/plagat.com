@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE install PUBLIC 
+  "-//Joomla! 1.5//DTD plugin 1.0//EN" "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="system">
+	<name>System - Wafl</name>
+	<creationDate>May 2009</creationDate>
+	<author>WAFL Development</author>
+	<authorEmail>info@wafl.be</authorEmail>
+	<authorUrl>http://www.wafl.ugent.be</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>GNU/GPL</license>
+	<version>0.1.0</version>
+	<description>WAFL Joomla! plugin: makes your Joomla! CMS more mobile dev friendly</description>
+	<files>
+		<filename plugin="wafl">wafl.php</filename>
+		<filename plugin="wafl">wafl/broker/sirunaChecker.php</filename>
+		<filename plugin="wafl">wafl/broker/redirectHandler.php</filename>
+		<filename plugin="wafl">wafl/broker/sirunaMapping.php</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/class.csstidy_optimise.php</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/class.csstidy_print.php</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/class.csstidy.php</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/data.inc.php</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/template.tpl</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/template1.tpl</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/template2.tpl</filename>
+		<filename plugin="wafl">wafl/lib/csstidy/template3.tpl</filename>
+		<filename plugin="wafl">wafl/lib/devicedetection.xml</filename>
+		<filename plugin="wafl">wafl/services/cssComposer.php</filename>
+		<filename plugin="wafl">wafl/services/cssTidyReader.php</filename>
+		<filename plugin="wafl">wafl/services/deviceDetection.php</filename>
+		<filename plugin="wafl">wafl/services/pageGenerator.php</filename>
+		<filename plugin="wafl">wafl/services/settingsManager.php</filename>
+		<filename plugin="wafl">wafl/services/settingsManagerClient.php</filename>
+		<filename plugin="wafl">wafl/services/styleRecycler.php</filename>
+		<filename plugin="wafl">wafl/util/fileNotFoundException.php</filename>
+		<filename plugin="wafl">wafl/util/CMSDependingHeader.php</filename>
+	</files>
+</install>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5">
+   <name>Wafl</name>
+   <creationDate>May 2009</creationDate>
+   <author>Wafl</author>
+   <authorEmail></authorEmail>
+   <authorUrl></authorUrl>
+   <copyright>Copyright Notice</copyright>
+   <license>GNU/GPL</license>
+   <version>0.1.0</version>
+   <description>Legendary</description>
+     
+   <uninstallfile>uninstall.wafl.php</uninstallfile>
+     
+   <administration>
+       <!-- Administration Menu Section -->
+       <menu view="wafl" controller="wafl">Wafl</menu>
+       <submenu>
+            <!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer-->
+            <menu img=" " link="option=com_wafl&amp;view=wafl&amp;c=wafl">Modules</menu>
+            <!-- Instead of link you can specify individual link attributes -->
+            <menu img=" " link="option=com_wafl&amp;view=settings&amp;c=settings">Settings</menu>
+            <menu img=" " link="option=com_wafl&amp;view=sirunaMapping&amp;c=sirunaMapping">SirunaMapping</menu>
+       </submenu>
+
+       <!-- Administration Main File Copy Section -->
+       <files>
+         <filename>com_wafl.xml</filename>
+         <filename>admin.wafl.php</filename>
+         <filename>db_handler.php</filename>
+         <folder>controllers</folder>
+         <folder>models</folder>
+         <folder>tables</folder>
+         <folder>views</folder>
+       </files>
+       <media destination="com_wafl">
+	     <filename>images/logowafl.png</filename>
+	   </media>
+     
+   </administration>
+</install>

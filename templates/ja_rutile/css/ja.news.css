@@ -1,0 +1,97 @@
+/*------------------------------------------------------------------------
+# JA Rutile for Joomla 1.5 - Version 1.0 - Licence Owner JA122250
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+h2.jazin-title, h4.jazin-title {
+	margin: 0;
+	padding: 0;
+	line-height: 1.1;
+	margin-bottom: 5px;
+}
+
+/* CONTENT
+--------------------------------------------- */
+#jazin-wrap {
+	padding: 0;
+}
+
+#jazin {
+	padding: 0;
+}
+
+.jazin-left {float: left; overflow: hidden;}
+.jazin-center {float: left; overflow: hidden;}
+.jazin-right {float: right; overflow: hidden;}
+
+.jazin-box {
+	margin: 0 15px 20px;
+}
+
+.jazin-left .jazin-box {margin-left: 0;}
+.jazin-right .jazin-box {margin-right: 0;}
+
+div.jazin-section {
+	display: block;
+	margin-bottom: 2px;
+}
+
+div.jazin-section a {
+	display: block;
+	float: left;
+	padding: 0 14px 0 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #999999;
+	font-size: 92%;
+	background: url(../images/arrow2.png) no-repeat right center;
+	letter-spacing: 1px;
+}
+
+div.jazin-section a span {}
+
+div.jazin-section a:hover,
+div.jazin-section a:active,
+div.jazin-section a:focus {
+	text-decoration: none;
+}
+
+.jazin-box:hover div.jazin-section a span,
+.hover div.jazin-section a span {
+}
+
+.jazin-more {
+	display: none;
+}
+
+ul.jazin-links {
+	padding: 0;
+	margin: 0;
+	font-size: 92%;
+}
+
+ul.jazin-links li {
+	padding-left: 10px;
+	background-position: 1px 7px;
+}
+
+ul.jazin-links a {}
+
+.jazin-content img {
+	padding: 5px 10px 0 0;
+}
+
+.jazin-pagedesc {}
+
+.jazin-pagedesc p {}
+
+/*mis
+-------------------------------------------------*/
+.jazin-pagenav, .jazin-pagenav-counter {
+	text-align: center;
+}

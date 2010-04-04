@@ -1,0 +1,63 @@
+/* @group General site layout */
+body {margin: 0; padding: 0;text-align: center;}
+	.left {float: left;}
+	.right {float: right;}
+	.hidden { display: none; }
+	div.inside {margin:10px 10px 10px 10px;} /* we add margin or padding for the main body column here rather than above so as not to break the layout */
+	
+	div#page {margin: 0 auto; padding: 0;} /* we want to center this div for browsers that understand so we have an auto declaration for the left and right margin */ 
+	div#backtotoplink a {float:right}
+/* @end general site layout */
+
+/* @group Header */
+		div#header {margin: 0; padding: 10px 0px;}
+		
+/* -- Access links -- */
+			ul#access {list-style-type: none;}
+			ul#access:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+				ul#access li{float:left; margin:0; padding:2px 5px 3px 5px;}
+
+/* -- Branding link container -- */		
+			div#branding {float: left; width: 40%; margin: 0; padding: 10px 0 10px 20px; text-align: left;} /* we set the width to 40% to allow for the left padding on this div and the right padding on the top-module div below. 10 pixels top padding, 0 pixels right padding, 10 pixels bottom padding and 20 pixels left padding */
+
+/* -- Top module container -- */			
+			div#top-module {float: right; width: 49%; margin: 0; padding: 16px 20px 0 0; text-align: right;} /* 10 pixels top padding, 20 pixels right padding, 0 pixels bottom padding and 0 pixels left padding */
+
+/* -- Breadcrumbs container -- */	
+			div#breadcrumbs {clear:both; float:left; margin:0 0 1em 0; padding:0;} /* beacuse the above divs have widths equalling 89% and 40pixels horizontal padding (left padding + right padding) there may be a gap between those two modules. We want to ensure that the breadcrumbs module clears both of these modules */
+
+/* @end header */
+
+/* @group Maincontent */
+	#BodyContent {padding: 0px; margin: 0px; text-align: left;}
+		#LoadFirst {float: left;}
+
+/* The #MiddleCol container holds the mainbody content. We load this container before we load the left column for SEO Source Ordering purposes.
+We set the width of this container based upon the content layout logic. (see template_config.php) */
+			#MiddleCol {padding:0px;}
+			.mc-both {float: right;}
+			.mc-left-only {float: right;}
+			.mc-right-only {float: left;}
+			.mc-wide {float: left;}
+
+/* -- Teaser Modules -- */
+/* To work out the widths of the teaser modules we are going to have to know how many are published in a row (upto four modules per row).
+See includes/template_config.php */ 
+				div.count1 {width:100%; float:left;}
+				div.count2 {width:50%; float:left;}
+				div.count3 {width:33%; float:left;}
+				div.count4 {width:25%; float:left;}
+			
+/* this container holds the left column content. We load this container before we load the right column for SEO Source Ordering purposes. */
+		#left {float: left;}
+			#left div.inside {margin:10px 10px 10px 0px;} /* we add margin or padding for the left cloumn here rather than above so as not to break the layout */
+
+/* this container holds the right column content. */
+		#right {float: right;}
+			#right div.inside {margin:10px 0px 10px 10px;} /* we add margin or padding for the right cloumn here rather than above so as not to break the layout */
+
+/* @end Maincontent */
+/* @group Footer*/
+	#footer {text-align:center;}
+			#footer div.inside {margin:10px 0px 10px 10px;} /* we add margin or padding for the footer here rather than above so as not to break the layout */
+/* @end footer */

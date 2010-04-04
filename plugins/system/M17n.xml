@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" version="1.5.2" group="system">
+	<name>System - Multilingual - M17n</name>
+	<author>SDIC :: Joomla! M17n</author>
+	<creationDate>January 2008</creationDate>
+	<copyright>(C) 2005 - 2008 SDIC SA. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>joomla@sdic.ch</authorEmail>
+	<authorUrl>http://www.sdic.ch</authorUrl>
+	<version>1.5.2</version>
+	<description>Provides language/locale globals for multilingualization (M17n)</description>
+	<files>
+		<filename plugin="M17n">M17n.php</filename>
+	</files>
+	<params>
+		<param name="GetLinkage" type="list" default="auto" label="Association Handling" description="Defines how the language selector will handle the M17n Keys used to associate a menu item with another in a different language">
+			<option value="auto">Automatic (associated if available)</option>
+			<option value="pure">Strict (associated only)</option>
+			<option value="none">Disabled (always to home items)</option>
+		</param>
+		<param name="GetItemId" type="list" default="auto" label="Home Items Retrieval" description="Sets how the 'home' ItemId (link) is retrieved for each language">
+			<option value="auto">Automatic (default)</option>
+			<option value="manu">Manual (expert only)</option>
+		</param>
+		<param name="CustItemId" type="text" default="" label="Manual Home Items" description="Set the itemid for each language. Format: locale-code=Itemid, separated by comas (en-GB=1,fr-FR=10)" />
+	</params>
+</install>

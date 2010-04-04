@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+   <name>Wafl</name>
+   <creationDate>May 2009</creationDate>
+   <author>Wafl</author>
+   <authorEmail></authorEmail>
+   <authorUrl></authorUrl>
+   <copyright>(C) 2009 WAFL. All rights reserved.</copyright>
+   <license>GNU/GPL</license>
+   <version>0.1.0</version>
+   <description>This component will improve the mobile experience.</description>
+	<files>
+		<filename>adminwafl.zip</filename>
+		<filename>pluginwafl.zip</filename>
+		<filename>contentwafl.zip</filename>
+		<filename>editorwafl.zip</filename>
+		<filename>templatewafl.zip</filename>
+		<filename>modulewafl.zip</filename>
+	</files>
+	
+	<installfile>install.wafl.php</installfile>
+	
+	<administration>
+       <!-- Administration Menu Section -->
+       <menu view="wafl" controller="wafl">Wafl</menu>
+       <submenu>
+            <menu img=" " link="option=com_wafl&amp;view=wafl&amp;c=wafl">Modules</menu>
+            <menu img=" " link="option=com_wafl&amp;view=settings&amp;c=settings">Settings</menu>
+            <menu img=" " link="option=com_wafl&amp;view=sirunaAdvanced&amp;c=sirunaAdvanced">SirunaAdvanced</menu>
+       </submenu>
+   </administration>
+</install>

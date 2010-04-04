@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0.4">
+	<name>R3D Floater</name>
+	<author>Richard Dvorak</author>
+	<creationDate>22. Mai 2009</creationDate>
+	<copyright>(C) 2009 r3d.de - All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@r3d.de</authorEmail>
+	<authorUrl>www.r3d.de</authorUrl>
+	<version>1.5.0</version>
+	
+	<description>PLEASE GO TO R3D FLOATER MODULE FOR DESCRIPTION</description>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_floater.ini</language>
+		<language tag="de-DE">de-DE.mod_floater.ini</language>
+	</languages>
+	
+	<files>
+		<filename module="mod_floater">mod_floater.php</filename>
+		<filename module="mod_floater">index.html</filename>
+		<filename module="mod_floater">images/r3d_extensions.jpg</filename>
+		<filename module="mod_floater">images/index.html</filename>
+	</files>
+	
+	<params>
+		
+		<param name="module_name" type="text" default="newsflash" size="30" label="Module Name" description="Name of the Module to be shown inside the floater. Example: newsflash (to import mod_newsflash on position floater)"/>
+		<param name="module_title" type="text" default="Floater Newsflash" size="30" label="Module Title" description="Title of the Module to be shown inside the floater. Example: Floater Newsflash (to import a mod_newsflash named Floater Newsflash on position floater)"/>
+		
+		<param name="timeout" type="list" default="10000" label="Timeout" description="Time until Box disappears - select: 5 sec through 86400 sec(one whole day!)">
+			<option value="5000">5 sec</option>
+			<option value="6000">6 sec</option>
+			<option value="7000">7 sec</option>
+			<option value="8000">8 sec</option>
+			<option value="9000">9 sec</option>
+			<option value="10000">10 sec</option>
+			<option value="11000">11 sec</option>
+			<option value="12000">12 sec</option>
+			<option value="13000">13 sec</option>
+			<option value="14000">14 sec</option>
+			<option value="15000">15 sec</option>
+			<option value="20000">20 sec</option>
+			<option value="25000">25 sec</option>
+			<option value="30000">30 sec</option>
+			<option value="60000">1 min</option>
+			<option value="3600000">1 hr</option>
+			<option value="28800000">8 hrs</option>
+			<option value="86400000">1 day</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="startpos" type="text" default="-400" label="Initial Position of box" description="Initial Position of box (don't write px after the integer.)" />
+		<param name="rightpos" type="text" default="100" label="Position right" description="Ending Position of module when sliding right (don't write px after the integer.)" />
+		<param name="rightspeed" type="text" default="20" label="Speed right" description="Sliding Speed of module when sliding right, the smaller the number, the faster..." />		
+		<param name="leftpos" type="text" default="-400" label="Position left" description="Ending Position of module when sliding left (don't write px after the integer.)" />
+		<param name="leftspeed" type="text" default="10" label="Speed left" description="Sliding Speed of module when sliding left, the smaller the number, the faster..." />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="boxwidth" type="text" default="300px" label="Container box width" description="Width of box that will contain the floater module in px." />
+		<param name="boxheight" type="text" default="300px" label="Container box height" description="Height of box that will contain the floater module in px." />
+		<param name="boxleft" type="text" default="-400px" label="Container box left" description="Distance of box left." />
+		<param name="boxtop" type="text" default="200px" label="Container box top" description="Distance of box from top." />		
+		<param name="bgcolor" type="text" default="#ffffff" label="bgcolor" description="Background color of container box - use 'transparent' or color hex like '#ffffff'. " />
+		<param name="border" type="text" default="7px solid #135CAE" label="border" description="Border of container box - Example: 7px solid #135CAE or none for no border" />
+		<param name="opacity" type="text" default="90" label="Box Opacity" description="Opacity of container box - full numbers between 0(=not visible) and 100(=fully visible)" />
+		<param name="talign" type="text" default="right" label="Box align" description="Text-align of container box - left, center, right" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="iwidth" type="text" default="270px" label="Inside box width" description="Width of Div Inside the Box that will contain the floater module px." />
+		<param name="iheight" type="text" default="250px" label="Inside box height" description="Height of Div Inside the Box that will contain the floater module in px." />
+		<param name="ileft" type="text" default="10px" label="Container box left" description="Padding left." />
+		<param name="itop" type="text" default="0px" label="Container box top" description="Padding top. Not counting .Close Window." />		
+		<param name="ibgcolor" type="text" default="transparent" label="bgcolor" description="Background color of container box - use 'transparent' or color hex like '#f7f7f7'. " />
+		<param name="iborder" type="text" default="none" label="border" description="Border of container box - Example: 1px dotted grey or none for no border" />
+		<param name="italign" type="text" default="center" label="Text align Inside" description="Text-align of Div Inside the Box - left, center, right" />
+		<param name="ioverflow" type="list" default="auto" label="Overflow" description="What happens to content larger then the Inside Div? Choose an Option">
+			<option value="visible">visible</option>
+			<option value="hidden">hidden</option>
+			<option value="scroll">scroll</option>
+			<option value="auto">auto</option>
+		</param>
+		
+	</params>
+</install>
