@@ -1223,7 +1223,7 @@ div.moduletable li, div.moduletable_menu li, div.moduletable_text li
 	position: relative;
 	padding: 20px 0 0;
 	z-index: 999;
-	
+
 	background: url(../images/header_bg.jpg) no-repeat;
 }
 
@@ -1996,8 +1996,8 @@ div.ja-innerdiv img.border
 	margin-top: 28px;
 }
 
-#ja-container #block-newsflash #newsflash.roknewsflash .controls{ 
-	margin: -30px -5px 0 0; 
+#ja-container #block-newsflash #newsflash.roknewsflash .controls{
+	margin: -30px -5px 0 0;
 }
 
 #ja-container #block-newsflash #newsflash.roknewsflash .flashing
@@ -2035,7 +2035,7 @@ div.ja-innerdiv img.border
 #ja-content .ja-newscontent
 {
 	width: 100%;
-	height: 230px;
+	height: 240px;
 	overflow: hidden;
 }
 #ja-content .ja-newscontent h4.jazin-title
@@ -2066,8 +2066,8 @@ div.ja-innerdiv img.border
 /*Fix li symbol to invisible */
 #ja-content #newsflash.roknewsflash ul li a,
 #ja-content .div_lnd_list li.lnd_latestnews > strong
-{	
-	background: white; 
+{
+	background: white;
 }
 
 /* Remove bullet */

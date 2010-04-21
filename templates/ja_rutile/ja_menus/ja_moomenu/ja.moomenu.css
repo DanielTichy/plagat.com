@@ -40,7 +40,7 @@ The second part will define the visual look for this menu.
 #ja-cssmenu li ul {
 	width: 16.4em;
 	position: absolute; /* second-level lists */
-	z-index: 99;
+	z-index: 100099 !important;
 	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
 	height: auto;
 	w\idth: 15.9em;

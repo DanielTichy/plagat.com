@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------------
+﻿/*------------------------------------------------------------------------
 # JA Rutile for Joomla 1.5 - Version 1.0 - Licence Owner JA122250
 # ------------------------------------------------------------------------
 # Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
@@ -40,7 +40,7 @@ The second part will define the visual look for this menu.
 #ja-cssmenu li ul {
 	width: 16.4em;
 	position: absolute; /* second-level lists */
-	z-index: 99;
+	z-index: 10099;
 	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
 	height: auto;
 	w\idth: 15.9em;
